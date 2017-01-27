@@ -4,7 +4,7 @@ Created on Fri Jan 27 20:21:05 2017
 
 @author: darragh
 """
-
+import os
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
@@ -18,6 +18,8 @@ from subprocess import check_output
 
 import numpy as np
 np.random.seed(1984)
+
+os.chdir('/home/darragh/Dropbox/fish')
 
 import os
 import glob
@@ -41,7 +43,7 @@ from keras import __version__ as keras_version
 
 def get_im_cv2(path):
     img = cv2.imread(path)
-    resized = cv2.resize(img, (64, 64), cv2.INTER_LINEAR)
+    resized = cv2.resize(img, (64, 64), interpolation = cv2.INTER_LINEAR)
     return resized
 
 
@@ -56,7 +58,7 @@ def load_train():
     for fld in folders:
         index = folders.index(fld)
         print('Load folder {} (Index: {})'.format(fld, index))
-        path = os.path.join('..', 'input', 'train', fld, '*.jpg')
+        path = os.path.join('data', 'train', fld, '*.jpg')
         files = glob.glob(path)
         for fl in files:
             flbase = os.path.basename(fl)
@@ -70,7 +72,7 @@ def load_train():
 
 
 def load_test():
-    path = os.path.join('..', 'input', 'test_stg1', '*.jpg')
+    path = os.path.join('data', 'test_stg1', '*.jpg')
     files = sorted(glob.glob(path))
 
     X_test = []
