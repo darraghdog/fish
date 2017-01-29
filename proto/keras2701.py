@@ -41,9 +41,12 @@ from keras.constraints import maxnorm
 from sklearn.metrics import log_loss
 from keras import __version__ as keras_version
 
+dim = 64
+
+
 def get_im_cv2(path):
     img = cv2.imread(path)
-    resized = cv2.resize(img, (64, 64), interpolation = cv2.INTER_LINEAR)
+    resized = cv2.resize(img, (dim, dim), interpolation = cv2.INTER_LINEAR)
     return resized
 
 
@@ -147,7 +150,7 @@ def merge_several_folds_mean(data, nfolds):
 
 def create_model():
     model = Sequential()
-    model.add(ZeroPadding2D((1, 1), input_shape=(3, 64, 64), dim_ordering='th'))
+    model.add(ZeroPadding2D((1, 1), input_shape=(3, dim, dim), dim_ordering='th'))
     model.add(Convolution2D(8, 3, 3, activation='relu', dim_ordering='th', init='he_uniform'))
     model.add(Dropout(0.2))
     model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), dim_ordering='th'))
@@ -179,7 +182,7 @@ def get_validation_predictions(train_data, predictions_valid):
 def run_cross_validation_create_models(nfolds=10):
     # input image dimensions
     batch_size = 32
-    nb_epoch = 8
+    nb_epoch = 20 #8
     random_state = 51
     first_rl = 96
 
@@ -250,6 +253,6 @@ def run_cross_validation_process_test(info_string, models):
 
 if __name__ == '__main__':
     print('Keras version: {}'.format(keras_version))
-    num_folds = 3
+    num_folds = 10 # 3
     info_string, models = run_cross_validation_create_models(num_folds)
     run_cross_validation_process_test(info_string, models)  
