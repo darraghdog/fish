@@ -1,0 +1,22 @@
+awsgpu
+AKIAJVMAD6QZ4ELMLMRA
+SZfShXY6f/Bg0FtqfgyJIn4Pb6npFk0Y+VuU5ePp
+
+============
+https://github.com/fastai/courses/tree/master/setup
+setup_p2.sh
+
+dl_course
+
+cd /home/darragh/Dropbox/fish
+ssh -i /home/darragh/.ssh/aws-key-fast-ai.pem ubuntu@ec2-34-248-233-218.eu-west-1.compute.amazonaws.com
+
+
+ubuntu@ip-172-31-12-145:~$ nvidia-smi
+ubuntu@ip-172-31-12-145:~$ sudo rm .bash_history 
+ubuntu@ip-172-31-12-145:~$ jupyter notebook
+
+http://ec2-34-248-233-218.eu-west-1.compute.amazonaws.com:8888/
+
+
+
