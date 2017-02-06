@@ -121,6 +121,7 @@ for i in range(2):
                  validation_data=(conv_val_feat, val_labels))
 
     # Make our prediction on the lrg_model layer
+<<<<<<< HEAD
     log.info('Bag Prediction')
     predsls.append(lrg_model[i].predict(conv_test_feat, batch_size=batch_size)) # or try 32 batch_size
     pvalsls.append(lrg_model[i].predict(conv_val_feat, batch_size=batch_size))
@@ -131,6 +132,15 @@ preds = sum(predsls)/len(predsls)
 subm = do_clip(preds,0.999)
 subm_name = path+'results/subm_bb_conv_lrg0206A.csv.gz'
 pred_name = path+'results/pred_bb_conv_lrg0206A.csv.gz'
+=======
+    log.info('Output Prediction')
+    predsls.append(lrg_model[i].predict(conv_test_feat, batch_size=batch_size)) # or try 32 batch_size
+
+preds = sum(predsls)/len(predsls)
+subm = do_clip(preds,0.99)
+subm_name = path+'results/subm_bb_conv_lrg0202A.csv.gz'
+pred_name = path+'results/pred_bb_conv_lrg0202A.csv.gz'
+>>>>>>> b47e62b4828bb49124e90bc239c671ef05718bb5
 
 classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
 submission = pd.DataFrame(subm, columns=classes)
