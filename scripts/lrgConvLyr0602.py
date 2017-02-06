@@ -19,50 +19,61 @@ import gc
 from theano.sandbox import cuda
 from vgg16bn import Vgg16BN
 
-
 # Set Parameters and check files
+input_exists = False
 log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
-batches = get_batches(path+'train', batch_size=batch_size)
-val_batches = get_batches(path+'valid', batch_size=batch_size*2, shuffle=False)
-(val_classes, trn_classes, val_labels, trn_labels, 
-    val_filenames, filenames, test_filenames) = get_classes(path)
 
-# Read in filenames 
-log.info('Read filenames')
-raw_filenames = [f.split('/')[-1] for f in filenames]
-raw_test_filenames = [f.split('/')[-1] for f in test_filenames]
-raw_val_filenames = [f.split('/')[-1] for f in val_filenames]
+if input_exists:
 
-# Read in our VGG pretrained model
-log.info('Get VGG')
-model = vgg_ft_bn(8)
+    batches = get_batches(path+'train', batch_size=batch_size)
+    val_batches = get_batches(path+'valid', batch_size=batch_size*2, shuffle=False)
+    (val_classes, trn_classes, val_labels, trn_labels, 
+        val_filenames, filenames, test_filenames) = get_classes(path)
+    
+    # Read in filenames 
+    log.info('Read filenames')
+    raw_filenames = [f.split('/')[-1] for f in filenames]
+    raw_test_filenames = [f.split('/')[-1] for f in test_filenames]
+    raw_val_filenames = [f.split('/')[-1] for f in val_filenames]
+    
+    # Read in our VGG pretrained model
+    log.info('Get VGG')
+    model = vgg_ft_bn(8)
+    
+    # Fetch our large images 
+    log.info('Fetch images')
+    trn = get_data(path+'train', (360,640))
+    val = get_data(path+'valid', (360,640))
+    test = get_data(path+'test', (360,640))
+    
+    # Create our VGG model 
+    log.info('Create VGG')
+    vgg640 = Vgg16BN((360, 640)).model
+    vgg640.pop()
+    vgg640.input_shape, vgg640.output_shape
+    vgg640.compile(Adam(), 'categorical_crossentropy', metrics=['accuracy'])
+    
+    # Precompute the output of the convolutional part of VGG
+    log.info('Get VGG output')
+    conv_val_feat = vgg640.predict(val, batch_size=32, verbose=1)
+    conv_trn_feat = vgg640.predict(trn, batch_size=32, verbose=1)
+    conv_test_feat = vgg640.predict(test, batch_size=32, verbose=1)
+    log.info('Write VGG output')
+    save_array(path+'results/conv_val_feat.dat', conv_val_feat)
+    save_array(path+'results/conv_trn_feat.dat', conv_trn_feat) 
+    save_array(path+'results/conv_test_feat.dat', conv_test_feat)     
 
-# Fetch our large images 
-log.info('Fetch images')
-trn = get_data(path+'train', (360,640))
-val = get_data(path+'valid', (360,640))
-test = get_data(path+'test', (360,640))
+    # For memory purposes delete out the original train and validation
+    log.info('Clear up memory')
+    del trn, val, test
+    gc.collect()
 
-# Create our VGG model 
-log.info('Create VGG')
-vgg640 = Vgg16BN((360, 640)).model
-vgg640.pop()
-vgg640.input_shape, vgg640.output_shape
-vgg640.compile(Adam(), 'categorical_crossentropy', metrics=['accuracy'])
-
-# Precompute the output of the convolutional part of VGG
-log.info('Get VGG output')
-conv_val_feat = vgg640.predict(val, batch_size=32, verbose=1)
-conv_trn_feat = vgg640.predict(trn, batch_size=32, verbose=1)
-conv_test_feat = vgg640.predict(test, batch_size=32, verbose=1)
-
-# For memory purposes delete out the original train and validation
-log.info('Clear up memory')
-del trn, val, test
-gc.collect()
-
+conv_val_feat = load_array(path+'results/conv_val_feat.dat')
+conv_trn_feat = load_array(path+'results/conv_trn_feat.dat') 
+conv_test_feat = load_array(path+'results/conv_test_feat.dat')
+    
 # Our Convolutional Net Architecture
 log.info('Create and fit CNN')
 def get_lrg_layers():
