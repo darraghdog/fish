@@ -20,40 +20,46 @@ from theano.sandbox import cuda
 from vgg16bn import Vgg16BN
 
 # Set Parameters and check files
-input_exists = False
+input_exists = True
 log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
 
-if input_exists:
+# Read in our VGG pretrained model
+log.info('Get VGG')
+model = vgg_ft_bn(8)
+
+# Create our VGG model
+log.info('Create VGG')
+vgg640 = Vgg16BN((360, 640)).model
+vgg640.pop()
+vgg640.input_shape, vgg640.output_shape
+vgg640.compile(Adam(), 'categorical_crossentropy', metrics=['accuracy'])
+
+# get labels
+(val_classes, trn_classes, val_labels, trn_labels,
+    val_filenames, filenames, test_filenames) = get_classes(path)
+
+# Read in filenames
+log.info('Read filenames')
+raw_filenames = [f.split('/')[-1] for f in filenames]
+raw_test_filenames = [f.split('/')[-1] for f in test_filenames]
+raw_val_filenames = [f.split('/')[-1] for f in val_filenames]
+
+
+log.info('Read in data')
+if not input_exists:
 
     batches = get_batches(path+'train', batch_size=batch_size)
     val_batches = get_batches(path+'valid', batch_size=batch_size*2, shuffle=False)
     (val_classes, trn_classes, val_labels, trn_labels, 
         val_filenames, filenames, test_filenames) = get_classes(path)
     
-    # Read in filenames 
-    log.info('Read filenames')
-    raw_filenames = [f.split('/')[-1] for f in filenames]
-    raw_test_filenames = [f.split('/')[-1] for f in test_filenames]
-    raw_val_filenames = [f.split('/')[-1] for f in val_filenames]
-    
-    # Read in our VGG pretrained model
-    log.info('Get VGG')
-    model = vgg_ft_bn(8)
-    
     # Fetch our large images 
     log.info('Fetch images')
     trn = get_data(path+'train', (360,640))
     val = get_data(path+'valid', (360,640))
     test = get_data(path+'test', (360,640))
-    
-    # Create our VGG model 
-    log.info('Create VGG')
-    vgg640 = Vgg16BN((360, 640)).model
-    vgg640.pop()
-    vgg640.input_shape, vgg640.output_shape
-    vgg640.compile(Adam(), 'categorical_crossentropy', metrics=['accuracy'])
     
     # Precompute the output of the convolutional part of VGG
     log.info('Get VGG output')
