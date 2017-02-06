@@ -22,7 +22,7 @@ from vgg16bn import Vgg16BN
 
 # Set Parameters and check files
 log.info('Set Paramters')
-path = "data/fish/"
+path = "../data/fish/"
 batch_size=64
 batches = get_batches(path+'train', batch_size=batch_size)
 val_batches = get_batches(path+'valid', batch_size=batch_size*2, shuffle=False)
