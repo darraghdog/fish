@@ -110,7 +110,7 @@ predsls = []
 
 for i in range(2):
     log.info('Train round' + str(i))
-    lrg_model[i] = Sequential(get_lrg_layers())
+    lrg_model.append(Sequential(get_lrg_layers()))
     # lrg_model.summary()
     lrg_model[i].compile(Adam(lr=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2, 
@@ -125,10 +125,9 @@ for i in range(2):
 
     # Make our prediction on the lrg_model layer
     log.info('Output Prediction')
-    predsls[i] = lrg_model[i].predict(conv_test_feat, batch_size=batch_size) # or try 32 batch_size
-    print predsls[i][:5]
+    predsls.append(lrg_model[i].predict(conv_test_feat, batch_size=batch_size)) # or try 32 batch_size
 
-preds = sum(preds)/len(preds)
+preds = sum(predsls)/len(predsls)
 subm = do_clip(preds,0.99)
 subm_name = path+'results/subm_bb_conv_lrg0202A.csv.gz'
 pred_name = path+'results/pred_bb_conv_lrg0202A.csv.gz'
