@@ -18,6 +18,7 @@ import gc
 # from __future__ import division, print_function
 from theano.sandbox import cuda
 from vgg16bn import Vgg16BN
+from sklearn import metrics
 
 # Set Parameters and check files
 input_exists = True
@@ -110,7 +111,7 @@ predsls = []
 
 for i in range(2):
     log.info('Train round' + str(i))
-    lrg_model[i] = Sequential(get_lrg_layers())
+    lrg_model.append(Sequential(get_lrg_layers()))
     # lrg_model.summary()
     lrg_model[i].compile(Adam(lr=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2, 
@@ -119,19 +120,17 @@ for i in range(2):
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=6,
                  validation_data=(conv_val_feat, val_labels))
 
-    ## Evaluate the model
-    #log.info('Evaluate')
-    #lrg_model[i].evaluate(conv_val_feat, val_labels)
-
     # Make our prediction on the lrg_model layer
-    log.info('Output Prediction')
-    predsls[i] = lrg_model[i].predict(conv_test_feat, batch_size=batch_size) # or try 32 batch_size
-    print predsls[i][:5]
+    log.info('Bag Prediction')
+    predsls.append(lrg_model[i].predict(conv_test_feat, batch_size=batch_size)) # or try 32 batch_size
+    pvalsls.append(lrg_model[i].predict(conv_val_feat, batch_size=batch_size))
+    val_score = "%.3f" % metrics.log_loss(val_labels, sum(pvalsls)/len(pvalsls))
+    log.info('Bagged Logloss ' + str(val_score))
 
-preds = sum(preds)/len(preds)
-subm = do_clip(preds,0.99)
-subm_name = path+'results/subm_bb_conv_lrg0202A.csv.gz'
-pred_name = path+'results/pred_bb_conv_lrg0202A.csv.gz'
+preds = sum(predsls)/len(predsls)
+subm = do_clip(preds,0.999)
+subm_name = path+'results/subm_bb_conv_lrg0206A.csv.gz'
+pred_name = path+'results/pred_bb_conv_lrg0206A.csv.gz'
 
 classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
 submission = pd.DataFrame(subm, columns=classes)
