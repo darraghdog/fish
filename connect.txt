@@ -6,7 +6,9 @@ setup_p2.sh
 dl_course
 
 cd /home/darragh/Dropbox/fish
-ssh -i /home/darragh/.ssh/aws-key-fast-ai.pem ubuntu@ec2-34-248-233-218.eu-west-1.compute.amazonaws.com
+ssh -i /home/darragh/.ssh/aws-key-fast-ai.pem ubuntu@ec2-34-249-13-106.eu-west-1.compute.amazonaws.com
+
+scp -i /home/darragh/.ssh/aws-key-fast-ai.pem -r ./data ubuntu@ec2-34-249-13-106.eu-west-1.compute.amazonaws.com:
 
 
 ubuntu@ip-172-31-12-145:~$ nvidia-smi
@@ -16,5 +18,8 @@ ubuntu@ip-172-31-12-145:~$ jupyter notebook
 http://ec2-34-248-233-218.eu-west-1.compute.amazonaws.com:8888/
 
 ssh -i fish.pem ubuntu@ec2-34-249-133-111.eu-west-1.compute.amazonaws.com
+
+
+
 
 

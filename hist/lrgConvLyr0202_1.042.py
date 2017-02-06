@@ -14,11 +14,7 @@ log = Logger('Logbook')
 import utils; reload(utils)
 from utils import *
 import gc
-<<<<<<< HEAD
-
-=======
 # from __future__ import division, print_function
->>>>>>> 3fd674862237694a7c9bee20e1feed68f8c9bee9
 from theano.sandbox import cuda
 from vgg16bn import Vgg16BN
 
@@ -108,15 +104,6 @@ lrg_model.evaluate(conv_val_feat, val_labels)
 # Make our prediction on the lrg_model layer
 log.info('Output Prediction')
 preds = lrg_model.predict(conv_test_feat, batch_size=batch_size) # or try 32 batch_size
-<<<<<<< HEAD
-subm = do_clip(preds,0.82)
-subm_name = path+'results/subm_bb_conv_lrg0202.csv.gz'
-classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
-submission = pd.DataFrame(subm, columns=classes)
-submission.insert(0, 'image', raw_test_filenames)
-submission.head()
-submission.to_csv(subm_name, index=False, compression='gzip')
-=======
 subm = do_clip(preds,0.99)
 subm_name = path+'results/subm_bb_conv_lrg0202A.csv.gz'
 pred_name = path+'results/pred_bb_conv_lrg0202A.csv.gz'
@@ -131,14 +118,10 @@ subm1.to_csv(pred_name, index=False, compression='gzip')
 
 
 
->>>>>>> 3fd674862237694a7c9bee20e1feed68f8c9bee9
 
 log.info('Done - files @ ' + subm_name)
 
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 3fd674862237694a7c9bee20e1feed68f8c9bee9
