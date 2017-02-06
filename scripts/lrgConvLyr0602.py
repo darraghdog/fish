@@ -110,10 +110,8 @@ lrg_model.compile(Adam(lr=0.001), loss='categorical_crossentropy', metrics=['acc
 lrg_model.fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2, 
              validation_data=(conv_val_feat, val_labels))
 lrg_model.optimizer.lr=1e-5
-lrg_model.fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=6, 
+lrg_model.fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=6,
              validation_data=(conv_val_feat, val_labels))
-
-# Epoch 6/6 should be getting ~ 6s - loss: 8.9966e-04 - acc: 1.0000 - val_loss: 0.0976 - val_acc: 0.9760
 
 # Evaluate the model
 log.info('Evaluate')
