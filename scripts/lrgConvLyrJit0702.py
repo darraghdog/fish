@@ -129,9 +129,10 @@ for i in range(bags):
     acc_score = "%.3f" % accuracyfunc(val_labels, do_clip(sum(pvalsls)/len(pvalsls), .99))
     log.info('Bagged Validation Logloss ' + str(val_score))
     log.info('Bagged Validation Logloss ' + str(acc_score))
-    # 10 bagged : 0.131
 
-# metrics.log_loss(val_labels, do_clip(sum(pvalsls)/len(pvalsls), .9999))
+# Bagged Validation Logloss 0.974
+# Bagged Validation Logloss 0.151
+
 preds = sum(predsls)/len(predsls)
 subm = do_clip(preds,0.999)
 subm_name = path+'results/subm_bb_conv_lrg0206A.csv.gz'
