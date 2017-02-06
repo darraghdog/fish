@@ -107,6 +107,7 @@ nf=128; p=0. # No dropout
 lrg_model = []
 predsls = []
 
+
 for i in range(2):
     log.info('Train round' + str(i))
     lrg_model[i] = Sequential(get_lrg_layers())
