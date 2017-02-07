@@ -216,6 +216,13 @@ def get_classes(path):
     return (val_batches.classes, batches.classes, onehot(val_batches.classes), onehot(batches.classes),
         val_batches.filenames, batches.filenames, test_batches.filenames)
 
+def get_classes_all(path):
+    batches = get_batches(path+'train-all', shuffle=False, batch_size=1)
+    val_batches = get_batches(path+'valid', shuffle=False, batch_size=1)
+    test_batches = get_batches(path+'test', shuffle=False, batch_size=1)
+    return (val_batches.classes, batches.classes, onehot(val_batches.classes), onehot(batches.classes),
+        val_batches.filenames, batches.filenames, test_batches.filenames)
+
 
 def split_at(model, layer_type):
     layers = model.layers
