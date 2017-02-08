@@ -15,6 +15,13 @@ os.chdir(current_dir)
 import pandas as pd
 import datetime
 
+def hamdist(str1, str2):
+    diffs = 0
+    for ch1, ch2 in zip(str1, str2):
+        if ch1 != ch2:
+            diffs += 1
+    return diffs
+
 def dhash(image,hash_size = 16):
     image = image.convert('LA').resize((hash_size+1,hash_size),Image.ANTIALIAS)
     pixels = list(image.getdata())
@@ -61,4 +68,10 @@ for name in names:
     counter+=1
 
 df = pd.DataFrame(img_id_hash,columns=['ParDirectory' , 'SubDirectory', 'file_name', 'image_hash'])
+df = df.sort(['image_hash'], ascending=[1]).reset_index(drop=True)
+for i in range(1, df.shape[0]):
+    df.loc[i, 'distance']  = hamdist(df.loc[i, 'image_hash'], df.loc[i-1, 'image_hash'])
+
+
 df.to_csv('image_hash_' + parentdir + '.csv', index=False)
+
