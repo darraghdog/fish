@@ -34,8 +34,8 @@ def refresh_directory_structure(name, sub_dirs):
         os.makedirs(os.path.join(gdir, sub_dir))
 
 # Set Parameters and check files
-refresh_directories = True
-input_exists = False
+refresh_directories = False
+input_exists = True
 full = False
 log.info('Set Paramters')
 path = "../data/fish/"
@@ -147,10 +147,10 @@ for i in range(bags):
     lrg_model.append(Sequential(get_lrg_layers()))
     if i == 0:
 	lrg_model[i].summary()
-    lrg_model[i].compile(Adam(lr=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
+    lrg_model[i].compile(Adam(lr=.0001), loss='categorical_crossentropy', metrics=['accuracy']) #.001
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2, 
                  validation_data=(conv_val_feat, val_labels))
-    lrg_model[i].optimizer.lr=1e-5
+    lrg_model[i].optimizer.lr=1e-7 #1e-5
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=6,
                  validation_data=(conv_val_feat, val_labels))
 
@@ -181,9 +181,6 @@ subm1.to_csv(pred_name, index=False, compression='gzip')
 log.info('Done - files @ ' + subm_name)
 
 # Bag 6 Original scores 
-#[2017-02-07 16:06:28.804177] INFO: Logbook: Bagged Validation Logloss 0.169
-#[2017-02-07 16:06:28.804338] INFO: Logbook: Bagged Validation Logloss 0.978
-
-
-
+#[2017-02-09 22:40:05.864336] INFO: Logbook: Bagged Validation Logloss 1.046
+#[2017-02-09 22:40:05.864498] INFO: Logbook: Bagged Validation Accuracy 0.706
 
