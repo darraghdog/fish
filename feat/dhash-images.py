@@ -73,7 +73,7 @@ for name in names:
 
 df = pd.DataFrame(img_id_hash,columns=['ParDirectory' , 'SubDirectory', 'file_name', 'image_hash'])
 
-# Create the distance matrix 
+# Create the distance matrix for the distances in images
 distances = np.zeros((df.shape[0], df.shape[0]))
 for i, row in df.iterrows():
     if i % 20 == 0:
@@ -94,13 +94,14 @@ y = cls.fit_predict(distances)
 print(pd.Series(y).value_counts()[:50])
 
 # Lets look at the first 5 clusters
-_, ax = plt.subplots(15, 4, figsize=(10, 30))
+_, ax = plt.subplots(10, 4, figsize=(10, 20))
 ax = ax.flatten()
 count = 0
 
 for c in range(20):
     for i, row in df[y==c].iterrows():
-        if count  == len(ax) : break
+        if count  == len(ax): 
+            break
         if row['ParDirectory'] == 'test' :
             imgdata = Image.open(os.path.join(row['ParDirectory'], row['file_name']))
         else:
