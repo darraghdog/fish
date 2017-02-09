@@ -34,22 +34,24 @@ def refresh_directory_structure(name, sub_dirs):
         os.makedirs(os.path.join(gdir, sub_dir))
 
 # Set Parameters and check files
-input_exists = True
+refresh_directories = True
+input_exists = False
 full = False
 log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
 
 # Create the test and valid directory
-log.info('Create directory structure and validation files')
-sub_dirs = os.listdir(os.path.join(path, 'train-all'))[:-1]
-refresh_directory_structure('train', sub_dirs)
-refresh_directory_structure('valid', sub_dirs)
-for c,row in enumerate(csv.DictReader(open('../image_validation_set.csv'))):
-    value = 'valid' if row['Validation'] == '1' else 'train'
-    name_from = os.path.join(path, 'train-all', row['SubDirectory'], row['file_name'])
-    name_to   = os.path.join(path, value, row['SubDirectory'], row['file_name'])
-    shutil.copyfile(name_from, name_to)
+if refresh_directories:
+    log.info('Create directory structure and validation files')
+    sub_dirs = os.listdir(os.path.join(path, 'train-all'))[:-1]
+    refresh_directory_structure('train', sub_dirs)
+    refresh_directory_structure('valid', sub_dirs)
+    for c,row in enumerate(csv.DictReader(open('../image_validation_set.csv'))):
+        value = 'valid' if row['Validation'] == '1' else 'train'
+        name_from = os.path.join(path, 'train-all', row['SubDirectory'], row['file_name'])
+        name_to   = os.path.join(path, value, row['SubDirectory'], row['file_name'])
+        shutil.copyfile(name_from, name_to)
         
 # Read in our VGG pretrained model
 log.info('Get VGG')
