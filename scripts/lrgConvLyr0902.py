@@ -44,7 +44,8 @@ batch_size=64
 # Create the test and valid directory
 if refresh_directories:
     log.info('Create directory structure and validation files')
-    sub_dirs = os.listdir(os.path.join(path, 'train-all'))[:-1]
+    sub_dirs = os.listdir(os.path.join(path, 'train-all'))
+    if '.DS_Store' in sub_dirs: sub_dirs.remove('.DS_Store')
     refresh_directory_structure('train', sub_dirs)
     refresh_directory_structure('valid', sub_dirs)
     for c,row in enumerate(csv.DictReader(open('../image_validation_set.csv'))):
