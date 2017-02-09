@@ -11,6 +11,8 @@ from logbook import Logger, StreamHandler
 import sys
 StreamHandler(sys.stdout).push_application()
 log = Logger('Logbook')
+import shutil
+import csv
 
 import utils; reload(utils)
 from utils import *
@@ -22,13 +24,14 @@ from sklearn import metrics
 
 def accuracyfunc(y_act, y_pred):
     return metrics.accuracy_score(np.argmax(y_act, axis=1), np.argmax(y_pred, axis=1))
-
-def get_batches(dirname, gen=image.ImageDataGenerator(), shuffle=True, batch_size=4, class_mode='categorical',
-                target_size=(224,224)):
-    return gen.flow_from_directory(dirname, target_size=target_size,
-            class_mode=class_mode, shuffle=shuffle, batch_size=batch_size)
-
-
+    
+def refresh_directory_structure(name, sub_dirs):
+    gdir = os.path.join(path, name)
+    if os.path.exists(gdir):
+        shutil.rmtree(gdir)
+    os.makedirs(gdir)
+    for sub_dir in sub_dirs:
+        os.makedirs(os.path.join(gdir, sub_dir))
 
 # Set Parameters and check files
 input_exists = True
@@ -37,6 +40,17 @@ log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
 
+# Create the test and valid directory
+log.info('Create directory structure and validation files')
+sub_dirs = os.listdir(os.path.join(path, 'train-all'))[:-1]
+refresh_directory_structure('train', sub_dirs)
+refresh_directory_structure('valid', sub_dirs)
+for c,row in enumerate(csv.DictReader(open('../image_validation_set.csv'))):
+    value = 'valid' if row['Validation'] == '1' else 'train'
+    name_from = os.path.join(path, 'train-all', row['SubDirectory'], row['file_name'])
+    name_to   = os.path.join(path, value, row['SubDirectory'], row['file_name'])
+    shutil.copyfile(name_from, name_to)
+        
 # Read in our VGG pretrained model
 log.info('Get VGG')
 model = vgg_ft_bn(8)
