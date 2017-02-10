@@ -11,8 +11,8 @@ from logbook import Logger, StreamHandler
 import sys
 StreamHandler(sys.stdout).push_application()
 log = Logger('Logbook')
-import shutil
-import csv
+import shutil, csv, time
+timestr = time.strftime("%Y%m%d")
 
 import utils; reload(utils)
 from utils import *
@@ -40,6 +40,7 @@ full = False
 log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
+clip = 0.99
 
 # Create the test and valid directory
 if refresh_directories:
@@ -159,25 +160,24 @@ for i in range(bags):
     predsls.append(lrg_model[i].predict(conv_test_feat, batch_size=batch_size)) # or try 32 batch_size
     pvalsls.append(lrg_model[i].predict(conv_val_feat, batch_size=batch_size))
     val_score = "%.3f" % metrics.log_loss(val_labels, sum(pvalsls)/len(pvalsls))
-    acc_score = "%.3f" % accuracyfunc(val_labels, do_clip(sum(pvalsls)/len(pvalsls), .99))
+    acc_score = "%.3f" % accuracyfunc(val_labels, do_clip(sum(pvalsls)/len(pvalsls), clip))
     log.info('Bagged Validation Logloss ' + str(val_score))
     log.info('Bagged Validation Accuracy ' + str(acc_score))
     # 10 bagged : 0.131
 
 # metrics.log_loss(val_labels, do_clip(sum(pvalsls)/len(pvalsls), .9999))
 preds = sum(predsls)/len(predsls)
-subm = do_clip(preds,0.999)
-subm_name = path+'results/subm_bb_conv_lrg0206A.csv.gz'
-pred_name = path+'results/pred_bb_conv_lrg0206A.csv.gz'
+subm = do_clip(preds, clip)
+
+if full:
+    subm_name = path+'results/subm_full_conv_' + timestr + '.csv.gz'
+else:
+    subm_name = path+'results/subm_part_conv_' + timestr + '.csv.gz'
 
 classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
 submission = pd.DataFrame(subm, columns=classes)
 submission.insert(0, 'image', raw_test_filenames)
 submission.to_csv(subm_name, index=False, compression='gzip')
-subm1 = pd.DataFrame(preds, columns=classes)
-subm1.insert(0, 'image', raw_test_filenames)
-subm1.to_csv(pred_name, index=False, compression='gzip')
-
 log.info('Done - files @ ' + subm_name)
 
 # Bag 6 Original scores 
