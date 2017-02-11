@@ -42,7 +42,7 @@ path = "../data/fish/"
 batch_size=64
 clip = 0.99
 bags = 6
-load_size = (540, 960)
+load_size = (450, 540)
 
 # Create the test and valid directory
 if refresh_directories:
@@ -89,21 +89,23 @@ if not input_exists:
         val_filenames, filenames, test_filenames) = get_classes(path)
     
     # Fetch our large images 
-    log.info('Fetch images')
+    log.info('Fetch images val')
     val = get_data(path+'valid', load_size)
-    conv_val_feat = vgg640.predict(val, batch_size=32, verbose=1)
+    conv_val_feat = vgg640.predict(val, batch_size=16, verbose=1)
     save_array(path+'results/conv_val_big_feat.dat', conv_val_feat)
     del val, conv_val_feat
     gc.collect()
-    
+
+    log.info('Fetch images trn') 
     trn = get_data(path+'train', load_size)
-    conv_trn_feat = vgg640.predict(trn, batch_size=32, verbose=1)
+    conv_trn_feat = vgg640.predict(trn, batch_size=16, verbose=1)
     save_array(path+'results/conv_trn_big_feat.dat', conv_trn_feat) 
     del trn, conv_trn_feat
     gc.collect()
-    
+
+    log.info('Fetch images tst')
     test = get_data(path+'test', load_size)
-    conv_test_feat = vgg640.predict(test, batch_size=32, verbose=1)
+    conv_test_feat = vgg640.predict(test, batch_size=16, verbose=1)
     save_array(path+'results/conv_test_big_feat.dat', conv_test_feat) 
     del test, conv_test_feat 
     gc.collect()    
