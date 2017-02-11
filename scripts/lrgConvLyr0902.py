@@ -36,11 +36,12 @@ def refresh_directory_structure(name, sub_dirs):
 # Set Parameters and check files
 refresh_directories = False
 input_exists = True
-full = False
+full = True
 log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
 clip = 0.99
+bags = 6
 
 # Create the test and valid directory
 if refresh_directories:
@@ -141,17 +142,17 @@ nf=128; p=0. # No dropout
 lrg_model = []
 predsls = []
 pvalsls = []
-bags = 6
 
 for i in range(bags):
+
     log.info('Train round' + str(i))
     lrg_model.append(Sequential(get_lrg_layers()))
     if i == 0:
-	lrg_model[i].summary()
-    lrg_model[i].compile(Adam(lr=.0001), loss='categorical_crossentropy', metrics=['accuracy']) #.001
-    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2, 
+        lrg_model[i].summary()
+    lrg_model[i].compile(Adam(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
+    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2,
                  validation_data=(conv_val_feat, val_labels))
-    lrg_model[i].optimizer.lr=1e-7 #1e-5
+    lrg_model[i].optimizer.lr=1e-7
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=6,
                  validation_data=(conv_val_feat, val_labels))
 
