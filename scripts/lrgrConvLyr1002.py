@@ -41,7 +41,7 @@ log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
 clip = 0.99
-bags = 6
+bags = 1
 load_size = (720, 1280)#(540, 960)
 
 # Create the test and valid directory
@@ -135,7 +135,11 @@ def get_lrg_layers():
         MaxPooling2D(),
         Convolution2D(nf,3,3, activation='relu', border_mode='same'),
         BatchNormalization(axis=1),
-        MaxPooling2D((1,2)),
+        #MaxPooling2D(),
+        #Convolution2D(nf,3,3, activation='relu', border_mode='same'),
+        #BatchNormalization(axis=1),
+
+	MaxPooling2D((1,2)),
         Convolution2D(8,3,3, border_mode='same'),
         Dropout(p),
         GlobalAveragePooling2D(),
@@ -144,7 +148,9 @@ def get_lrg_layers():
 
 # Set up the fully convolutional net (FCN); 
 conv_layers,_ = split_at(vgg640, Convolution2D)
-nf=128; p=0. # No dropout
+nf=128
+p=0. # No dropout
+
 
 lrg_model = []
 predsls = []
@@ -157,7 +163,10 @@ for i in range(bags):
     if i == 0:
         lrg_model[i].summary()
     lrg_model[i].compile(Adam(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2,
+    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=3,
+                 validation_data=(conv_val_feat, val_labels))
+    lrg_model[i].compile(Adam(lr=0.00001), loss='categorical_crossentropy', metrics=['accuracy'])
+    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=3,
                  validation_data=(conv_val_feat, val_labels))
     lrg_model[i].optimizer.lr=1e-7
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=4,
