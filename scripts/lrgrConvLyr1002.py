@@ -35,14 +35,14 @@ def refresh_directory_structure(name, sub_dirs):
 
 # Set Parameters and check files
 refresh_directories = False
-input_exists = False
+input_exists = True
 full = False
 log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
 clip = 0.99
 bags = 6
-load_size = (450, 540)
+load_size = (720, 1280)#(540, 960)
 
 # Create the test and valid directory
 if refresh_directories:
@@ -91,22 +91,22 @@ if not input_exists:
     # Fetch our large images 
     log.info('Fetch images val')
     val = get_data(path+'valid', load_size)
-    conv_val_feat = vgg640.predict(val, batch_size=16, verbose=1)
-    save_array(path+'results/conv_val_big_feat.dat', conv_val_feat)
+    conv_val_feat = vgg640.predict(val, batch_size=4, verbose=1)
+    save_array(path+'results/conv_val_vbig_feat.dat', conv_val_feat)
     del val, conv_val_feat
     gc.collect()
 
     log.info('Fetch images trn') 
     trn = get_data(path+'train', load_size)
-    conv_trn_feat = vgg640.predict(trn, batch_size=16, verbose=1)
-    save_array(path+'results/conv_trn_big_feat.dat', conv_trn_feat) 
+    conv_trn_feat = vgg640.predict(trn, batch_size=4, verbose=1)
+    save_array(path+'results/conv_trn_vbig_feat.dat', conv_trn_feat) 
     del trn, conv_trn_feat
     gc.collect()
 
     log.info('Fetch images tst')
     test = get_data(path+'test', load_size)
-    conv_test_feat = vgg640.predict(test, batch_size=16, verbose=1)
-    save_array(path+'results/conv_test_big_feat.dat', conv_test_feat) 
+    conv_test_feat = vgg640.predict(test, batch_size=4, verbose=1)
+    save_array(path+'results/conv_test_vbig_feat.dat', conv_test_feat) 
     del test, conv_test_feat 
     gc.collect()    
 
@@ -114,9 +114,9 @@ if not input_exists:
     log.info('Clear up memory')
     gc.collect() 
 
-conv_val_feat = load_array(path+'results/conv_val_big_feat.dat')
-conv_trn_feat = load_array(path+'results/conv_trn_big_feat.dat') 
-conv_test_feat = load_array(path+'results/conv_test_big_feat.dat')
+conv_val_feat = load_array(path+'results/conv_val_vbig_feat.dat')
+conv_trn_feat = load_array(path+'results/conv_trn_vbig_feat.dat') 
+conv_test_feat = load_array(path+'results/conv_test_vbig_feat.dat')
 
 if full:
     conv_trn_feat = np.concatenate([conv_trn_feat, conv_val_feat])
@@ -160,7 +160,7 @@ for i in range(bags):
     lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2,
                  validation_data=(conv_val_feat, val_labels))
     lrg_model[i].optimizer.lr=1e-7
-    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=6,
+    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=4,
                  validation_data=(conv_val_feat, val_labels))
 
     # Make our prediction on the lrg_model layer
