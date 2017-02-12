@@ -41,7 +41,8 @@ log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=64
 clip = 0.99
-bags = 6
+bags = 1
+load_size = (360, 640)
 
 # Create the test and valid directory
 if refresh_directories:
@@ -62,7 +63,7 @@ model = vgg_ft_bn(8)
 
 # Create our VGG model
 log.info('Create VGG')
-vgg640 = Vgg16BN((360, 640)).model
+vgg640 = Vgg16BN(load_size).model
 vgg640.pop()
 vgg640.input_shape, vgg640.output_shape
 vgg640.compile(Adam(), 'categorical_crossentropy', metrics=['accuracy'])
@@ -87,7 +88,7 @@ for c in anno_classes:
             bb_json[l['filename'].split('/')[-1]] = sorted(
                 l['annotations'], key=lambda x: x['height']*x['width'])[-1]
 
-empty_bbox = {'height': 0., 'width': 0., 'x': 0., 'y': 0.}
+empty_bbox = {'height': 0., 'width': 0., 'x': 100., 'y': 100.}
 for f in raw_filenames:
     if not f in bb_json.keys(): bb_json[f] = empty_bbox
 for f in raw_val_filenames:
@@ -97,13 +98,16 @@ for f in raw_val_filenames:
 bb_params = ['height', 'width', 'x', 'y']
 def convert_bb(bb, size):
     bb = [bb[p] for p in bb_params]
-    conv_x = (224. / size[0])
-    conv_y = (224. / size[1])
+    conv_x = (load_size[1] / size[0])
+    conv_y = (load_size[0] / size[1])
     bb[0] = bb[0]*conv_y
     bb[1] = bb[1]*conv_x
     bb[2] = max(bb[2]*conv_x, 0)
     bb[3] = max(bb[3]*conv_y, 0)
-    return bb
+    bbout = []
+    bbout.append(bb[2]+.5*bb[1])
+    bbout.append(bb[3]+.5*bb[0])
+    return bbout
 
 
 trn_sizes = [PIL.Image.open(path+'train/'+f).size for f in filenames]
@@ -121,11 +125,12 @@ def create_rect(bb, color='red'):
 
 def show_bb(i):
     bb = val_bbox[i]
-    plot(val[i])
-    plt.gca().add_patch(create_rect(bb))
+    img  = np.rollaxis(val[i], 0, 3).astype(np.uint8)
+    plt.scatter(bb[0], bb[1], color='red', s = 100)
+    plt.imshow(img)
     
-val = get_data(path+'valid', (360,640))
-show_bb(1)
+val = get_data(path+'valid', load_size)
+show_bb(98)
 # check whats going wrong here
 
 
@@ -139,9 +144,9 @@ if not input_exists:
     
     # Fetch our large images 
     log.info('Fetch images')
-    trn = get_data(path+'train', (360,640))
-    val = get_data(path+'valid', (360,640))
-    test = get_data(path+'test', (360,640))
+    trn = get_data(path+'train', load_size)
+    val = get_data(path+'valid', load_size)
+    test = get_data(path+'test', load_size)
     
     # Precompute the output of the convolutional part of VGG
     log.info('Get VGG output')
@@ -200,12 +205,13 @@ for i in range(bags):
     lrg_model.append(Sequential(get_lrg_layers()))
     if i == 0:
         lrg_model[i].summary()
-    lrg_model[i].compile(Adam(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=2,
-                 validation_data=(conv_val_feat, val_labels))
+    #lrg_model[i].compile(Adam(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
+    lrg_model[i].compile(Adam(lr=0.0001), loss=['mse'], metrics=['mse'])
+    lrg_model[i].fit(conv_trn_feat, trn_bbox, batch_size=batch_size, nb_epoch=2,
+                 validation_data=(conv_val_feat, val_bbox))             
     lrg_model[i].optimizer.lr=1e-7
-    lrg_model[i].fit(conv_trn_feat, trn_labels, batch_size=batch_size, nb_epoch=6,
-                 validation_data=(conv_val_feat, val_labels))
+    lrg_model[i].fit(conv_trn_feat, trn_bbox, batch_size=batch_size, nb_epoch=6,
+                 validation_data=(conv_val_feat, val_bbox))
 
     # Make our prediction on the lrg_model layer
     log.info('Output Prediction')
@@ -215,7 +221,6 @@ for i in range(bags):
     acc_score = "%.3f" % accuracyfunc(val_labels, do_clip(sum(pvalsls)/len(pvalsls), clip))
     log.info('Bagged Validation Logloss ' + str(val_score))
     log.info('Bagged Validation Accuracy ' + str(acc_score))
-    # 10 bagged : 0.131
 
 # metrics.log_loss(val_labels, do_clip(sum(pvalsls)/len(pvalsls), .9999))
 preds = sum(predsls)/len(predsls)
