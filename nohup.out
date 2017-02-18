@@ -11,3 +11,24 @@
 [I 21:28:33.497 NotebookApp] Kernel started: d1a60558-5973-4cc4-add3-6a816aee34d0
 [I 21:29:05.966 NotebookApp] Saving file at /scripts/test_anno.ipynb
 [I 21:29:26.178 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:30:33.623 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:32:07.863 NotebookApp] Kernel interrupted: d1a60558-5973-4cc4-add3-6a816aee34d0
+[I 21:32:11.154 NotebookApp] Kernel interrupted: d1a60558-5973-4cc4-add3-6a816aee34d0
+[I 21:32:33.654 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:44:30.001 NotebookApp] Kernel interrupted: d1a60558-5973-4cc4-add3-6a816aee34d0
+[I 21:44:33.707 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:45:48.909 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:46:33.619 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 22:26:33.615 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 22:26:57.314 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 22:27:07.073 NotebookApp] Kernel interrupted: d1a60558-5973-4cc4-add3-6a816aee34d0
+[I 22:27:14.854 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 22:28:33.493 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 22:33:01.252 NotebookApp] Kernel restarted: d1a60558-5973-4cc4-add3-6a816aee34d0
+[I 22:34:33.574 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 23:22:33.635 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 23:24:33.642 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 23:24:42.630 NotebookApp] 302 GET /notebooks/data/fish/results/subm_full_conv_20170218B.csv (176.61.36.2) 0.97ms
+[I 23:26:34.794 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 23:26:46.855 NotebookApp] Copying scripts/test_anno.ipynb to /scripts
+[I 23:26:48.665 NotebookApp] Kernel started: 31038fa3-590b-47a5-91fb-fd5a0e41271f
