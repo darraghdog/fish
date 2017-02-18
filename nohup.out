@@ -1,0 +1,13 @@
+[I 21:28:22.299 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[W 21:28:22.666 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 21:28:22.700 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 21:28:22.700 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 21:28:22.703 NotebookApp] [nb_conda] enabled
+[I 21:28:22.733 NotebookApp] [nb_anacondacloud] enabled
+[I 21:28:22.735 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 21:28:22.735 NotebookApp] 0 active kernels 
+[I 21:28:22.735 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 21:28:22.735 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:28:33.497 NotebookApp] Kernel started: d1a60558-5973-4cc4-add3-6a816aee34d0
+[I 21:29:05.966 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:29:26.178 NotebookApp] Saving file at /scripts/test_anno.ipynb
