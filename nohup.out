@@ -127,3 +127,37 @@
 [W 16:31:10.090 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
 [I 16:31:38.749 NotebookApp] Kernel restarted: 01b761ce-1398-45fe-a597-be374fb0458c
 [I 16:31:47.631 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 16:33:48.519 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 17:42:54.339 NotebookApp] Kernel started: d4d9d114-8aec-4398-aed8-e90a4d216413
+[I 17:43:08.260 NotebookApp] Copying scripts/test_nb.ipynb to /scripts
+[I 17:43:18.746 NotebookApp] Kernel started: 07abd14f-6adb-4d18-9116-2a8f52e6c6ca
+[I 17:47:04.578 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 17:48:56.111 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 17:50:56.501 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 18:01:09.355 NotebookApp] 302 GET /notebooks/data/fish/results/subm_full_conv_20170219.csv (176.61.36.2) 0.95ms
+[I 18:01:50.592 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 18:05:04.066 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 18:05:32.442 NotebookApp] 302 GET /notebooks/data/fish/results/subm_full_conv_20170219A.csv (176.61.36.2) 0.95ms
+[I 18:05:50.178 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 18:06:14.736 NotebookApp] 302 GET /notebooks/data/fish/results/subm_full_conv_20170219A.csv (176.61.36.2) 0.95ms
+[I 18:07:50.641 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 18:08:13.035 NotebookApp] Notebook scripts/old/test_anno_0.797.ipynb is not trusted
+[I 18:08:13.990 NotebookApp] Kernel started: b1a0a8b6-ba04-4891-936b-00855abb8b45
+[W 18:09:27.124 NotebookApp] Notebook scripts/old/test_anno_0.797#2.ipynb is not trusted
+[I 18:09:27.828 NotebookApp] Kernel started: eaf0d42a-5a78-4c5b-bdcd-98fa264ec4c6
+[I 18:10:12.243 NotebookApp] Saving file at /scripts/old/test_anno_0.797#2.ipynb
+[W 18:10:12.243 NotebookApp] Saving untrusted notebook scripts/old/test_anno_0.797#2.ipynb
+[W 18:11:28.047 NotebookApp] Notebook scripts/test_anno_0.797#2.ipynb is not trusted
+[I 18:11:28.950 NotebookApp] Kernel started: ccfa453a-d7b7-4f86-a464-c0188f9be278
+[I 18:11:42.851 NotebookApp] Kernel shutdown: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 18:11:46.039 NotebookApp] Kernel shutdown: d4d9d114-8aec-4398-aed8-e90a4d216413
+[I 18:11:49.333 NotebookApp] Kernel shutdown: b1a0a8b6-ba04-4891-936b-00855abb8b45
+[I 18:12:15.213 NotebookApp] Kernel started: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 18:13:29.492 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 18:14:15.396 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 18:16:15.355 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 19:06:58.069 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 19:07:32.316 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 19:09:32.278 NotebookApp] Saving file at /scripts/test_nb.ipynb
+[I 19:09:43.302 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:09:45.992 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
