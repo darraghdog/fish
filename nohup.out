@@ -32,3 +32,98 @@
 [I 23:26:34.794 NotebookApp] Saving file at /scripts/test_anno.ipynb
 [I 23:26:46.855 NotebookApp] Copying scripts/test_anno.ipynb to /scripts
 [I 23:26:48.665 NotebookApp] Kernel started: 31038fa3-590b-47a5-91fb-fd5a0e41271f
+[I 13:17:06.375 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 13:17:06.379 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 13:17:09.883 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 13:17:10.370 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 13:17:10.370 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 13:17:10.374 NotebookApp] [nb_conda] enabled
+[I 13:17:11.575 NotebookApp] [nb_anacondacloud] enabled
+[I 13:17:11.578 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 13:17:11.578 NotebookApp] 0 active kernels 
+[I 13:17:11.579 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 13:17:11.579 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:17:33.444 NotebookApp] 302 GET / (176.61.36.2) 0.60ms
+[I 13:17:33.463 NotebookApp] 302 GET /tree (176.61.36.2) 0.88ms
+[I 13:17:37.616 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.87ms
+[W 13:17:47.470 NotebookApp] Notebook scripts/test_anno.ipynb is not trusted
+[I 13:17:48.607 NotebookApp] Kernel started: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 13:18:03.596 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 13:18:03.597 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 13:18:24.870 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 13:18:24.870 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 13:19:48.626 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 13:19:48.626 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 13:21:48.650 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 13:21:48.651 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 13:23:48.670 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 13:23:48.671 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 13:29:48.620 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 13:29:48.621 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 13:55:48.772 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 13:55:48.773 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:03:48.717 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:03:48.718 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:05:48.662 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:05:48.662 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:10:04.372 NotebookApp] Kernel interrupted: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 14:10:31.242 NotebookApp] Kernel interrupted: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 14:11:48.711 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:11:48.712 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:14:29.580 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:14:29.581 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:17:45.542 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:17:45.543 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:19:10.701 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:19:10.702 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:19:32.084 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:19:32.085 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:21:48.638 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:21:48.638 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:23:48.725 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:23:48.726 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:33:48.826 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:33:48.827 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:35:48.788 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:35:48.789 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:35:48.955 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:35:48.955 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:36:04.969 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:36:04.969 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:36:11.528 NotebookApp] Kernel interrupted: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 14:37:48.675 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:37:48.676 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:46:53.917 NotebookApp] Kernel interrupted: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 14:47:48.678 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:47:48.679 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 14:57:48.656 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 14:57:48.656 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 15:00:30.248 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 15:00:30.248 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 15:00:41.065 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 15:00:41.066 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 15:01:48.643 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 15:01:48.644 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 15:20:09.669 NotebookApp] Kernel interrupted: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 15:20:23.564 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 15:20:23.564 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 15:21:48.637 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 15:21:48.639 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:19:48.650 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:19:48.651 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:23:48.450 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:23:48.451 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:24:20.330 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:24:20.331 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:25:48.534 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:25:48.534 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:27:48.598 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:27:48.599 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:29:48.555 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:29:48.555 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:30:41.048 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:30:41.048 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:31:10.089 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[W 16:31:10.090 NotebookApp] Saving untrusted notebook scripts/test_anno.ipynb
+[I 16:31:38.749 NotebookApp] Kernel restarted: 01b761ce-1398-45fe-a597-be374fb0458c
+[I 16:31:47.631 NotebookApp] Saving file at /scripts/test_anno.ipynb
