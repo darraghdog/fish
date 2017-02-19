@@ -161,3 +161,76 @@
 [I 19:09:32.278 NotebookApp] Saving file at /scripts/test_nb.ipynb
 [I 19:09:43.302 NotebookApp] Saving file at /scripts/test_aug.ipynb
 [I 19:09:45.992 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 19:10:50.193 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:11:09.602 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:13:32.387 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:14:21.996 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:14:26.899 NotebookApp] Kernel restarted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 19:15:23.579 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:15:32.384 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:16:11.885 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:41:32.366 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:42:32.538 NotebookApp] Kernel restarted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 19:43:32.426 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:45:32.334 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:46:09.538 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:47:32.398 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:49:32.329 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:51:29.135 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 19:51:32.385 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:51:34.630 NotebookApp] 302 GET /notebooks/data/fish/results/subm_full_conv_20170219B.csv (176.61.36.2) 1.34ms
+[I 19:53:32.380 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:55:28.214 NotebookApp] Kernel shutdown: ccfa453a-d7b7-4f86-a464-c0188f9be278
+[I 19:57:21.543 NotebookApp] Kernel started: bd78c939-fbe8-4912-9ff2-296dc939fd85
+[I 19:57:32.465 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:59:32.353 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:01:16.888 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:01:27.599 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:01:56.163 NotebookApp] Kernel interrupted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 20:03:32.317 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:04:05.917 NotebookApp] Kernel restarted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 20:04:57.600 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:05:32.394 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:07:32.249 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:09:32.342 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:10:11.710 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:11:32.611 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:22:34.196 NotebookApp] Kernel shutdown: bd78c939-fbe8-4912-9ff2-296dc939fd85
+[I 20:49:56.525 NotebookApp] Kernel started: dffd7af3-575f-4bac-8ff0-6224df3eeae4
+[I 20:50:27.927 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:51:13.917 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:51:32.369 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:51:48.597 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:52:08.468 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:55:32.303 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:57:32.303 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:59:32.344 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:00:51.278 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:01:32.310 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:02:43.836 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:03:11.123 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:26:23.740 NotebookApp] Kernel interrupted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 21:27:32.316 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:27:54.141 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:28:25.297 NotebookApp] Kernel interrupted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 21:29:19.905 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:29:32.195 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:31:28.288 NotebookApp] Kernel restarted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[W 21:31:28.291 NotebookApp] zmq message arrived on closed channel
+[I 21:31:32.259 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:32:47.422 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:33:32.268 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:35:32.297 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:37:32.370 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:45:31.623 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:46:29.796 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:55:34.284 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:56:11.192 NotebookApp] Kernel interrupted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 21:56:28.967 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:57:34.253 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:59:25.868 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:01:34.239 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:02:09.428 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:02:46.295 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:03:34.223 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:03:40.769 NotebookApp] Saving file at /scripts/test_aug.ipynb
