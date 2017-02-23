@@ -234,3 +234,229 @@
 [I 22:02:46.295 NotebookApp] Saving file at /scripts/test_aug.ipynb
 [I 22:03:34.223 NotebookApp] Saving file at /scripts/test_aug.ipynb
 [I 22:03:40.769 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:12:18.493 NotebookApp] Kernel interrupted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 22:13:34.328 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:22:41.595 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:24:42.406 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:26:41.573 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:27:19.983 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:27:47.452 NotebookApp] Kernel interrupted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 22:27:49.899 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:28:41.494 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:29:04.648 NotebookApp] Kernel restarted: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 22:29:06.511 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:30:41.605 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:31:41.210 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:32:15.851 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:32:41.573 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:32:54.895 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:33:28.296 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:34:17.930 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:34:41.584 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:39:40.474 NotebookApp] Kernel interrupted: dffd7af3-575f-4bac-8ff0-6224df3eeae4
+[I 22:39:43.215 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:40:08.531 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:41:15.894 NotebookApp] Kernel shutdown: dffd7af3-575f-4bac-8ff0-6224df3eeae4
+[I 22:41:19.755 NotebookApp] Kernel shutdown: a49823af-149d-4a20-bb79-2e8ba07caa19
+[I 22:41:52.522 NotebookApp] Saving file at /scripts/test_anno_0.797#2.ipynb
+[I 22:41:59.078 NotebookApp] Kernel started: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 22:43:59.323 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+Error allocating 7582547968 bytes of device memory (out of memory). Driver report 969801728 bytes free and 11995578368 bytes total 
+[I 22:45:59.321 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+Error allocating 7582547968 bytes of device memory (out of memory). Driver report 969801728 bytes free and 11995578368 bytes total 
+Error allocating 7582547968 bytes of device memory (out of memory). Driver report 969801728 bytes free and 11995578368 bytes total 
+[I 22:48:00.402 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+Error allocating 7582547968 bytes of device memory (out of memory). Driver report 969801728 bytes free and 11995578368 bytes total 
+[I 22:49:40.947 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 22:53:59.294 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 22:55:59.293 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 22:57:59.273 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 22:59:59.380 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:01:07.250 NotebookApp] Kernel interrupted: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 23:01:59.386 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:02:18.501 NotebookApp] Kernel started: 16a06b0a-4d44-48ea-b8a8-c9a9c92cc59d
+[I 23:03:59.631 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:06:00.232 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:07:59.408 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:09:59.419 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:11:59.412 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:12:50.222 NotebookApp] Kernel interrupted: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 23:13:19.979 NotebookApp] Kernel interrupted: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 23:13:59.765 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:15:32.324 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:15:44.832 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:15:45.729 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:15:47.551 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:17:04.300 NotebookApp] Kernel restarted: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 23:17:59.172 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:19:19.035 NotebookApp] Kernel interrupted: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 23:19:59.145 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:21:26.871 NotebookApp] Kernel interrupted: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 23:21:59.185 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:23:59.146 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:25:59.085 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:27:59.082 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[I 23:29:25.513 NotebookApp] Saving file at /scripts/test_anno_lrg.ipynb
+[C 23:30:12.150 NotebookApp] received signal 15, stopping
+[I 23:30:12.151 NotebookApp] Shutting down kernels
+[I 23:30:12.354 NotebookApp] Kernel shutdown: 953fc112-aeeb-48d0-b925-a49fe1788b2b
+[I 23:30:12.354 NotebookApp] Kernel shutdown: eaf0d42a-5a78-4c5b-bdcd-98fa264ec4c6
+[I 23:30:12.354 NotebookApp] Kernel shutdown: 07abd14f-6adb-4d18-9116-2a8f52e6c6ca
+[I 23:30:12.354 NotebookApp] Kernel shutdown: 16a06b0a-4d44-48ea-b8a8-c9a9c92cc59d
+[I 19:07:08.213 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 19:07:08.408 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 19:07:13.089 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 19:07:13.749 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 19:07:13.749 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 19:07:13.753 NotebookApp] [nb_conda] enabled
+[I 19:07:15.376 NotebookApp] [nb_anacondacloud] enabled
+[I 19:07:15.379 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 19:07:15.379 NotebookApp] 0 active kernels 
+[I 19:07:15.379 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 19:07:15.379 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 19:07:17.806 NotebookApp] 302 GET / (176.61.36.2) 0.66ms
+[I 19:07:17.825 NotebookApp] 302 GET /tree (176.61.36.2) 0.85ms
+[I 19:13:29.904 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.81ms
+[I 19:13:51.904 NotebookApp] Kernel started: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[W 19:14:08.549 NotebookApp] Notebook scripts/old/test_anno_0.797.ipynb is not trusted
+[I 19:14:09.400 NotebookApp] Kernel started: 3143469d-c7f4-4ed6-9313-bd114fe95fb2
+[I 19:15:51.687 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:15:53.925 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:16:41.638 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:17:10.424 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:17:51.718 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:18:39.191 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:18:51.038 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:19:51.671 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:21:17.998 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:21:51.675 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:23:21.759 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:23:51.672 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:25:09.471 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:25:51.788 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:27:51.670 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:28:06.953 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:28:15.364 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:29:51.775 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 19:58:26.864 NotebookApp] 302 GET / (207.154.223.78) 0.36ms
+[I 20:26:53.169 NotebookApp] Kernel restarted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 20:26:53.936 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:27:51.619 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:28:50.077 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:29:51.711 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:30:02.387 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:30:42.788 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:31:52.359 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:36:02.416 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:36:41.154 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:37:30.650 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:39:51.441 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:51:52.371 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:52:34.567 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:53:51.620 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:55:51.686 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:57:51.692 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:57:59.926 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 20:59:51.707 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:01:51.685 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:03:51.694 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:05:51.687 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:07:02.561 NotebookApp] Kernel restarted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 21:07:52.249 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:09:52.333 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:11:51.685 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:13:51.692 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:14:02.637 NotebookApp] Kernel restarted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 21:15:51.664 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:17:33.221 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:17:42.386 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:17:51.574 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:19:52.326 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:31:51.698 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:32:17.367 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:51:51.696 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 21:53:52.312 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:03:03.255 NotebookApp] Kernel interrupted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 22:03:09.268 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:03:52.328 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:19:38.422 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:21:52.259 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:31:46.249 NotebookApp] Kernel interrupted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 22:31:51.614 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:31:56.305 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:33:51.612 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:44:46.918 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:45:27.675 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:46:41.375 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 22:47:52.255 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 23:04:44.410 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 23:08:40.417 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 23:08:56.379 NotebookApp] Kernel restarted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 23:09:07.957 NotebookApp] Kernel restarted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 23:09:26.867 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 23:09:51.490 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 23:10:01.858 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 23:10:32.457 NotebookApp] Kernel restarted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 23:11:52.233 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 23:13:51.593 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 02:53:51.496 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 07:29:59.335 NotebookApp] 302 GET /notebooks/data/fish/results/subm_full_conv_20170220.csv (176.61.36.2) 0.93ms
+[I 07:39:44.854 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 07:39:51.286 NotebookApp] Saving file at /scripts/test_aug.ipynb
+[I 07:40:14.027 NotebookApp] Kernel restarted: 07de36e2-df57-4bc1-b99c-f00a433f4fbe
+[I 07:41:51.844 NotebookApp] Saving file at /scripts/test_aug.ipynb
+                                                                    [I 21:25:14.496 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 21:25:14.500 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 21:25:17.633 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 21:25:18.226 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 21:25:18.227 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 21:25:18.232 NotebookApp] [nb_conda] enabled
+[I 21:25:19.375 NotebookApp] [nb_anacondacloud] enabled
+[I 21:25:19.380 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 21:25:19.380 NotebookApp] 0 active kernels 
+[I 21:25:19.380 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 21:25:19.380 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:25:19.397 NotebookApp] 302 GET / (176.61.36.2) 0.87ms
+[I 21:25:19.430 NotebookApp] 302 GET /tree (176.61.36.2) 1.28ms
+[I 21:25:25.591 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 1.16ms
+[W 21:25:50.053 NotebookApp] 404 GET /favicon.ico (176.61.36.2) 8.90ms referer=http://ec2-34-251-169-154.eu-west-1.compute.amazonaws.com:8888/files/darknet/VOC/VOCdevkit/VOC2007/SegmentationClass/000032.png
+[I 21:31:09.375 NotebookApp] 302 GET / (176.61.36.2) 0.31ms
+[I 21:35:54.103 NotebookApp] 302 GET /tree/darknet/VOC/VOCdevkit/VOC2007/JPEGImages/000012.jpg (176.61.36.2) 1.24ms
+[I 21:41:26.188 NotebookApp] 302 GET / (176.61.36.2) 0.73ms
+[I 21:41:36.379 NotebookApp] Creating new notebook in /feat
+[I 21:41:39.192 NotebookApp] Kernel started: da25de72-d73e-4fb5-a2b7-b66fcf5671ff
+[W 21:42:03.544 NotebookApp] Notebook feat/Cut image in Bounding Box.ipynb is not trusted
+[I 21:42:09.296 NotebookApp] Kernel started: 4e365637-1fd6-4e57-b64e-28ab6f61cd06
+[I 21:43:38.556 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:44:08.506 NotebookApp] Saving file at /feat/Cut image in Bounding Box.ipynb
+[W 21:44:08.507 NotebookApp] Saving untrusted notebook feat/Cut image in Bounding Box.ipynb
+[I 21:45:38.596 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:46:10.785 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:47:38.572 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:49:38.574 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:51:39.245 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:53:49.999 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:53:50.649 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:55:39.435 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:57:39.271 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 21:59:39.289 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:00:20.107 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:01:39.235 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:03:39.189 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:05:39.234 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:07:38.564 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:09:39.032 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:13:38.563 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:14:55.964 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:15:39.191 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:17:39.297 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:19:01.887 NotebookApp] Kernel restarted: da25de72-d73e-4fb5-a2b7-b66fcf5671ff
+[I 22:19:39.207 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:21:39.750 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:29:39.341 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:31:39.135 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:33:39.123 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:35:39.109 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:37:39.618 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:41:39.583 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:49:39.124 NotebookApp] Saving file at /feat/check darknet labels.ipynb
