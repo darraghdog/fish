@@ -460,3 +460,48 @@ Error allocating 7582547968 bytes of device memory (out of memory). Driver repor
 [I 22:37:39.618 NotebookApp] Saving file at /feat/check darknet labels.ipynb
 [I 22:41:39.583 NotebookApp] Saving file at /feat/check darknet labels.ipynb
 [I 22:49:39.124 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 22:59:17.044 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[W 23:05:41.690 NotebookApp] No such file or directory: darknet/VOC
+[W 23:05:41.691 NotebookApp] 404 GET /api/contents/darknet/VOC?type=directory&_=1487888564122 (176.61.36.2) 2.52ms referer=http://ec2-34-251-169-154.eu-west-1.compute.amazonaws.com:8888/tree/darknet/VOC
+[I 23:16:35.265 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[W 23:17:44.163 NotebookApp] delete /darknet/VOC
+[I 23:24:22.500 NotebookApp] 302 GET /tree/darknet/ (176.61.36.2) 0.36ms
+[C 23:24:54.536 NotebookApp] received signal 15, stopping
+[I 23:24:54.541 NotebookApp] Shutting down kernels
+[I 23:24:54.541 NotebookApp] Kernel shutdown: 4e365637-1fd6-4e57-b64e-28ab6f61cd06
+[I 23:24:54.642 NotebookApp] Kernel shutdown: da25de72-d73e-4fb5-a2b7-b66fcf5671ff
+[I 17:52:01.435 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 17:52:01.645 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 17:52:07.279 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 17:52:08.009 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 17:52:08.009 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 17:52:08.019 NotebookApp] [nb_conda] enabled
+[I 17:52:09.867 NotebookApp] [nb_anacondacloud] enabled
+[I 17:52:09.885 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 17:52:09.885 NotebookApp] 0 active kernels 
+[I 17:52:09.885 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 17:52:09.885 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 17:52:10.150 NotebookApp] 302 GET / (176.12.107.139) 0.90ms
+[I 17:52:10.385 NotebookApp] 302 GET /tree (176.12.107.139) 1.13ms
+[I 17:52:36.511 NotebookApp] 302 POST /login?next=%2Ftree (176.12.107.139) 0.86ms
+[I 17:52:44.017 NotebookApp] 302 POST /login?next=%2Ftree (176.12.107.139) 1.12ms
+[W 17:57:33.963 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170224175201 (176.12.107.139) 15.41ms referer=http://ec2-34-251-51-83.eu-west-1.compute.amazonaws.com:8888/notebooks/feat/check%20darknet%20labels.ipynb
+[I 18:01:23.054 NotebookApp] Kernel started: 89e14dbd-43e6-45fc-a85a-fb6bc4b5aa23
+[I 18:02:22.455 NotebookApp] Kernel restarted: 89e14dbd-43e6-45fc-a85a-fb6bc4b5aa23
+[I 18:03:29.046 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:05:22.747 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:07:25.051 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[W 18:07:56.021 NotebookApp] Notebook feat/Cut image in Bounding Box.ipynb is not trusted
+[I 18:11:24.299 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:13:22.889 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:15:25.951 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:17:27.444 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:19:32.571 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:20:10.646 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:20:37.511 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:21:07.876 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:21:13.382 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:22:45.088 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[W 18:26:55.757 NotebookApp] WebSocket ping timeout after 119839 ms.
+[I 18:29:03.124 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:31:46.699 NotebookApp] Saving file at /feat/check darknet labels.ipynb
