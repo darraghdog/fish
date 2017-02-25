@@ -1,0 +1,5 @@
+Change 3 files:
+1 yolo-voc.cfg  change line classes=20
+2 voc.data  change line classes=20
+3 voc.names  number of lines must be equal the number of classes
+4 coco.c ... change the class names and the number of classes variable
