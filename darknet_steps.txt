@@ -1,9 +1,26 @@
-Change 3 files:
-1 yolo-voc.cfg  change line classes=20
-2 voc.data  change line classes=20
-3 voc.names  number of lines must be equal the number of classes
+Change files:
+1 yolo-voc.cfg  change line classes=20, change height and width, change filters to 7 from 20
+2 voc.data -> voc.FISH.data  change line classes=20
+3 voc.names -> voc.FISH.names  number of lines must be equal the number of classes
 4 coco.c ... change the class names and the number of classes variable
+	char *coco_classes
+	int coco_ids
+
+Get test images:
+	mkdir tmp
+	cp ../data/fish/test_stg1/img_01168.jpg tmp/tmp1.jpg
+	cp ../data/fish/test_stg1/img_01177.jpg tmp/tmp2.jpg
+	cp ../data/fish/test_stg1/img_01188.jpg tmp/tmp3.jpg
+	cp ../data/fish/test_stg1/img_01198.jpg tmp/tmp4.jpg
+	cp ../data/fish/test_stg1/img_01179.jpg tmp/tmp5.jpg
+
+Start off a notebook so you can look at the images outputted :
+	nohup jupyter notebook &
 
 To predict :
 Change cudnn to 0 and remake
-./darknet detector test cfg/voc.FISH.data cfg/yolo-voc.cfg backup/yolo-voc_3000.weights tmp1.jpg -thresh 0.1
+./darknet detector valid cfg/voc.FISH.data cfg/yolo-voc.cfg backup/yolo-voc_5000.weights 
+And then check under results folder
+then try 
+	grep "img_07050" *
+# ./darknet detector test cfg/voc.FISH.data cfg/yolo-voc.cfg backup/yolo-voc_3000.weights tmp/tmp1.jpg -thresh 0.1
