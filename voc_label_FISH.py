@@ -19,7 +19,7 @@ classes = ["ALB", "BET", "DOL", "LAG", "OTHER", "SHARK", "YFT"]
 
 folder_anno_in = 'darknet/FISH/annos'
 folder_anno_out = 'darknet/FISH/labels'
-folder_img_srce = 'data/fish'
+folder_img_srce = 'darknet/FISH/JPEGImages'
 
 def convert(size, box):
     dw = 1./size[0]
@@ -45,7 +45,10 @@ def convert_annojson(ftype, fsrce):
         cls_id = str(imgjson['filename'].split('/')[0])
         cls_id = classes.index(cls_id)
         imgsize = PIL.Image.open(folder_img_srce + '/' + fsrce + '/' + imgjson['filename']).size
-        fo = open(os.path.join(folder_anno_out, '%s.txt'%(imgname)),'w')
+	if not os.path.exists(os.path.join(folder_anno_out, fsrce, ftype)):
+	    os.makedirs(os.path.join(folder_anno_out, fsrce, ftype))
+
+        fo = open(os.path.join(folder_anno_out, fsrce, ftype, '%s.txt'%(imgname)),'w')
         for bb in imgjson['annotations']:
             b = (bb['x'], bb['x']+bb['width'], bb['y'], bb['y']+bb['height'])
             b = convert(imgsize, b)
@@ -63,15 +66,18 @@ for image_set in sets:
     #if not os.path.exists('batch/ImageSets/Main'):
     #   os.makedirs('batch/ImageSets/Main')
     image_ids = []
+    wd = os.getcwd()
     if image_set != 'test':
         for c in classes:
-            f = os.listdir(os.path.join(folder_img_srce, image_set, c))
-            f = [c + '/' + s for s in f]
+            f = os.listdir(os.path.join(wd, folder_img_srce, image_set, c))
+            f = [image_set + '/' + c + '/' + s for s in f]
             image_ids = image_ids + f
     else:
-        image_ids = os.listdir(os.path.join(folder_img_srce, image_set))
+        f = os.listdir(os.path.join(wd, folder_img_srce, image_set))
+	f = [image_set + '/' + s for s in f]
+	image_ids = f
     list_file = open('%s.txt'%(image_set), 'w')
     for image_id in image_ids:
-        list_file.write(os.path.join(os.getcwd(), image_id) + '\n')
+        list_file.write(os.path.join(os.getcwd(), folder_img_srce, image_id) + '\n')
         
     list_file.close()

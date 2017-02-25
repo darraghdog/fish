@@ -505,3 +505,8 @@ Error allocating 7582547968 bytes of device memory (out of memory). Driver repor
 [W 18:26:55.757 NotebookApp] WebSocket ping timeout after 119839 ms.
 [I 18:29:03.124 NotebookApp] Saving file at /feat/check darknet labels.ipynb
 [I 18:31:46.699 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:40:52.226 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[I 18:41:06.733 NotebookApp] Saving file at /feat/check darknet labels.ipynb
+[W 20:13:47.149 NotebookApp] WebSocket ping timeout after 119941 ms.
+[I 23:34:02.361 NotebookApp] 302 GET / (71.6.158.166) 0.34ms
+[I 23:34:02.660 NotebookApp] 302 GET /tree (71.6.158.166) 0.71ms
