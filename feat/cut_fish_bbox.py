@@ -120,7 +120,7 @@ yolodf = yolodf[yolodf['proba'] > yolo_proba_cutoff]
 for ii in range(yolodf.shape[0]):
     yoloc = yolodf.iloc[ii].values
     fname = yoloc[0]
-    img = PIL.Image.open(os.path.join(folder_img_srce, 'test', fname)+'.jpg')
+    img = PIL.Image.open(os.path.join(folder_img_srce, 'test', 'test', fname)+'.jpg')
     x, y, w0, h0 = yoloc[2], yoloc[3], yoloc[4] - yoloc[2], yoloc[5] - yoloc[2]        # make it a box
     w, h = max(h0, w0), max(h0, w0)
     # centre it
