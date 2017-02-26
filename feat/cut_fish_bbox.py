@@ -1,5 +1,6 @@
 from logbook import Logger, StreamHandler
 import sys
+import random
 StreamHandler(sys.stdout).push_application()
 log = Logger('Logbook')
 import xml.etree.ElementTree as ET
@@ -39,9 +40,9 @@ if refresh_directories:
     if '.DS_Store' in sub_dirs: sub_dirs.remove('.DS_Store')
     refresh_directory_structure('crop/train', sub_dirs)
     refresh_directory_structure('crop/valid', sub_dirs)
-    if os.path.exists(os.path.join(path, 'crop/test')):
-        shutil.rmtree(os.path.join(path, 'crop/test'))
-    os.makedirs(os.path.join(path, 'crop/test'))
+    if os.path.exists(os.path.join(path, 'crop/test/test')):
+        shutil.rmtree(os.path.join(path, 'crop/test/test'))
+    os.makedirs(os.path.join(path, 'crop/test/test'))
 
 # Read in the validation set
 df_valid = pd.read_csv('image_validation_set.csv')
@@ -85,15 +86,23 @@ for ftype in classes:
             x, y = x - (w-w0)/2, y - (h-h0)/2 
             img.crop((x, y, h+x, w+y))
             # Avoid borders 
-            for pad in [0, 200, 400]:
+            for pad in [50, 200]:
+		if subdir == 'ALB':
+	                if bool(random.getrandbits(1)):
+        	                continue
                 cut = 0
                 fo = '%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
                 img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
             # Avoid borders 
-            for cut in [1,2,3,4]:
-                pad = 0
-                fo = '%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
-                img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
+#            for cut in [1,2,3,4]:
+#		if bool(random.getrandbits(1)):
+#			continue
+#                if subdir == 'ALB':
+#                        if bool(random.getrandbits(1)):
+#                                continue
+#		pad = 0
+#                fo = '%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
+#                img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
 
 # Now read in the yolo bindings
 yolo_files = os.listdir('yolo_coords')
@@ -118,5 +127,5 @@ for ii in range(yolodf.shape[0]):
     x, y = x - (w-w0)/2, y - (h-h0)/2 
     pad = 200
     fo = '%s_%s.jpg'%(fname, pad)
-    img.crop(bbox_offset(x, y, h, img.size, pad)).save(os.path.join(folder_img_srce, 'crop', 'test', fo))
+    img.crop(bbox_offset(x, y, h, img.size, pad)).save(os.path.join(folder_img_srce, 'crop', 'test','test', fo))
 
