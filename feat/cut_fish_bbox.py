@@ -13,8 +13,7 @@ from PIL import Image
 from os.path import join
 import pandas as pd
 os.getcwd()
-# os.chdir('C:\\Users\\dhanley2\\Documents\\Personal\\fish\\fish')
-os.chdir('/home/darragh/Dropbox/fish/')
+os.chdir('../')
 
 classes = ["ALB", "BET", "DOL", "LAG", "OTHER", "SHARK", "YFT"]
 folder_anno_in = 'darknet/FISH/annos'
@@ -22,7 +21,7 @@ folder_anno_out = 'darknet/FISH/labels'
 folder_img_srce = 'data/fish'
 path = 'data/fish'
 refresh_directories = True
-yolo_proba_cutoff = 0.4
+yolo_proba_cutoff = 0.6
 
 
 def refresh_directory_structure(name, sub_dirs):
@@ -106,7 +105,7 @@ for file_ in yolo_files :
 yolodf = pd.concat(list_, axis = 0, ignore_index=True)
 # Get the max value by image
 yolodf = yolodf.iloc[yolodf.groupby(['fname']).apply(lambda x: x['proba'].idxmax())].reset_index(drop=True)
-yolodf = yolodf[yolodf['proba'] > 0.6]#yolo_proba_cutoff]
+yolodf = yolodf[yolodf['proba'] > yolo_proba_cutoff]
 
 # Make the test images
 for ii in range(yolodf.shape[0]):

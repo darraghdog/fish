@@ -510,3 +510,27 @@ Error allocating 7582547968 bytes of device memory (out of memory). Driver repor
 [W 20:13:47.149 NotebookApp] WebSocket ping timeout after 119941 ms.
 [I 23:34:02.361 NotebookApp] 302 GET / (71.6.158.166) 0.34ms
 [I 23:34:02.660 NotebookApp] 302 GET /tree (71.6.158.166) 0.71ms
+[I 17:20:50.120 NotebookApp] 302 GET / (176.61.36.2) 0.36ms
+[I 18:01:55.495 NotebookApp] 302 GET / (176.61.36.2) 0.37ms
+[W 18:03:38.559 NotebookApp] 404 GET /favicon.ico (176.61.36.2) 1.39ms referer=http://ec2-34-251-51-83.eu-west-1.compute.amazonaws.com:8888/files/data/fish/crop/train/DOL/img_00165_0_0_cut0.jpg
+[I 18:05:28.225 NotebookApp] Kernel started: 6b9c6ad1-5f71-4f84-aab8-d174c201bf7d
+[I 18:05:43.979 NotebookApp] Creating new notebook in /scripts
+[I 18:05:44.596 NotebookApp] Kernel started: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[W 18:05:53.525 NotebookApp] Notebook scripts/old/test_anno_0.797.ipynb is not trusted
+[I 18:05:54.190 NotebookApp] Kernel started: b216efe6-e4c4-46d4-8131-9b12b2cffd35
+[I 18:07:44.611 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:09:00.821 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:09:44.611 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:10:30.911 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[W 18:11:04.931 NotebookApp] Notebook scripts/old/test_anno_0.93.ipynb is not trusted
+[I 18:11:05.617 NotebookApp] Kernel started: 58731c1e-14cb-49a5-846d-8e2b18498cf9
+[I 18:11:41.224 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:13:17.451 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 18:13:44.613 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:14:37.505 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:15:44.610 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:16:13.610 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:16:20.191 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:16:29.247 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:17:23.292 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:18:29.481 NotebookApp] Saving file at /scripts/test_crop.ipynb
