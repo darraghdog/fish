@@ -77,7 +77,8 @@ for ftype in classes:
         topdir = ['train', 'valid'][validation[0][5]]
         fname = validation[0][2].split('.')[0]
         img = PIL.Image.open(os.path.join(folder_img_srce, 'train-all', validation[0][6]))
-        for a in range(len(imgjson['annotations'])):
+        if len(imgjson['annotations']) < 1: continue
+	for a in [0]:# range(len(imgjson['annotations'])):
             imgano = imgjson['annotations'][a]
             x, y, w0, h0 = imgano['x'], imgano['y'], imgano['width'], imgano['height']
             # make it a box
