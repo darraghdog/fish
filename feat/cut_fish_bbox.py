@@ -22,7 +22,7 @@ folder_anno_out = 'darknet/FISH/labels'
 folder_img_srce = 'data/fish'
 path = 'data/fish'
 refresh_directories = True
-yolo_proba_cutoff = 0.8
+yolo_proba_cutoff = 0.4
 
 
 def refresh_directory_structure(name, sub_dirs):
@@ -49,7 +49,11 @@ df_valid = pd.read_csv('image_validation_set.csv')
 df_valid['image_folder'] = df_valid['SubDirectory'] + '/' + df_valid['file_name']
 
 # Function to offset boundary box correctly
-def bbox_offset(x, y, offset, size, padding = 0):
+def bbox_offset(x, y, offset, size, padding = 0, cut = 0):
+    if cut == 1: x = x - w/3
+    if cut == 2: y = y - h/3
+    if cut == 3: x = x + w/3
+    if cut == 4: y = y + h/3
     x, y, offset = x - padding/2, y - padding/2, offset + padding
     if x < 0.0:
         x = 0.0
@@ -60,8 +64,10 @@ def bbox_offset(x, y, offset, size, padding = 0):
     elif y + offset > size[1]:
         y = size[1] - offset
     return x, y, offset+x, offset+y
+    
 # Make the train and valid images
 for ftype in classes:
+    print ftype
     in_file = open(os.path.join(folder_anno_in,'%s.json'%(ftype))).read()
     tree = json.loads(in_file)
     for ii in range(len(tree)):
@@ -80,9 +86,15 @@ for ftype in classes:
             x, y = x - (w-w0)/2, y - (h-h0)/2 
             img.crop((x, y, h+x, w+y))
             # Avoid borders 
-            for pad in [0, 100, 200]:
-                fo = '%s_%s_%s.jpg'%(fname, a, pad)
-                img.crop(bbox_offset(x, y, h, img.size, pad)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
+            for pad in [0, 200, 400]:
+                cut = 0
+                fo = '%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
+                img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
+            # Avoid borders 
+            for cut in [1,2,3,4]:
+                pad = 0
+                fo = '%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
+                img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
 
 # Now read in the yolo bindings
 yolo_files = os.listdir('yolo_coords')
@@ -94,8 +106,7 @@ for file_ in yolo_files :
 yolodf = pd.concat(list_, axis = 0, ignore_index=True)
 # Get the max value by image
 yolodf = yolodf.iloc[yolodf.groupby(['fname']).apply(lambda x: x['proba'].idxmax())].reset_index(drop=True)
-yolodf = yolodf[yolodf['proba'] > yolo_proba_cutoff]
-
+yolodf = yolodf[yolodf['proba'] > 0.6]#yolo_proba_cutoff]
 
 # Make the test images
 for ii in range(yolodf.shape[0]):
