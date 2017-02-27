@@ -534,3 +534,160 @@ Error allocating 7582547968 bytes of device memory (out of memory). Driver repor
 [I 18:16:29.247 NotebookApp] Saving file at /scripts/test_crop.ipynb
 [I 18:17:23.292 NotebookApp] Saving file at /scripts/test_crop.ipynb
 [I 18:18:29.481 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:25:38.814 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:25:43.171 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:27:44.615 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:28:14.561 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 18:29:44.611 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:29:53.946 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 18:31:44.596 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:36:52.752 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:37:44.597 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:45:44.858 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 18:45:44.883 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:47:44.600 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:52:51.302 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 18:53:44.595 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:57:37.774 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:57:44.574 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 18:59:44.579 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:11:44.594 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:27:43.387 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 19:27:44.550 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:29:45.202 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:41:44.555 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:43:05.864 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 19:43:24.011 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:43:44.564 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:47:56.365 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 19:48:07.515 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:49:44.543 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:51:44.535 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:53:44.546 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:54:30.779 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:55:45.184 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:57:16.037 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 19:57:44.559 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 19:59:35.578 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 19:59:44.549 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:01:02.448 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:01:44.593 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:05:12.161 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:05:44.532 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:07:01.293 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:07:44.528 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:13:44.532 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:14:29.679 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:15:44.519 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:15:52.363 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:17:44.619 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:17:48.455 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:19:44.519 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:21:44.517 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:29:45.181 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:30:28.246 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:31:44.524 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:33:45.175 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:37:44.511 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:39:18.026 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:41:21.955 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 20:41:44.514 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:55:44.526 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 20:59:44.555 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:01:28.805 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:01:44.496 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:02:29.146 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:03:44.196 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:03:44.497 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:04:53.829 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:05:44.467 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:05:56.840 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:07:44.495 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:08:58.637 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:09:19.085 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:09:44.475 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:11:44.472 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:12:55.874 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:13:44.558 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:15:30.723 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:15:44.484 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:15:59.863 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:17:44.465 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:21:44.469 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:23:25.269 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:25:44.457 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:27:44.468 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:28:03.559 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 21:29:44.459 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:43:44.500 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 21:44:58.889 NotebookApp] 302 GET /notebooks/data/fish/results/subm_part_crop_conv_20170226.csv (176.61.36.2) 0.96ms
+[I 21:45:08.077 NotebookApp] 302 GET /notebooks/data/fish/results/subm_part_crop_conv_20170226.csv (176.61.36.2) 0.94ms
+[I 21:45:44.573 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:03:44.694 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:18:08.983 NotebookApp] 302 GET / (176.61.36.2) 0.51ms
+[I 22:21:45.083 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:22:08.520 NotebookApp] 302 GET /notebooks/data/fish/results/subm_full_crop_conv_20170226.csv (176.61.36.2) 1.33ms
+[I 22:23:44.428 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:25:45.089 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:35:45.070 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:43:44.401 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:44:19.017 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 22:45:43.820 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 22:45:44.408 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:45:53.409 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:47:59.834 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 22:49:44.424 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:51:17.985 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 22:51:44.391 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:53:03.387 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 22:53:44.501 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:55:18.562 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 22:55:44.541 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:57:20.976 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 22:57:44.536 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 22:59:45.060 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:01:04.521 NotebookApp] Kernel restarted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:01:45.042 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:05:44.394 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:06:32.267 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:07:26.990 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:07:44.409 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:08:15.402 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:09:11.377 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:09:44.409 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:09:58.456 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:11:17.634 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:11:44.379 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:13:44.490 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:15:44.488 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:16:24.296 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:17:44.371 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:18:07.612 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:19:00.522 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:19:44.381 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:20:00.785 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:20:25.552 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 23:21:44.379 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 23:22:44.612 NotebookApp] Kernel interrupted: b968e850-6724-426c-8b1f-35dd04fe9b0e
+[I 19:04:00.384 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 19:04:00.645 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 19:04:04.373 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 19:04:05.004 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 19:04:05.005 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 19:04:05.009 NotebookApp] [nb_conda] enabled
+[I 19:04:06.309 NotebookApp] [nb_anacondacloud] enabled
+[I 19:04:06.312 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 19:04:06.312 NotebookApp] 0 active kernels 
+[I 19:04:06.312 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 19:04:06.312 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 19:04:06.822 NotebookApp] 302 GET / (176.61.36.2) 0.69ms
+[I 19:04:06.890 NotebookApp] 302 GET / (176.61.36.2) 0.42ms
+[I 19:04:06.946 NotebookApp] 302 GET /tree (176.61.36.2) 1.01ms
+[I 19:04:14.358 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.91ms
+[I 19:04:59.220 NotebookApp] Creating new notebook in /scripts
+[I 19:05:04.165 NotebookApp] Kernel started: c38c0bfd-0883-4365-94ba-19720b183150
+[W 19:05:27.589 NotebookApp] Notebook scripts/old/test_anno_0.797.ipynb is not trusted
+[I 19:05:28.343 NotebookApp] Kernel started: 672bb024-3d14-4c3c-8105-e6a1ccfcbf63
+[I 19:07:03.688 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 19:09:03.248 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 19:10:00.942 NotebookApp] Kernel started: 6c0e370d-f684-4768-83ce-6d1c52510f67

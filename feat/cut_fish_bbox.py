@@ -40,9 +40,15 @@ if refresh_directories:
     if '.DS_Store' in sub_dirs: sub_dirs.remove('.DS_Store')
     refresh_directory_structure('crop/train', sub_dirs)
     refresh_directory_structure('crop/valid', sub_dirs)
+    refresh_directory_structure('nocrop/train', sub_dirs)
+    refresh_directory_structure('nocrop/valid', sub_dirs)
     if os.path.exists(os.path.join(path, 'crop/test/test')):
         shutil.rmtree(os.path.join(path, 'crop/test/test'))
     os.makedirs(os.path.join(path, 'crop/test/test'))
+    if os.path.exists(os.path.join(path, 'nocrop/test/test')):
+        shutil.rmtree(os.path.join(path, 'nocrop/test/test'))
+    os.makedirs(os.path.join(path, 'nocrop/test/test'))
+
 
 # Read in the validation set
 df_valid = pd.read_csv('image_validation_set.csv')
@@ -54,7 +60,8 @@ def bbox_offset(x, y, offset, size, padding = 0, cut = 0):
     if cut == 2: y = y - h/3
     if cut == 3: x = x + w/3
     if cut == 4: y = y + h/3
-    x, y, offset = x - padding/2, y - padding/2, offset + padding
+    #x, y, offset = x - padding/2, y - padding/2, offset + padding
+    x, y, offset = x - (offset*padding/2), y - (offset*padding/2), offset + (padding*offset)
     if x < 0.0:
         x = 0.0
     elif x + offset > size[0]:
@@ -78,6 +85,7 @@ for ftype in classes:
         fname = validation[0][2].split('.')[0]
         img = PIL.Image.open(os.path.join(folder_img_srce, 'train-all', validation[0][6]))
         if len(imgjson['annotations']) < 1: continue
+	
 	for a in [0]:# range(len(imgjson['annotations'])):
             imgano = imgjson['annotations'][a]
             x, y, w0, h0 = imgano['x'], imgano['y'], imgano['width'], imgano['height']
@@ -87,23 +95,11 @@ for ftype in classes:
             x, y = x - (w-w0)/2, y - (h-h0)/2 
             img.crop((x, y, h+x, w+y))
             # Avoid borders 
-            for pad in [50, 200]:
-		if subdir == 'ALB':
-	                if bool(random.getrandbits(1)):
-        	                continue
-                cut = 0
-                fo = '%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
-                img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
-            # Avoid borders 
-#            for cut in [1,2,3,4]:
-#		if bool(random.getrandbits(1)):
-#			continue
-#                if subdir == 'ALB':
-#                        if bool(random.getrandbits(1)):
-#                                continue
-#		pad = 0
-#                fo = '%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
-#                img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
+            pad = 0.1
+	    cut = 0
+            fo = '%s.jpg'%(fname) #'%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
+            img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
+            img.save(os.path.join(folder_img_srce, 'nocrop', topdir, subdir, fo))
 
 # Now read in the yolo bindings
 yolo_files = os.listdir('yolo_coords')
@@ -126,7 +122,8 @@ for ii in range(yolodf.shape[0]):
     w, h = max(h0, w0), max(h0, w0)
     # centre it
     x, y = x - (w-w0)/2, y - (h-h0)/2 
-    pad = 200
-    fo = '%s_%s.jpg'%(fname, pad)
+    pad = 0.1
+    fo = '%s.jpg'%(fname)
     img.crop(bbox_offset(x, y, h, img.size, pad)).save(os.path.join(folder_img_srce, 'crop', 'test','test', fo))
+    img.save(os.path.join(folder_img_srce, 'nocrop', 'test','test', fo))
 
