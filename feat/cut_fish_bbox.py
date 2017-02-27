@@ -118,6 +118,7 @@ yolodf = yolodf[yolodf['proba'] > yolo_proba_cutoff]
 
 # Make the test images
 for ii in range(yolodf.shape[0]):
+    print "Test set"
     yoloc = yolodf.iloc[ii].values
     fname = yoloc[0]
     img = PIL.Image.open(os.path.join(folder_img_srce, 'test', 'test', fname)+'.jpg')
