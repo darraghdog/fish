@@ -691,3 +691,93 @@ Error allocating 7582547968 bytes of device memory (out of memory). Driver repor
 [I 19:07:03.688 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
 [I 19:09:03.248 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
 [I 19:10:00.942 NotebookApp] Kernel started: 6c0e370d-f684-4768-83ce-6d1c52510f67
+[I 20:16:28.077 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:17:03.640 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:19:03.200 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:20:25.332 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:20:50.874 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:21:03.197 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:21:28.510 NotebookApp] Saving file at /scripts/old/test_anno_0.797.ipynb
+[W 20:21:28.510 NotebookApp] Saving untrusted notebook scripts/old/test_anno_0.797.ipynb
+[I 20:23:03.197 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:25:03.264 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:27:03.215 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:29:03.212 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:31:03.197 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:33:03.191 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:35:03.204 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:37:03.191 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:37:10.347 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:38:50.025 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:39:03.188 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:39:53.409 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:40:04.073 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:40:57.929 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:41:35.170 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:43:03.184 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:43:35.375 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:44:16.133 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:45:28.701 NotebookApp] Saving file at /scripts/old/test_anno_0.797.ipynb
+[W 20:45:28.702 NotebookApp] Saving untrusted notebook scripts/old/test_anno_0.797.ipynb
+[I 20:45:55.282 NotebookApp] Saving file at /scripts/old/test_anno_0.797.ipynb
+[W 20:45:55.282 NotebookApp] Saving untrusted notebook scripts/old/test_anno_0.797.ipynb
+[I 20:46:29.017 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:47:03.184 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:47:29.060 NotebookApp] Saving file at /scripts/old/test_anno_0.797.ipynb
+[W 20:47:29.061 NotebookApp] Saving untrusted notebook scripts/old/test_anno_0.797.ipynb
+[I 20:47:58.531 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:49:03.174 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:49:11.085 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:49:21.694 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:49:37.374 NotebookApp] Kernel restarted: c38c0bfd-0883-4365-94ba-19720b183150
+[I 20:51:03.611 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:51:47.045 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:51:56.856 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:53:03.170 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:55:03.164 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:55:34.073 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 20:57:03.609 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:03:03.189 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:03:37.766 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:05:03.167 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:05:21.068 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:05:23.197 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:07:03.155 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:09:02.584 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:09:27.623 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:10:26.685 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:11:03.164 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:13:03.599 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:15:03.169 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:17:03.162 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:19:03.276 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:21:03.165 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:21:37.144 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:23:03.262 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:25:03.260 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:25:18.361 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[W 21:25:32.471 NotebookApp] Notebook feat/Clustering Images for Validation Set.ipynb is not trusted
+[I 21:27:03.690 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:28:08.847 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:29:03.308 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:30:22.393 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:30:46.625 NotebookApp] Kernel interrupted: c38c0bfd-0883-4365-94ba-19720b183150
+[I 21:31:03.260 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:33:03.708 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:35:03.689 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:39:03.241 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:41:02.008 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:41:37.002 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:43:03.713 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:44:50.031 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:47:03.266 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:49:03.245 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:51:03.276 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:51:21.316 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:51:31.033 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:52:49.000 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:54:23.311 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:54:39.281 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:55:04.583 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:57:03.238 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
+[I 21:57:58.437 NotebookApp] Saving file at /scripts/test bbox and crop.ipynb
