@@ -76,30 +76,32 @@ def bbox_offset(x, y, offset, size, padding = 0, cut = 0):
 for ftype in classes:
     print ftype
     in_file = open(os.path.join(folder_anno_in,'%s.json'%(ftype))).read()
-    tree = json.loads(in_file)
-    for ii in range(len(tree)):
-        imgjson = tree[ii]
-        validation = df_valid[df_valid['image_folder'] == str(imgjson['filename'])].values
+    bb_json = json.loads(in_file)
+    tree = {}
+    for l in bb_json:
+        if 'annotations' in l.keys() and len(l['annotations'])>0:
+            tree[l['filename'].split('/')[-1]] = sorted(
+                l['annotations'], key=lambda x: x['height']*x['width'])[-1]
+    for fname in tree:
+        imgjson = tree[fname]
+        validation = df_valid[df_valid['image_folder'] == os.path.join(imgjson['class'], fname)].values
         subdir = validation[0][1]
         topdir = ['train', 'valid'][validation[0][5]]
         fname = validation[0][2].split('.')[0]
         img = PIL.Image.open(os.path.join(folder_img_srce, 'train-all', validation[0][6]))
-        if len(imgjson['annotations']) < 1: continue
-	
-	for a in [0]:# range(len(imgjson['annotations'])):
-            imgano = imgjson['annotations'][a]
-            x, y, w0, h0 = imgano['x'], imgano['y'], imgano['width'], imgano['height']
-            # make it a box
-            w, h = max(h0, w0), max(h0, w0)
-            # centre it
-            x, y = x - (w-w0)/2, y - (h-h0)/2 
-            img.crop((x, y, h+x, w+y))
-            # Avoid borders 
-            pad = 0.1
-	    cut = 0
-            fo = '%s.jpg'%(fname) #'%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
-            img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
-            img.save(os.path.join(folder_img_srce, 'nocrop', topdir, subdir, fo))
+        if len(imgjson) < 1: continue
+        x, y, w0, h0 = imgjson['x'], imgjson['y'], imgjson['width'], imgjson['height']
+        # make it a box
+        w, h = max(h0, w0), max(h0, w0)
+        # centre it
+        x, y = x - (w-w0)/2, y - (h-h0)/2 
+        img.crop((x, y, h+x, w+y))
+        # Avoid borders 
+        pad = 0.1
+        cut = 0
+        fo = '%s.jpg'%(fname) #'%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
+        img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
+        img.save(os.path.join(folder_img_srce, 'nocrop', topdir, subdir, fo))
 
 # Now read in the yolo bindings
 yolo_files = os.listdir('yolo_coords')
