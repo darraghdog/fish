@@ -84,12 +84,13 @@ for ftype in classes:
                 l['annotations'], key=lambda x: x['height']*x['width'])[-1]
     for fname in tree:
         imgjson = tree[fname]
+        if len(imgjson) < 1: continue
         validation = df_valid[df_valid['image_folder'] == os.path.join(imgjson['class'], fname)].values
+        if len(validation) < 1: continue
         subdir = validation[0][1]
         topdir = ['train', 'valid'][validation[0][5]]
         fname = validation[0][2].split('.')[0]
         img = PIL.Image.open(os.path.join(folder_img_srce, 'train-all', validation[0][6]))
-        if len(imgjson) < 1: continue
         x, y, w0, h0 = imgjson['x'], imgjson['y'], imgjson['width'], imgjson['height']
         # make it a box
         w, h = max(h0, w0), max(h0, w0)
