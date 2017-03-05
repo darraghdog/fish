@@ -126,7 +126,7 @@ for ii in range(yolodf.shape[0]):
     w, h = max(h0, w0, 480), max(h0, w0, 480)
     # centre it
     x, y = x - (w-w0)/2, y - (h-h0)/2 
-    pad = 0.1
+    pad = 0.0
     fo = '%s.jpg'%(fname)
     img.crop(bbox_offset(x, y, h, img.size, pad)).save(os.path.join(folder_img_srce, 'crop', 'test','test', fo))
     img.save(os.path.join(folder_img_srce, 'nocrop', 'test','test', fo))
