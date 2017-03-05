@@ -55,13 +55,10 @@ df_valid = pd.read_csv('image_validation_set.csv')
 df_valid['image_folder'] = df_valid['SubDirectory'] + '/' + df_valid['file_name']
 
 # Function to offset boundary box correctly
-def bbox_offset(x, y, offset, size, padding = 0, cut = 0):
-    if cut == 1: x = x - w/3
-    if cut == 2: y = y - h/3
-    if cut == 3: x = x + w/3
-    if cut == 4: y = y + h/3
+def bbox_offset(x, y, offset, size, minsize = 400):
     #x, y, offset = x - padding/2, y - padding/2, offset + padding
-    x, y, offset = x - (offset*padding/2), y - (offset*padding/2), offset + (padding*offset)
+    #x, y, offset = x - (offset*padding/2), y - (offset*padding/2), offset + (padding*offset)
+    x, y, offset = x - (max(w, minsize)/2), y - (max(h, minsize)/2), max(h, w, minsize)
     if x < 0.0:
         x = 0.0
     elif x + offset > size[0]:
@@ -98,36 +95,33 @@ for ftype in classes:
         x, y = x - (w-w0)/2, y - (h-h0)/2 
         img.crop((x, y, h+x, w+y))
         # Avoid borders 
-        pad = 0.1
-        cut = 0
         fo = '%s.jpg'%(fname) #'%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
-        img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
+        img.crop(bbox_offset(x, y, h, img.size, pad)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
         img.save(os.path.join(folder_img_srce, 'nocrop', topdir, subdir, fo))
 
-# Now read in the yolo bindings
-yolo_files = os.listdir('yolo_coords')
-list_ = []
-colnames = ['fname', 'proba', 'x', 'y', 'w', 'h']
-for file_ in yolo_files :
-    df = pd.read_csv(os.path.join('yolo_coords', file_),index_col=None, header=None, sep = " ", names = colnames)
-    list_.append(df)
-yolodf = pd.concat(list_, axis = 0, ignore_index=True)
-# Get the max value by image
-yolodf = yolodf.iloc[yolodf.groupby(['fname']).apply(lambda x: x['proba'].idxmax())].reset_index(drop=True)
-yolodf = yolodf[yolodf['proba'] > yolo_proba_cutoff]
-
-# Make the test images
-for ii in range(yolodf.shape[0]):
-    print "Test set"
-    yoloc = yolodf.iloc[ii].values
-    fname = yoloc[0]
-    img = PIL.Image.open(os.path.join(folder_img_srce, 'test', 'test', fname)+'.jpg')
-    x, y, w0, h0 = yoloc[2], yoloc[3], yoloc[4] - yoloc[2], yoloc[5] - yoloc[2]        # make it a box
-    w, h = max(h0, w0), max(h0, w0)
-    # centre it
-    x, y = x - (w-w0)/2, y - (h-h0)/2 
-    pad = 0.1
-    fo = '%s.jpg'%(fname)
-    img.crop(bbox_offset(x, y, h, img.size, pad)).save(os.path.join(folder_img_srce, 'crop', 'test','test', fo))
-    img.save(os.path.join(folder_img_srce, 'nocrop', 'test','test', fo))
+## Now read in the yolo bindings
+#yolo_files = os.listdir('yolo_coords')
+#list_ = []
+#colnames = ['fname', 'proba', 'x', 'y', 'w', 'h']
+#for file_ in yolo_files :
+#    df = pd.read_csv(os.path.join('yolo_coords', file_),index_col=None, header=None, sep = " ", names = colnames)
+#    list_.append(df)
+#yolodf = pd.concat(list_, axis = 0, ignore_index=True)
+## Get the max value by image
+#yolodf = yolodf.iloc[yolodf.groupby(['fname']).apply(lambda x: x['proba'].idxmax())].reset_index(drop=True)
+#yolodf = yolodf[yolodf['proba'] > yolo_proba_cutoff]
+#
+## Make the test images
+#for ii in range(yolodf.shape[0]):
+#    print "Test set"
+#    yoloc = yolodf.iloc[ii].values
+#    fname = yoloc[0]
+#    img = PIL.Image.open(os.path.join(folder_img_srce, 'test', 'test', fname)+'.jpg')
+#    x, y, w0, h0 = yoloc[2], yoloc[3], yoloc[4] - yoloc[2], yoloc[5] - yoloc[2]        # make it a box
+#    w, h = max(h0, w0), max(h0, w0)
+#    # centre it
+#    x, y = x - (w-w0)/2, y - (h-h0)/2 
+#    fo = '%s.jpg'%(fname)
+#    img.crop(bbox_offset(x, y, h, img.size)).save(os.path.join(folder_img_srce, 'crop', 'test','test', fo))
+#    img.save(os.path.join(folder_img_srce, 'nocrop', 'test','test', fo))
 

@@ -1,3 +1,23 @@
+
+
+Training data 
+===============
+cd /home/ubuntu/fish/darknet/FISH/JPEGImages/train-all
+cp ALB/* FISH/
+cp BET/* FISH/
+cp DOL/* FISH/
+cp LAG/* FISH/
+cp OTHER/* FISH/
+cp SHARK/* FISH/
+cp YFT/* FISH/
+rm -rf ALB BET DOL LAG NoF OTHER SHARK YFT
+
+Set up testing data labels. 
+===========================
+python voc_label_FISH1.py
+cp train-all.txt darknet/train.txt 
+cp test.txt darknet/test.txt 
+
 Change files:
 1 yolo-voc.cfg  change line classes=20, change height and width, change filters to 7 from 20
 2 voc.data -> voc.FISH.data  change line classes=20
@@ -5,6 +25,7 @@ Change files:
 4 coco.c ... change the class names and the number of classes variable
 	char *coco_classes
 	int coco_ids
+5 yolo.c ... 
 
 Get test images:
 	mkdir tmp
@@ -16,6 +37,11 @@ Get test images:
 
 Start off a notebook so you can look at the images outputted :
 	nohup jupyter notebook &
+	./darknet detect cfg/yolo.cfg yolo.weights data/dog.jpg
+
+Change cudnn to 1 and remake
+Train:
+	./darknet detector train cfg/voc.FISH.data cfg/yolo-voc.cfg darknet19_448.conv.23 
 
 To predict :
 Change cudnn to 0 and remake
