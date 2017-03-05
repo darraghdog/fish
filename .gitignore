@@ -2,3 +2,4 @@ darknet/*
 data/*
 sub/*
 courses/*
+yolo_coords/*
