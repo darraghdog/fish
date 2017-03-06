@@ -93,7 +93,7 @@ for ftype in classes:
         img = PIL.Image.open(os.path.join(folder_img_srce, 'train-all', validation[0][6]))
         x, y, w0, h0 = imgjson['x'], imgjson['y'], imgjson['width'], imgjson['height']
         # make it a box
-        w, h = max(h0, w0, 480), max(h0, w0, 480)
+        w, h = max(h0, w0, 350), max(h0, w0, 350)
         # centre it
         x, y = x - (w-w0)/2, y - (h-h0)/2 
         img.crop((x, y, h+x, w+y))
@@ -123,7 +123,7 @@ for ii in range(yolodf.shape[0]):
     fname = yoloc[0]
     img = PIL.Image.open(os.path.join(folder_img_srce, 'test', 'test', fname)+'.jpg')
     x, y, w0, h0 = yoloc[2], yoloc[3], yoloc[4] - yoloc[2], yoloc[5] - yoloc[2]        # make it a box
-    w, h = max(h0, w0, 480), max(h0, w0, 480)
+    w, h = max(h0, w0, 350), max(h0, w0, 350)
     # centre it
     x, y = x - (w-w0)/2, y - (h-h0)/2 
     pad = 0.0
