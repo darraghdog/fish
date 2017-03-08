@@ -1499,3 +1499,18 @@ Error allocating 6815744 bytes of device memory (out of memory). Driver report 3
 [I 19:25:24.311 NotebookApp] 302 GET / (176.61.36.2) 0.67ms
 [I 19:25:24.419 NotebookApp] 302 GET /tree (176.61.36.2) 0.97ms
 [I 19:25:30.303 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 1.06ms
+[I 21:19:45.379 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 21:19:45.383 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 21:19:48.176 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 21:19:48.549 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 21:19:48.549 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 21:19:48.554 NotebookApp] [nb_conda] enabled
+[I 21:19:48.799 NotebookApp] [nb_anacondacloud] enabled
+[I 21:19:48.801 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 21:19:48.802 NotebookApp] 0 active kernels 
+[I 21:19:48.802 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 21:19:48.802 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:19:51.894 NotebookApp] 302 GET / (176.61.36.2) 0.57ms
+[I 21:19:51.910 NotebookApp] 302 GET /tree (176.61.36.2) 0.87ms
+[I 21:19:56.716 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.81ms
+[W 21:23:25.259 NotebookApp] 404 GET /favicon.ico (176.61.36.2) 17.05ms referer=http://ec2-34-251-214-204.eu-west-1.compute.amazonaws.com:8888/files/data/fish/crop/train/DOL/img_00165.jpg

@@ -24,7 +24,7 @@ path = 'data/fish'
 refresh_directories = True
 yolo_proba_cutoff = 0.75
 
-
+'''
 def refresh_directory_structure(name, sub_dirs):
     gdir = os.path.join(path, name)
     if os.path.exists(gdir):
@@ -54,6 +54,7 @@ if refresh_directories:
 df_valid = pd.read_csv('image_validation_set.csv')
 df_valid['image_folder'] = df_valid['SubDirectory'] + '/' + df_valid['file_name']
 
+'''
 # Function to offset boundary box correctly
 def bbox_offset(x, y, offset, size, padding = 0, cut = 0, minsize = 400):
     if cut == 1: x = x - w/3
@@ -73,7 +74,8 @@ def bbox_offset(x, y, offset, size, padding = 0, cut = 0, minsize = 400):
     elif y + offset > size[1]:
         y = size[1] - offset
     return x, y, offset+x, offset+y
-    
+
+'''  
 # Make the train and valid images
 for ftype in classes:
     print ftype
@@ -105,11 +107,11 @@ for ftype in classes:
         fo = '%s.jpg'%(fname) #'%s_%s_%s_cut%s.jpg'%(fname, a, pad, cut)
         img.crop(bbox_offset(x, y, h, img.size, pad, cut)).save(os.path.join(folder_img_srce, 'crop', topdir, subdir, fo))
         img.save(os.path.join(folder_img_srce, 'nocrop', topdir, subdir, fo))
-
+'''
 ## Now read in the yolo bindings
 #yolo_files = os.listdir('yolo_coords')
 #list_ = []
-#colnames = ['fname', 'proba', 'x', 'y', 'w', 'h']
+colnames = ['fname', 'proba', 'x', 'y', 'w', 'h']
 #for file_ in yolo_files :
 #    df = pd.read_csv(os.path.join('yolo_coords', file_),index_col=None, header=None, sep = " ", names = colnames)
 #    list_.append(df)
