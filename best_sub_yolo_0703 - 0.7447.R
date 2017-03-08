@@ -16,7 +16,7 @@ for (c in classes){
 yolodf = fread(paste0("~/Dropbox/fish/yolo_coords/comp4_det_test_FISH.txt"))
 yolodf = yolodf[,.(max(V2)), by=V1]
 setnames(yolodf, c("image", "proba"))
-sort(yolodf[proba<0.05]$image)
+sort(yolodf[proba>0.1 & proba<0.15]$image)
 subm_02[image %in% paste0(yolodf[proba<0.05]$image, ".jpg")][["NoF"]] = 10
 #id = paste0(yolodf[proba < 0.05]$image, ".jpg")
 #subm_02[image %in% id]

@@ -31,9 +31,9 @@ find /home/ubuntu/fish/darknet -name train.txt -exec sed -i "s/SHARK/FISH/g" {} 
 find /home/ubuntu/fish/darknet -name train.txt -exec sed -i "s/YFT/FISH/g" {} \;
 
 
-#Set up testing data labels. 
-#===========================
-#python voc_label_FISH1.py
+Set up testing data labels. 
+===========================
+python voc_label_FISH1.py ... to write out new train labels, all to folder FISH and all with class 0. 
 #cp train-all.txt darknet/train.txt 
 #cp test.txt darknet/test.txt 
 
@@ -67,6 +67,7 @@ Train:
 To predict :
 Change cudnn to 0 and remake
 ./darknet detector valid cfg/voc.FISH.data cfg/yolo-voc.cfg backup/yolo-voc_13000.weights 
+./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg backupFISH/yolo-voc_11000.weights 
 And then check under results folder
 then try 
 	grep "img_07050" *
