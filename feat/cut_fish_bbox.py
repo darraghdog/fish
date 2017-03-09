@@ -7,6 +7,7 @@ import xml.etree.ElementTree as ET
 import pickle
 import os
 import json
+import tarfile
 import shutil, csv, time
 from os import listdir, getcwd
 import PIL 
@@ -22,6 +23,7 @@ folder_anno_out = 'darknet/FISH/labels'
 folder_img_srce = 'data/fish'
 path = 'data/fish'
 refresh_directories = True
+refresh_external = True
 yolo_proba_cutoff = 0.75
 
 
@@ -48,7 +50,28 @@ if refresh_directories:
     if os.path.exists(os.path.join(path, 'nocrop/test/test')):
         shutil.rmtree(os.path.join(path, 'nocrop/test/test'))
     os.makedirs(os.path.join(path, 'nocrop/test/test'))
+    
+    
+# Pull in external data
+# Create the test and valid directory
 
+external = {'ALB' : "https://www.dropbox.com/s/57bqzrla990di61/ALB.tar?dl=1",
+            'DOL' : "https://www.dropbox.com/s/ihhwvg5hr42aw9a/DOL.tar?dl=1",
+            'LAG' : "https://www.dropbox.com/s/fqumify0gkqg2wi/LAG.tar?dl=1",
+            'BET' : "https://www.dropbox.com/s/lngdeoesm40w76f/BET.tar?dl=1",
+            'YFT' : "https://www.dropbox.com/s/066wond1ggtohqu/YFT.tar?dl=1",
+            'OTHER' : "https://www.dropbox.com/s/qd0npaftd3c8ljf/OTHER.tar?dl=1"}
+
+if refresh_external:
+    if os.path.exists(os.path.join(path, 'external')):
+        shutil.rmtree(os.path.join(path, 'external'))
+    os.makedirs(os.path.join(path, 'external'))
+    for c in external:
+        print c, external[c]
+        urllib.urlretrieve(external[c], 'data/fish/external/%s.tar'%(c))
+        tar = tarfile.open('data/fish/external/%s.tar'%(c))
+        tar.extractall(path = 'data/fish/crop/train/%s'%(c))
+        tar.close()
 
 # Read in the validation set
 df_valid = pd.read_csv('image_validation_set.csv')
