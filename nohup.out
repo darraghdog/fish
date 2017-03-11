@@ -1767,3 +1767,53 @@ Error allocating 6815744 bytes of device memory (out of memory). Driver report 3
 [I 10:59:16.126 NotebookApp] Kernel interrupted: 2599f76a-cbe1-40b6-9ed2-50dc5988be41
 [I 10:59:54.107 NotebookApp] Kernel interrupted: 2599f76a-cbe1-40b6-9ed2-50dc5988be41
 [I 11:01:00.994 NotebookApp] Saving file at /scripts/test_crop.ipynb
+[I 12:39:02.557 NotebookApp] 302 GET / (176.61.36.2) 0.35ms
+[I 12:39:22.229 NotebookApp] Creating new notebook in /keras-resnet
+[I 12:39:22.900 NotebookApp] Kernel started: a66a6a3a-0476-460f-9a34-f64194a602b9
+[I 12:41:23.609 NotebookApp] Saving file at /keras-resnet/cifar10.ipynb
+[I 12:41:34.843 NotebookApp] Saving file at /keras-resnet/cifar10.ipynb
+[I 12:43:23.584 NotebookApp] Saving file at /keras-resnet/cifar10.ipynb
+[I 13:40:05.314 NotebookApp] Kernel interrupted: a66a6a3a-0476-460f-9a34-f64194a602b9
+[I 13:40:07.152 NotebookApp] Saving file at /keras-resnet/cifar10.ipynb
+[I 13:40:15.176 NotebookApp] Copying keras-resnet/cifar10.ipynb to /keras-resnet
+[I 13:40:16.404 NotebookApp] Kernel started: bdd7ff31-b5d1-428b-8d13-c8a1dd476d41
+[I 13:40:52.233 NotebookApp] Kernel restarted: bdd7ff31-b5d1-428b-8d13-c8a1dd476d41
+[I 13:41:57.347 NotebookApp] KernelRestarter: restarting kernel (1/5)
+[I 13:42:16.545 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 13:42:16.899 NotebookApp] KernelRestarter: restarting kernel (1/5)
+[I 13:43:21.077 NotebookApp] KernelRestarter: restarting kernel (1/5)
+[C 13:43:31.525 NotebookApp] received signal 15, stopping
+[I 13:43:31.525 NotebookApp] Shutting down kernels
+[I 13:43:31.928 NotebookApp] Kernel shutdown: 2599f76a-cbe1-40b6-9ed2-50dc5988be41
+[I 13:43:31.928 NotebookApp] Kernel shutdown: 7d482713-64e6-4bd4-b901-e30b4cc59a03
+[I 13:43:31.928 NotebookApp] Kernel shutdown: a66a6a3a-0476-460f-9a34-f64194a602b9
+[I 13:43:31.928 NotebookApp] Kernel shutdown: bdd7ff31-b5d1-428b-8d13-c8a1dd476d41
+[I 13:43:55.727 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[W 13:43:55.913 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 13:43:55.947 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 13:43:55.947 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 13:43:55.950 NotebookApp] [nb_conda] enabled
+[I 13:43:55.980 NotebookApp] [nb_anacondacloud] enabled
+[I 13:43:55.982 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 13:43:55.983 NotebookApp] 0 active kernels 
+[I 13:43:55.983 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 13:43:55.983 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:44:01.939 NotebookApp] Kernel started: f6f3d048-07e8-42ed-a6b3-cb8496dc181b
+[W 13:44:07.974 NotebookApp] 404 GET /api/kernels/bdd7ff31-b5d1-428b-8d13-c8a1dd476d41/channels?session_id=894FE1673B4E497887B07FB345518FE1 (176.61.36.2): Kernel does not exist: bdd7ff31-b5d1-428b-8d13-c8a1dd476d41
+[W 13:44:07.980 NotebookApp] 404 GET /api/kernels/bdd7ff31-b5d1-428b-8d13-c8a1dd476d41/channels?session_id=894FE1673B4E497887B07FB345518FE1 (176.61.36.2) 14.25ms referer=None
+[W 13:44:40.554 NotebookApp] Replacing stale connection: bdd7ff31-b5d1-428b-8d13-c8a1dd476d41:894FE1673B4E497887B07FB345518FE1
+[I 13:46:02.545 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 13:50:02.540 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 13:50:46.027 NotebookApp] Kernel started: ed2c6dde-a651-4051-bc4b-709ce9ff9752
+[I 13:52:02.552 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 13:53:48.567 NotebookApp] Kernel interrupted: f6f3d048-07e8-42ed-a6b3-cb8496dc181b
+[I 13:54:01.959 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 13:54:06.651 NotebookApp] Kernel interrupted: f6f3d048-07e8-42ed-a6b3-cb8496dc181b
+[I 13:56:01.946 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 13:58:01.948 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 14:00:01.947 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 14:02:01.982 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 14:02:27.097 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 14:04:02.874 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 14:06:01.943 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 14:08:02.548 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
