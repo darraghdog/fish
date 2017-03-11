@@ -4,6 +4,7 @@ import random
 StreamHandler(sys.stdout).push_application()
 log = Logger('Logbook')
 import xml.etree.ElementTree as ET
+import urllib
 import pickle
 import os
 import json
@@ -23,7 +24,7 @@ folder_anno_out = 'darknet/FISH/labels'
 folder_img_srce = 'data/fish'
 path = 'data/fish'
 refresh_directories = True
-refresh_external = True
+refresh_external = False
 yolo_proba_cutoff = 0.75
 
 
