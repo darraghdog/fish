@@ -2210,3 +2210,7 @@ Error allocating 205520896 bytes of device memory (out of memory). Driver report
 [I 21:03:28.971 NotebookApp] Saving file at /resnet/resnet_01.ipynb
 [I 21:04:44.458 NotebookApp] Saving file at /resnet/resnet_01.ipynb
 [I 21:07:05.440 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:56:04.365 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:58:00.498 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:58:03.069 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:59:05.746 NotebookApp] Saving file at /resnet/resnet_01.ipynb
