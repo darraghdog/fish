@@ -1817,3 +1817,396 @@ Error allocating 6815744 bytes of device memory (out of memory). Driver report 3
 [I 14:04:02.874 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
 [I 14:06:01.943 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
 [I 14:08:02.548 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 14:54:00.228 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:10:55.030 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 15:10:55.142 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 15:10:57.934 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 15:10:58.559 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 15:10:58.560 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 15:10:58.563 NotebookApp] [nb_conda] enabled
+[I 15:10:59.562 NotebookApp] [nb_anacondacloud] enabled
+[I 15:10:59.565 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 15:10:59.565 NotebookApp] 0 active kernels 
+[I 15:10:59.565 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 15:10:59.565 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 15:11:34.440 NotebookApp] 302 GET / (176.61.36.2) 0.57ms
+[I 15:11:34.466 NotebookApp] 302 GET /tree (176.61.36.2) 0.81ms
+[I 15:11:41.178 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.84ms
+[I 15:13:43.439 NotebookApp] Kernel started: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:15:43.474 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:16:56.482 NotebookApp] Kernel interrupted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:16:58.322 NotebookApp] Kernel interrupted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:17:21.262 NotebookApp] Kernel restarted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:17:42.694 NotebookApp] Kernel restarted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:17:43.437 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:18:03.015 NotebookApp] Kernel restarted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[W 15:18:03.017 NotebookApp] zmq message arrived on closed channel
+[I 15:18:06.643 NotebookApp] Kernel restarted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:19:43.431 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:21:11.337 NotebookApp] Kernel interrupted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:21:43.431 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:33:52.193 NotebookApp] Kernel interrupted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:35:43.450 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:42:53.567 NotebookApp] Kernel interrupted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:43:43.444 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:47:43.443 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:49:43.412 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:51:43.447 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:58:43.594 NotebookApp] Kernel interrupted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 15:59:43.424 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 15:59:59.741 NotebookApp] Kernel restarted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 16:01:43.451 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 16:07:44.326 NotebookApp] Kernel interrupted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 16:08:25.640 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 16:08:33.165 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 16:08:51.347 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 16:08:56.627 NotebookApp] Kernel restarted: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 16:09:43.423 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 17:21:43.386 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 17:35:43.325 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 17:36:08.637 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 17:37:43.354 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 17:41:43.320 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 19:05:43.323 NotebookApp] Saving file at /keras-resnet/resnetCrop.ipynb
+[I 19:12:30.904 NotebookApp] Kernel shutdown: 69d1c2f2-f73b-4609-8816-f7631380b7c9
+[I 19:12:49.375 NotebookApp] Kernel started: 389bfb7e-5729-45c9-9b87-59d28a3881e9
+[I 19:12:51.545 NotebookApp] Copying scripts/test_crop.ipynb to /scripts
+[I 19:12:52.281 NotebookApp] Kernel started: 79cf582e-3971-4ffa-995c-911c2ad36b9f
+[I 19:15:06.077 NotebookApp] Creating new notebook in /scripts
+[I 19:15:07.146 NotebookApp] Kernel started: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 19:17:07.277 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:19:07.165 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:20:06.663 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:21:07.167 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:23:07.181 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:25:07.184 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:29:07.171 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:31:07.176 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:33:07.175 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:34:06.010 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:37:07.288 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 19:59:07.201 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:00:40.567 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:01:07.147 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:01:24.260 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:01:53.030 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:02:15.912 NotebookApp] Kernel restarted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 20:03:07.152 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:05:07.155 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:07:07.143 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:09:07.144 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:11:07.141 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:13:07.253 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:15:07.138 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:17:07.146 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:19:07.139 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:21:07.150 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:23:07.132 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:25:07.133 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:26:43.040 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:27:07.131 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:29:07.146 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:31:07.137 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:33:07.130 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:34:43.472 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:34:51.460 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:35:07.121 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:37:07.120 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:39:07.115 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:40:35.865 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:41:07.098 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:45:10.168 NotebookApp] Kernel interrupted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 20:45:35.100 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:47:07.219 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:57:07.156 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:57:10.941 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 20:57:17.579 NotebookApp] Kernel restarted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 20:59:07.091 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:03:30.501 NotebookApp] Kernel interrupted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 21:05:07.102 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:05:16.096 NotebookApp] Kernel restarted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 21:07:07.216 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:09:07.228 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:13:07.200 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:15:07.085 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:15:29.553 NotebookApp] Kernel interrupted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 21:16:33.868 NotebookApp] Kernel restarted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 21:17:07.191 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:19:07.082 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:21:07.258 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:25:26.512 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 21:26:40.449 NotebookApp] Kernel restarted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 21:27:07.185 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 22:13:41.479 NotebookApp] Kernel interrupted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 22:14:00.832 NotebookApp] Kernel restarted: 7fe231b1-6d08-449a-bc92-db7bd5acdf1a
+[I 22:14:16.072 NotebookApp] Saving file at /scripts/zft_crop.ipynb
+[I 22:14:16.132 NotebookApp] Copying scripts/zft_crop.ipynb to /scripts
+[I 22:14:17.301 NotebookApp] Kernel started: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:16:18.142 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:18:17.320 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:20:18.141 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:22:17.319 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:24:15.274 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:24:17.317 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:25:14.403 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:26:17.324 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:28:17.332 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:29:12.946 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:30:18.152 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:32:17.323 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:32:18.231 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:34:18.134 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:35:04.670 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:36:18.124 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:38:17.333 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:38:51.770 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:38:56.516 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:40:18.122 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:42:17.315 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:44:18.126 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:46:08.267 NotebookApp] Kernel interrupted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:46:17.383 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:47:17.060 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:48:18.118 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:53:53.944 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:54:18.117 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 22:57:13.745 NotebookApp] Kernel interrupted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 22:58:18.138 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 23:00:17.305 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 23:01:36.618 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 23:02:18.104 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 23:06:21.452 NotebookApp] Kernel interrupted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 23:07:11.308 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 23:08:18.102 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 23:18:37.373 NotebookApp] Kernel restarted: 03c68d25-dda8-4519-8ff0-5eda46a5d371
+[I 23:20:18.094 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 23:28:18.127 NotebookApp] Saving file at /scripts/zft_crop-Copy1.ipynb
+[I 18:54:49.158 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 18:54:49.163 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 18:54:52.081 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 18:54:52.550 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 18:54:52.550 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 18:54:52.554 NotebookApp] [nb_conda] enabled
+[I 18:54:54.170 NotebookApp] [nb_anacondacloud] enabled
+[I 18:54:54.173 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 18:54:54.173 NotebookApp] 0 active kernels 
+[I 18:54:54.173 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 18:54:54.173 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 18:54:59.244 NotebookApp] 302 GET / (176.61.36.2) 0.59ms
+[I 18:54:59.263 NotebookApp] 302 GET /tree (176.61.36.2) 0.72ms
+[I 18:56:26.242 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.86ms
+[I 18:56:50.544 NotebookApp] Creating new notebook in /resnet
+[I 18:56:56.322 NotebookApp] Kernel started: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 18:58:56.964 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:04:56.018 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:08:03.954 NotebookApp] Kernel interrupted: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 19:08:18.844 NotebookApp] Kernel restarted: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 19:08:56.847 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:10:24.843 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:12:55.997 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:13:20.022 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:14:56.874 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:15:17.367 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[W 19:16:08.639 NotebookApp] 404 GET /favicon.ico (176.61.36.2) 11.89ms referer=http://ec2-34-251-212-13.eu-west-1.compute.amazonaws.com:8888/files/data/fish/annos/alb_labels.json
+[I 19:16:56.898 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:20:55.914 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:23:56.558 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:24:50.158 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:26:16.334 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:26:55.937 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:28:57.558 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:32:56.007 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:33:16.388 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:34:19.099 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:34:56.007 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:36:56.083 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:38:55.939 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:40:56.022 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:42:56.007 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:44:56.121 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:46:56.080 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:48:56.081 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:49:41.312 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:50:55.940 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:52:51.358 NotebookApp] Kernel restarted: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 19:52:55.906 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:53:12.142 NotebookApp] Kernel restarted: 189ea433-83c0-46e8-83d2-b909be02da48
+[W 19:53:12.146 NotebookApp] zmq message arrived on closed channel
+[I 19:54:20.777 NotebookApp] Kernel restarted: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 19:54:56.131 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:10:56.958 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:12:56.975 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:14:44.426 NotebookApp] Kernel restarted: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 20:14:56.004 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:24:06.207 NotebookApp] Kernel restarted: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 20:24:16.640 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:24:55.971 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:26:57.010 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:27:46.213 NotebookApp] Kernel restarted: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 20:28:56.044 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:30:55.889 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:32:44.870 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:33:03.353 NotebookApp] Kernel shutdown: 189ea433-83c0-46e8-83d2-b909be02da48
+[I 20:33:05.410 NotebookApp] Kernel started: b6fa486a-3e67-460a-b755-dac8a0c2d869
+[I 20:35:05.470 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:36:48.028 NotebookApp] Kernel restarted: b6fa486a-3e67-460a-b755-dac8a0c2d869
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:36:51.029 NotebookApp] KernelRestarter: restarting kernel (1/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:36:54.040 NotebookApp] KernelRestarter: restarting kernel (2/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:36:57.051 NotebookApp] KernelRestarter: restarting kernel (3/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:37:00.061 NotebookApp] KernelRestarter: restarting kernel (4/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[W 20:37:03.071 NotebookApp] KernelRestarter: restart failed
+[W 20:37:03.071 NotebookApp] Kernel b6fa486a-3e67-460a-b755-dac8a0c2d869 died, removing from map.
+[W 20:37:03.071 NotebookApp] Restarting kernel failed: b6fa486a-3e67-460a-b755-dac8a0c2d869
+[E 20:37:03.072 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/kernels/handlers.py", line 88, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/gen.py", line 1015, in run
+        value = future.result()
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/concurrent.py", line 237, in result
+        raise_exc_info(self._exc_info)
+      File "<string>", line 3, in raise_exc_info
+    RuntimeError: Restart failed
+[E 20:37:03.074 NotebookApp] {
+      "Origin": "http://ec2-34-251-212-13.eu-west-1.compute.amazonaws.com:8888", 
+      "Content-Length": "0", 
+      "Accept-Language": "en-GB,en-US;q=0.8,en;q=0.6", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Host": "ec2-34-251-212-13.eu-west-1.compute.amazonaws.com:8888", 
+      "Accept": "application/json, text/javascript, */*; q=0.01", 
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36", 
+      "Connection": "keep-alive", 
+      "X-Requested-With": "XMLHttpRequest", 
+      "Referer": "http://ec2-34-251-212-13.eu-west-1.compute.amazonaws.com:8888/notebooks/resnet/resnet_01.ipynb", 
+      "Cookie": "username-ec2-34-251-212-13-eu-west-1-compute-amazonaws-com-8888=\"2|1:0|10:1489431386|63:username-ec2-34-251-212-13-eu-west-1-compute-amazonaws-com-8888|48:OTZiZjY3ZjgtYWY1NS00ZWM2LWJmOWQtNGIzYmIyMjVjZjEy|32fa40c24851e0004565d7206701022c74d000b80e3db1350280997fc26c8c25\""
+    }
+[E 20:37:03.074 NotebookApp] 500 POST /api/kernels/b6fa486a-3e67-460a-b755-dac8a0c2d869/restart (176.61.36.2) 16078.23ms referer=http://ec2-34-251-212-13.eu-west-1.compute.amazonaws.com:8888/notebooks/resnet/resnet_01.ipynb
+[W 20:37:03.105 NotebookApp] Kernel deleted before session
+[W 20:37:03.105 NotebookApp] 410 DELETE /api/sessions/861866bd-b198-4624-b3e5-3161a3576db7 (176.61.36.2) 2.70ms referer=http://ec2-34-251-212-13.eu-west-1.compute.amazonaws.com:8888/notebooks/resnet/resnet_01.ipynb
+[W 20:37:05.422 NotebookApp] Session not found: session_id=u'861866bd-b198-4624-b3e5-3161a3576db7'
+[W 20:37:05.422 NotebookApp] 404 DELETE /api/sessions/861866bd-b198-4624-b3e5-3161a3576db7 (176.61.36.2) 1.19ms referer=http://ec2-34-251-212-13.eu-west-1.compute.amazonaws.com:8888/notebooks/resnet/resnet_01.ipynb
+[I 20:37:05.977 NotebookApp] Kernel started: d2169f64-dd30-4cbc-a121-f0db6d494ed1
+[I 20:38:03.762 NotebookApp] Kernel restarted: d2169f64-dd30-4cbc-a121-f0db6d494ed1
+[I 20:39:05.796 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:40:02.625 NotebookApp] Kernel restarted: d2169f64-dd30-4cbc-a121-f0db6d494ed1
+[I 20:41:05.809 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+Error allocating 205520896 bytes of device memory (out of memory). Driver report 393216 bytes free and 11995578368 bytes total 
+[I 20:43:05.471 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:43:12.341 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:43:16.979 NotebookApp] Kernel restarted: d2169f64-dd30-4cbc-a121-f0db6d494ed1
+[I 20:45:05.840 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:02:17.143 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:03:05.833 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:03:28.971 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:04:44.458 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:07:05.440 NotebookApp] Saving file at /resnet/resnet_01.ipynb

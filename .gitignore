@@ -4,4 +4,6 @@ darknet/*
 data/*
 sub/*
 courses/*
+resnet/checkpoints/*
+resnet/logs/*
 yolo_coords/*
