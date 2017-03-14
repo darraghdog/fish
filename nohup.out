@@ -2491,3 +2491,115 @@ Error allocating 704643072 bytes of device memory (out of memory). Driver report
 [I 17:47:24.696 NotebookApp] Saving file at /scripts/test_anno_relabel_pop_vgg.ipynb
 [I 17:47:35.343 NotebookApp] Saving file at /scripts/test_anno_relabel_pop_vgg.ipynb
 >>>>>>> c611649db9197f1d46cc458c28c9dd1a9a498b68
+[I 18:52:15.827 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 18:52:15.915 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 18:52:18.965 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 18:52:19.531 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 18:52:19.531 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 18:52:19.535 NotebookApp] [nb_conda] enabled
+[I 18:52:20.925 NotebookApp] [nb_anacondacloud] enabled
+[I 18:52:20.928 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 18:52:20.928 NotebookApp] 0 active kernels 
+[I 18:52:20.928 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 18:52:20.928 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 18:53:30.312 NotebookApp] 302 GET / (176.61.36.2) 0.60ms
+[I 18:53:30.366 NotebookApp] 302 GET /tree (176.61.36.2) 0.82ms
+[I 18:53:42.173 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.87ms
+[I 18:55:26.461 NotebookApp] Kernel started: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 18:56:05.171 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 18:56:44.303 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 18:59:26.533 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 18:59:32.754 NotebookApp] Kernel interrupted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 18:59:41.473 NotebookApp] Kernel restarted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 19:01:26.546 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:03:26.622 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:05:26.558 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:09:26.521 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:11:26.541 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:13:26.532 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:15:26.616 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:19:26.524 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:21:26.538 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:23:26.529 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:25:26.570 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:27:26.593 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:29:26.519 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:31:26.724 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:33:26.570 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:35:26.540 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:37:27.158 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:39:26.977 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:41:27.096 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:43:27.002 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:45:26.736 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:47:27.312 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:47:59.488 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:48:15.194 NotebookApp] Kernel restarted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 19:49:27.001 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:50:20.415 NotebookApp] Kernel restarted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 19:51:10.601 NotebookApp] Kernel restarted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 19:51:26.663 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:53:05.492 NotebookApp] Kernel restarted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 19:53:26.987 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:54:51.256 NotebookApp] Kernel restarted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 19:55:27.240 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:55:35.115 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 19:59:27.280 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:01:26.918 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:03:26.827 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:05:26.910 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:07:26.831 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:09:26.993 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:11:26.824 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:13:27.266 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:15:26.752 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:17:26.790 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:18:50.869 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:19:26.799 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:19:32.985 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:20:05.003 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:21:26.779 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:23:26.779 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:26:03.627 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:26:22.606 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:27:26.807 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:29:26.823 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:30:41.508 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:31:27.083 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:33:27.294 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:35:26.783 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:37:27.160 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:39:26.963 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:41:20.454 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:43:27.089 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:45:27.111 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 20:47:27.102 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:01:27.136 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:03:27.025 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:05:27.067 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:07:26.734 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:09:26.842 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:11:20.611 NotebookApp] Kernel restarted: 4235b594-016a-45bb-a2ed-a558ef010d68
+[I 21:11:26.472 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:13:26.973 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:15:26.925 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:15:51.812 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:16:20.853 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:17:26.869 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:19:27.153 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:20:09.549 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:25:27.197 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:27:11.788 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:31:04.308 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:31:27.383 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:33:27.011 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:35:27.007 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:37:06.535 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:37:27.035 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:39:26.924 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:41:26.913 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:43:26.936 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:43:52.024 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:45:57.324 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:47:27.001 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 21:47:37.063 NotebookApp] Saving file at /resnet/resnet_01.ipynb
