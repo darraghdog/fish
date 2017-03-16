@@ -2603,3 +2603,39 @@ Error allocating 704643072 bytes of device memory (out of memory). Driver report
 [I 21:45:57.324 NotebookApp] Saving file at /resnet/resnet_01.ipynb
 [I 21:47:27.001 NotebookApp] Saving file at /resnet/resnet_01.ipynb
 [I 21:47:37.063 NotebookApp] Saving file at /resnet/resnet_01.ipynb
+[I 07:01:11.677 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 07:01:11.813 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 07:01:15.485 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 07:01:16.289 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 07:01:16.289 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 07:01:16.293 NotebookApp] [nb_conda] enabled
+[I 07:01:18.250 NotebookApp] [nb_anacondacloud] enabled
+[I 07:01:18.253 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 07:01:18.253 NotebookApp] 0 active kernels 
+[I 07:01:18.253 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 07:01:18.253 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 07:01:18.433 NotebookApp] 302 GET / (176.61.36.2) 0.65ms
+[I 07:01:18.559 NotebookApp] 302 GET /tree (176.61.36.2) 0.88ms
+[I 07:01:38.553 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.85ms
+[I 07:01:55.297 NotebookApp] Copying resnet/resnet_02.ipynb to /resnet
+[I 07:02:03.853 NotebookApp] Kernel started: 2f33a0e3-3bbd-45f2-9ee2-356dd473cdc1
+[I 07:03:07.261 NotebookApp] Saving file at /resnet/resnet_02-Copy1.ipynb
+[I 07:03:21.400 NotebookApp] Saving file at /resnet/resnet_02-Copy1.ipynb
+[I 07:05:34.066 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:08:04.211 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:10:04.244 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:10:07.989 NotebookApp] Kernel restarted: 2f33a0e3-3bbd-45f2-9ee2-356dd473cdc1
+[W 07:10:07.992 NotebookApp] zmq message arrived on closed channel
+[I 07:11:19.043 NotebookApp] Kernel started: befd6684-7c80-4189-a799-595a29320624
+[I 07:11:30.535 NotebookApp] Saving file at /resnet/resnet_02.ipynb
+[I 07:12:03.788 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:12:08.166 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:12:28.506 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:12:46.996 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:13:03.845 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:13:59.907 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:14:25.380 NotebookApp] Kernel restarted: 2f33a0e3-3bbd-45f2-9ee2-356dd473cdc1
+[I 07:14:30.087 NotebookApp] Kernel restarted: 2f33a0e3-3bbd-45f2-9ee2-356dd473cdc1
+[W 07:14:30.091 NotebookApp] zmq message arrived on closed channel
+[I 07:16:04.137 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 07:18:04.466 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
