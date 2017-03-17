@@ -2639,3 +2639,314 @@ Error allocating 704643072 bytes of device memory (out of memory). Driver report
 [W 07:14:30.091 NotebookApp] zmq message arrived on closed channel
 [I 07:16:04.137 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
 [I 07:18:04.466 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 10:36:04.134 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 13:36:04.045 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 16:02:03.945 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 16:04:04.676 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 16:10:04.305 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 16:12:04.343 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 18:58:04.111 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:00:03.938 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:02:14.341 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:04:04.003 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:04:11.715 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:06:03.971 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:06:14.759 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:07:02.492 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:08:04.162 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:30:04.198 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:32:04.501 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:32:50.003 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:34:04.253 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:36:03.983 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:38:04.013 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:39:45.241 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:42:04.288 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:44:04.148 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:46:04.230 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:48:04.036 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:50:04.071 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:52:03.989 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 19:54:04.090 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:07:28.503 NotebookApp] Copying resnet/resnet_02.ipynb to /resnet
+[I 20:07:35.564 NotebookApp] Kernel shutdown: befd6684-7c80-4189-a799-595a29320624
+[I 20:11:50.755 NotebookApp] Kernel started: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 20:12:02.869 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:13:51.978 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:16:04.077 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:26:03.923 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:26:22.002 NotebookApp] 302 GET /notebooks/sub/subm_full_resnet_cut0.7_20170316.csv (176.61.36.2) 0.93ms
+[I 20:26:30.733 NotebookApp] 302 GET /notebooks/sub/subm_full_resnet_cut0.7_20170316.csv (176.61.36.2) 0.90ms
+[I 20:28:04.245 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:32:03.958 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:33:53.013 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:34:04.560 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:34:08.329 NotebookApp] 302 GET /notebooks/sub/subm_full_resnet_cut0.7_20170316.csv (176.61.36.2) 0.91ms
+[I 20:36:04.058 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:36:23.694 NotebookApp] 302 GET /notebooks/sub/subm_full_resnet_cut0.7_20170316.csv (176.61.36.2) 0.89ms
+[I 20:38:04.193 NotebookApp] Saving file at /resnet/resnet_02-full.ipynb
+[I 20:44:33.209 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:45:51.296 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:47:51.284 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:49:51.265 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:51:51.532 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:53:51.579 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:53:57.986 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:54:37.439 NotebookApp] Kernel shutdown: 2f33a0e3-3bbd-45f2-9ee2-356dd473cdc1
+[I 20:54:47.294 NotebookApp] Kernel started: b90b0c3f-617a-4e4f-bde6-d5f5a2ffabfb
+[I 20:54:58.639 NotebookApp] Kernel started: bd1614cc-0d04-4bee-b417-29b9529224cc
+[I 20:55:51.272 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:56:49.656 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:59:09.981 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 20:59:56.348 NotebookApp] Kernel shutdown: bd1614cc-0d04-4bee-b417-29b9529224cc
+[I 20:59:58.662 NotebookApp] Kernel shutdown: b90b0c3f-617a-4e4f-bde6-d5f5a2ffabfb
+[I 21:01:16.224 NotebookApp] Kernel started: dd412a43-c621-4839-9412-c30614d5e60c
+[I 21:01:23.228 NotebookApp] Kernel started: 9441eed0-cfef-4bbf-b26d-7369301616ba
+[I 21:03:23.975 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:05:51.893 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:06:59.775 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:07:26.320 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:07:30.123 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:09:52.236 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:11:23.844 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:11:52.817 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:13:14.313 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:13:23.642 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 21:13:49.645 NotebookApp] Kernel shutdown: 9441eed0-cfef-4bbf-b26d-7369301616ba
+[I 21:13:50.149 NotebookApp] Kernel shutdown: dd412a43-c621-4839-9412-c30614d5e60c
+[I 21:15:53.592 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:16:32.656 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:17:53.428 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:19:53.726 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:20:59.832 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:21:53.596 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:23:09.323 NotebookApp] Kernel started: c047b3b1-696c-4bbb-bda8-5166569ba24d
+[I 21:23:55.130 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:25:53.835 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:27:54.178 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:29:54.339 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:31:54.828 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:33:56.556 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:35:26.440 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[W 21:35:26.442 NotebookApp] zmq message arrived on closed channel
+[I 21:35:52.908 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:36:05.364 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:37:53.598 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:37:58.128 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:38:23.190 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:39:52.917 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:41:52.907 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:42:43.204 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:43:53.313 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:44:35.747 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 21:45:53.670 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:47:53.345 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:49:53.490 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:51:30.312 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 21:51:52.970 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:53:53.012 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:55:52.988 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:56:34.122 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 21:56:54.600 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 21:57:52.889 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:04:37.138 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:06:37.128 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:06:39.047 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:08:01.347 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:08:37.127 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:08:55.898 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[W 22:08:55.900 NotebookApp] zmq message arrived on closed channel
+[I 22:10:19.526 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:10:37.195 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:12:37.214 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:14:44.309 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:15:30.509 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:16:37.314 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:17:46.707 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:18:37.999 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:20:42.025 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:22:38.361 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:24:04.915 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:24:37.208 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:26:37.939 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:28:37.954 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:31:51.609 NotebookApp] Kernel started: 85b91baf-6da2-416b-b365-b563362cf153
+[I 22:32:37.785 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:32:47.863 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:36:37.792 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:38:07.420 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:38:37.167 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:40:37.108 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:42:37.618 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:44:32.902 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:44:37.096 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:46:14.376 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:46:37.221 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:48:36.445 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:48:37.241 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:50:37.799 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:50:58.119 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:52:37.204 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:52:45.829 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:52:56.247 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:53:00.560 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:54:38.608 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:54:56.705 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:55:47.871 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:56:37.927 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:57:39.586 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 22:58:37.284 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 22:58:45.560 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 23:00:37.094 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:00:57.998 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 23:02:38.179 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:04:37.794 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:06:37.248 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:06:42.256 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 23:07:18.940 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 23:08:37.201 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:10:03.034 NotebookApp] Kernel interrupted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 23:10:37.704 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:12:37.433 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:12:42.396 NotebookApp] Kernel restarted: 68495c2a-7c3e-43b0-8036-c6102bbc60c6
+[I 23:14:37.822 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 23:16:37.848 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[W 23:20:32.480 NotebookApp] 404 GET http://api.login.icq.net/ (68.116.70.254) 7.17ms referer=None
+[I 23:24:56.638 NotebookApp] Saving file at /scripts/test_anno.ipynb
+[I 09:32:37.483 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 09:32:37.560 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 09:32:40.288 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 09:32:40.738 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 09:32:40.738 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 09:32:40.742 NotebookApp] [nb_conda] enabled
+[I 09:32:41.844 NotebookApp] [nb_anacondacloud] enabled
+[I 09:32:41.847 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 09:32:41.847 NotebookApp] 0 active kernels 
+[I 09:32:41.847 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 09:32:41.847 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 09:35:45.942 NotebookApp] 302 GET / (176.61.36.2) 0.62ms
+[I 09:35:45.963 NotebookApp] 302 GET /tree (176.61.36.2) 0.80ms
+[I 09:35:52.230 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.88ms
+[I 09:36:30.572 NotebookApp] Kernel started: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 09:38:30.765 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:40:30.898 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:41:39.490 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:42:30.754 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:44:30.709 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:46:30.731 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:48:31.078 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:49:24.879 NotebookApp] Kernel started: ecbf1b2b-3dd5-44f8-9d36-c812ee4c41c8
+[I 09:52:30.846 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:54:30.862 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:56:30.736 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 09:58:30.707 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:00:30.787 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:04:30.707 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:07:20.605 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:08:30.819 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:08:52.145 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:10:30.719 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:11:07.949 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:12:57.418 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:13:02.673 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:13:17.093 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:14:30.579 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:16:30.591 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:18:30.586 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:19:29.663 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[W 10:19:29.666 NotebookApp] zmq message arrived on closed channel
+[I 10:19:30.247 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:20:30.677 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+Error allocating 4010803200 bytes of device memory (out of memory). Driver report 3715104768 bytes free and 11995578368 bytes total 
+[I 10:22:30.814 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:26:09.737 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[W 10:26:09.740 NotebookApp] zmq message arrived on closed channel
+[I 10:26:30.583 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:28:30.889 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+Error allocating 1971453952 bytes of device memory (out of memory). Driver report 1350041600 bytes free and 11995578368 bytes total 
+[I 10:30:30.740 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:31:43.849 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:32:30.779 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:34:30.627 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:34:32.533 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:36:30.681 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:37:28.392 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:38:30.619 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:40:11.969 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:40:17.441 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:40:30.554 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:42:30.662 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:43:55.158 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:44:08.914 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[W 10:44:08.918 NotebookApp] zmq message arrived on closed channel
+[I 10:44:30.621 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:46:11.917 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:46:30.691 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:48:09.899 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:48:30.550 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:50:30.612 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:51:08.333 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 10:52:30.607 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:54:30.664 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:56:30.872 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 10:58:30.665 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:00:30.779 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:00:52.169 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:00:57.449 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:02:30.723 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:07:39.039 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:09:07.982 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:09:14.198 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:10:30.558 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:12:30.542 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:14:30.523 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:16:30.566 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:18:30.545 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:20:30.522 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:20:42.097 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:20:50.922 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:22:30.577 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:23:51.162 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:23:58.004 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:24:06.587 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:24:30.517 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:25:10.217 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:25:17.373 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:26:30.538 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:30:10.329 NotebookApp] 302 GET / (176.61.36.2) 0.36ms
+[W 11:30:47.943 NotebookApp] WebSocket ping timeout after 101185 ms.
+[I 11:32:17.130 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:34:06.086 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:34:17.120 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:34:20.214 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:36:17.421 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:36:23.333 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:36:57.323 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:37:49.195 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:38:17.210 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:38:29.660 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:38:44.679 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:39:54.066 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:40:17.144 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:41:22.820 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:42:14.162 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:42:17.110 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:42:32.907 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:44:17.105 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:44:20.200 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:44:24.640 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 11:46:11.163 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 11:50:15.770 NotebookApp] Kernel started: 5cc92487-0e17-4689-9177-f9ca9e25d6cd
+[I 11:50:52.864 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 12:28:17.314 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 12:28:49.224 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 12:39:26.469 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 12:39:56.219 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 12:40:23.631 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 12:42:18.030 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 12:58:17.638 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 13:01:59.796 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 13:09:55.408 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 13:10:04.663 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 13:10:17.257 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 13:11:19.266 NotebookApp] Saving file at /resnet/resnet_03.ipynb
