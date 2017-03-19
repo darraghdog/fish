@@ -32,20 +32,17 @@ def refresh_dir(PATH):
     for f in files:
         os.remove(f)
 refresh_dir('rcnn')
-refresh_dir('rcnn/VOCdevkitfish')
 refresh_dir('rcnn/VOCdevkitfish/VOC2007')
-refresh_dir('rcnn/VOCdevkitfish/VOC2007/Annotations')
-refresh_dir('rcnn/VOCdevkitfish/VOC2007/ImageSets')
-refresh_dir('rcnn/VOCdevkitfish/VOC2007/ImageSets/Main')
-refresh_dir('rcnn/VOCdevkitfish/VOC2007/JPEGImages')
+refresh_dir('rcnn/FISH/Annotations')
+refresh_dir('rcnn/FISH/ImageSets')
+refresh_dir('rcnn/FISH/ImageSets/Main')
+refresh_dir('rcnn/FISH/JPEGImages')
 
 
 # Start annotating the images with fish
 crop_classes=FISH_CLASSES[:]
 crop_classes.remove('NoF')
 crop_classes
-
-imgxmls = []
 
 for c in crop_classes:
     j = json.load(open(os.path.join(anno_path, 'annos/{}.json'.format(c)), 'r'))
@@ -57,8 +54,7 @@ for c in crop_classes:
             print(filename)
             print("no bbox")
         else:
-            imgxmls.append(basename)
-            f = open(os.path.join(anno_path, 'rcnn/VOCdevkitfish/VOC2007/Annotations/' + basename + '.xml'),'w') 
+            f = open(os.path.join(anno_path, 'rcnn/FISH/Annotations/' + basename + '.xml'),'w') 
             line = "<annotation>" + '\n'
             f.write(line)
             line = '\t<folder>' + 'FISH' + '</folder>' + '\n'
@@ -104,25 +100,42 @@ for fish in crop_classes:
     imgs_fish = [os.path.splitext(im)[0] for im in os.listdir(fish_dir)]
     imgs.extend(imgs_fish)
 index = np.random.permutation(len(imgs))
-imgs = [imgs[i] for i in index if imgs[i] in imgxmls]
-with open(os.path.join(anno_path, 'rcnn/VOCdevkitfish/VOC2007/ImageSets/Main', 'trainval.txt'),'w') as f:
+imgs = [imgs[i] for i in index]
+num_train = math.ceil(len(imgs)*0.7)
+with open(os.path.join(anno_path, 'rcnn/FISH/ImageSets/Main', 'train.txt'),'w') as f:
+    train = sorted(imgs[:int(num_train)])
+    for im in train:
+        f.write(im + '\n')
+with open(os.path.join(anno_path, 'rcnn/FISH/ImageSets/Main', 'val.txt'),'w') as f:
+    val = sorted(imgs[int(num_train):])
+    for im in val:
+        f.write(im + '\n')
+with open(os.path.join(anno_path, 'rcnn/FISH/ImageSets/Main', 'trainval.txt'),'w') as f:
     trainval = sorted(imgs)
     for im in trainval:
         f.write(im + '\n')
 #del img_00568 and img_07439
 imgs_fish = []
-for fish in crop_classes:
+for fish in FISH_CLASSES:
     fish_dir = TRAIN_DIR+'{}'.format(fish)
     imgs_fish += [os.path.splitext(im)[0] for im in os.listdir(fish_dir)]
-trainval_fish = [im + '  1' for im in trainval if im in imgxmls]#[im+'  1' if im in imgs_fish else im+' -1' for im in trainval]
-with open(os.path.join(anno_path, 'rcnn/VOCdevkitfish/VOC2007/ImageSets/Main', 'fish_trainval.txt'),'w') as f:
+train_fish = [im+'  1' if im in imgs_fish else im+' -1' for im in train]
+val_fish = [im+'  1' if im in imgs_fish else im+' -1' for im in val]
+trainval_fish = [im+'  1' if im in imgs_fish else im+' -1' for im in trainval]
+with open(os.path.join(anno_path, 'rcnn/FISH/ImageSets/Main', 'FISH_train.txt'),'w') as f:
+    for im in train_fish:
+        f.write(im + '\n')
+with open(os.path.join(anno_path, 'rcnn/FISH/ImageSets/Main', 'FISH_val.txt'),'w') as f:
+    for im in val_fish:
+        f.write(im + '\n')
+with open(os.path.join(anno_path, 'rcnn/FISH/ImageSets/Main', 'FISH_trainval.txt'),'w') as f:
     for im in trainval_fish:
         f.write(im + '\n')
             
 # Write the same for the test set
 fish_dir = TEST_DIR
 imgs_test = [os.path.splitext(im)[0] for im in os.listdir(fish_dir)]
-with open(os.path.join(anno_path, 'rcnn/VOCdevkitfish/VOC2007/ImageSets/Main', 'test.txt'),'w') as f:
+with open(os.path.join(anno_path, 'rcnn/FISH/ImageSets/Main', 'test.txt'),'w') as f:
     for im in sorted(imgs_test):
         f.write(im + '\n')
         
@@ -132,12 +145,12 @@ for fish in FISH_CLASSES:
     imgs = os.listdir(fish_dir)
     for img_ in imgs:
         copy2(os.path.join(fish_dir, img_), 
-              os.path.join(anno_path, 'rcnn/VOCdevkitfish/VOC2007/JPEGImages', img_))
+              os.path.join(anno_path, 'rcnn/FISH/JPEGImages', img_))
 fish_dir = TEST_DIR
 imgs = os.listdir(TEST_DIR)
 for img_ in imgs:
     copy2(os.path.join(fish_dir, img_), 
-          os.path.join(anno_path, 'rcnn/VOCdevkitfish/VOC2007/JPEGImages', img_))      
+          os.path.join(anno_path, 'rcnn/FISH/JPEGImages', img_))      
 
 # Zip the folder for rcnn to move to RCNN server/folder
 make_archive(
