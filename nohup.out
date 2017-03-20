@@ -2950,3 +2950,52 @@ Error allocating 1971453952 bytes of device memory (out of memory). Driver repor
 [I 13:10:04.663 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
 [I 13:10:17.257 NotebookApp] Saving file at /resnet/resnet_03.ipynb
 [I 13:11:19.266 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 18:53:47.752 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 18:54:16.847 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 18:56:16.901 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 18:58:16.908 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 18:59:43.322 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:02:16.884 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:03:34.217 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:04:26.334 NotebookApp] Kernel interrupted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 19:05:03.221 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:06:16.849 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+Error allocating 37748736 bytes of device memory (out of memory). Driver report 22544384 bytes free and 11995578368 bytes total 
+[I 19:14:17.445 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:16:16.878 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:17:51.424 NotebookApp] Kernel restarted: 5d9d0c7d-dc85-4996-a519-87eef06ac330
+[I 19:18:17.442 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:20:16.908 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:22:16.833 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:22:33.163 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 19:22:44.430 NotebookApp] Saving file at /resnet/resnet_03.ipynb
+[I 21:27:48.179 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 21:27:48.284 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 21:27:51.488 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 21:27:52.162 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 21:27:52.162 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 21:27:52.166 NotebookApp] [nb_conda] enabled
+[I 21:27:53.581 NotebookApp] [nb_anacondacloud] enabled
+[I 21:27:53.583 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 21:27:53.583 NotebookApp] 0 active kernels 
+[I 21:27:53.583 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 21:27:53.584 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:28:11.052 NotebookApp] 302 GET / (176.61.36.2) 0.64ms
+[I 21:28:11.072 NotebookApp] 302 GET /tree (176.61.36.2) 0.75ms
+[I 21:28:15.340 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.85ms
+[I 21:28:29.917 NotebookApp] Kernel started: 4f2d1d2c-9522-4f02-b714-cbc44ec5b367
+[I 21:29:40.473 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 21:30:22.413 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 21:32:15.365 NotebookApp] Kernel restarted: 4f2d1d2c-9522-4f02-b714-cbc44ec5b367
+[I 21:32:20.320 NotebookApp] Kernel restarted: 4f2d1d2c-9522-4f02-b714-cbc44ec5b367
+[I 21:32:30.100 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 21:36:30.598 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 21:38:30.259 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 23:08:07.911 NotebookApp] Kernel started: fd4a8cdd-c933-4c63-8c37-6ed3ccdde53a
+[I 00:58:33.332 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 04:04:33.176 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 06:32:33.031 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 06:34:33.301 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 06:36:33.355 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 07:18:33.300 NotebookApp] Saving file at /resnet/resnet_04.ipynb
+[I 08:01:49.160 NotebookApp] 302 GET /notebooks/sub/subm_full_resnet_cut0.7_20170320.csv (176.61.36.2) 0.92ms
