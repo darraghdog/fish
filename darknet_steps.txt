@@ -66,9 +66,22 @@ Train:
 
 To predict :
 Change cudnn to 0 and remake
-./darknet detector valid cfg/voc.FISH.data cfg/yolo-voc.cfg backup/yolo-voc_13000.weights 
+#./darknet detector valid cfg/voc.FISH.data cfg/yolo-voc.cfg backup/yolo-voc_13000.weights 
 ./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg backupFISH/yolo-voc-FISH_11000.weights
 And then check under results folder
 then try 
 	grep "img_07050" *
 # ./darknet detector test cfg/voc.FISH.data cfg/yolo-voc.cfg backup/yolo-voc_3000.weights tmp/tmp1.jpg -thresh 0.1
+
+
+To validate (see also https://github.com/AlexeyAB/darknet#when-should-i-stop-training) :
+cp train.txt data/voc.2007.test
+ ./darknet detector recall cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg backupFISH/yolo-voc-FISH_11000.weights
+# 3311  4282  4371	RPs/Img: 30.50	IOU: 81.20%	Recall:97.96% (11k)
+# 3311  4264  4371	RPs/Img: 33.05	IOU: 80.60%	Recall:97.55% (8k)
+# 3311  4249  4371	RPs/Img: 53.66	IOU: 79.15%	Recall:97.21% (5k)
+
+
+
+
+
