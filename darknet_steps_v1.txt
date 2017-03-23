@@ -86,7 +86,8 @@ cp train.txt data/voc.2007.test
 # Set up testing data labels @ 544 
 # =================================
 
-# Change files:
+
+Change files:
 cp cfg/yolo-voc-FISH.cfg cfg/yolo-voc-FISH544.cfg
 mkdir backupFISH544
 vim cfg/yolo-voc-FISH544.cfg  # change height and width
@@ -95,12 +96,12 @@ vim cfg/yolo-voc-FISH544.cfg  # change height and width
 # Train:
 # ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg darknet19_448.conv.23 
 
-nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg darknet19_448.conv.23 > nohup544.out 2>&1&
+nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH544.cfg darknet19_448.conv.23 > nohup544.out 2>&1&
 
 
 # To predict :
 # Change cudnn to 0 and remake
-./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg backupFISH544/yolo-voc-FISH_11000.weights
+./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH544.cfg backupFISH/yolo-voc-FISH544_9000.weights
 
 
 

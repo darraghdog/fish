@@ -3195,3 +3195,119 @@ Error allocating 37748736 bytes of device memory (out of memory). Driver report 
 [I 08:34:04.658 NotebookApp] Saving file at /resnet/old/resnet_06-Squarebox-Improves.ipynb
 =======
 >>>>>>> 8c9e6c971c9408e6e0d6cf12bfdbd644aefa16f6
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/site.py", line 552, in <module>
+    main()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site.py", line 531, in main
+    known_paths = addsitepackages(known_paths)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site.py", line 313, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site.py", line 190, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site.py", line 147, in addpackage
+    for n, line in enumerate(f):
+KeyboardInterrupt
+[I 20:16:23.114 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 20:16:23.118 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 20:16:25.903 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 20:16:26.418 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 20:16:26.418 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 20:16:26.421 NotebookApp] [nb_conda] enabled
+[I 20:16:28.585 NotebookApp] [nb_anacondacloud] enabled
+[I 20:16:28.588 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 20:16:28.588 NotebookApp] 0 active kernels 
+[I 20:16:28.588 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 20:16:28.588 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 20:16:28.715 NotebookApp] Malformed HTTP message from 176.61.36.2: Malformed HTTP headers: ''
+[I 20:17:08.299 NotebookApp] Malformed HTTP message from 176.61.36.2: Malformed HTTP request line
+[I 20:17:08.349 NotebookApp] Malformed HTTP message from 176.61.36.2: Malformed HTTP headers: ''
+[I 20:17:42.576 NotebookApp] 302 GET / (176.61.36.2) 0.60ms
+[I 20:17:42.597 NotebookApp] 302 GET /tree (176.61.36.2) 0.68ms
+[W 20:17:45.560 NotebookApp] 401 POST /login?next=%2Ftree (176.61.36.2) 1.22ms referer=http://ec2-34-251-0-174.eu-west-1.compute.amazonaws.com:8888/login?next=%2Ftree
+[W 20:17:48.608 NotebookApp] 401 POST /login?next=%2Ftree (176.61.36.2) 1.20ms referer=http://ec2-34-251-0-174.eu-west-1.compute.amazonaws.com:8888/login?next=%2Ftree
+[W 20:18:06.005 NotebookApp] 401 POST /login?next=%2Ftree (176.61.36.2) 1.19ms referer=http://ec2-34-251-0-174.eu-west-1.compute.amazonaws.com:8888/login?next=%2Ftree
+[W 20:18:08.217 NotebookApp] 401 POST /login?next=%2Ftree (176.61.36.2) 1.19ms referer=http://ec2-34-251-0-174.eu-west-1.compute.amazonaws.com:8888/login?next=%2Ftree
+[W 20:18:12.794 NotebookApp] 401 POST /login?next=%2Ftree (176.61.36.2) 1.23ms referer=http://ec2-34-251-0-174.eu-west-1.compute.amazonaws.com:8888/login?next=%2Ftree
+[I 20:18:18.705 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.82ms
+[I 20:18:34.649 NotebookApp] Kernel started: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 20:20:34.617 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:20:44.239 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 20:22:34.590 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:24:34.588 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:26:34.594 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:28:34.590 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:30:34.577 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:31:22.763 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 20:32:29.496 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:33:37.516 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 20:34:35.508 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:46:34.593 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:48:34.585 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:50:34.576 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:52:34.568 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:54:34.582 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 20:58:35.269 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:03:21.105 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[W 21:03:21.108 NotebookApp] zmq message arrived on closed channel
+[I 21:04:34.580 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:06:34.566 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:07:33.680 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[W 21:07:33.684 NotebookApp] zmq message arrived on closed channel
+[I 21:08:35.282 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:12:34.562 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:14:34.565 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:20:34.600 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:22:34.570 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:24:17.943 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 21:24:19.818 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:24:35.278 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:28:20.090 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 21:28:35.263 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:30:34.583 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:33:29.635 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:34:34.547 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:36:34.545 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:38:35.283 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:39:44.700 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:40:34.534 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:42:34.531 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:44:34.713 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:44:57.905 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:45:35.979 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 21:46:34.642 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:48:34.643 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:50:09.536 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:50:34.526 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:50:45.089 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 21:52:34.519 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:54:07.094 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:54:13.490 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[W 21:54:13.493 NotebookApp] zmq message arrived on closed channel
+[I 21:54:34.512 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:56:32.818 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 21:56:34.532 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:58:34.531 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 21:59:22.416 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 21:59:27.809 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:00:34.527 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:04:34.507 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:06:34.512 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:08:34.509 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:10:34.547 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:12:34.511 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:14:05.297 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:14:29.034 NotebookApp] Kernel restarted: ba54ddd4-0562-4173-b848-0e3efb97f9a6
+[I 22:14:34.484 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:14:44.726 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:16:18.632 NotebookApp] Kernel started: 756105a9-975e-4a1b-a16b-525ea7995c86
+[I 22:16:19.692 NotebookApp] Copying resnet/resnet_07-Squarebox.ipynb to /resnet
+[I 22:16:21.699 NotebookApp] Kernel started: 5a1333f4-117b-4cf2-ba80-2e38423da259
+[I 22:16:35.206 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:17:03.780 NotebookApp] Saving file at /resnet/resnet_07-yolo544-flip.ipynb
+[I 22:17:26.898 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:17:35.077 NotebookApp] Saving file at /resnet/resnet_07-yolo544-flip.ipynb
+[I 22:19:06.202 NotebookApp] Saving file at /resnet/resnet_07-yolo544-flip.ipynb
+[I 22:20:22.091 NotebookApp] Saving file at /resnet/resnet_07-yolo544-flip.ipynb
+[I 22:21:03.123 NotebookApp] Saving file at /resnet/resnet_07-yolo544-flip.ipynb
+[I 22:21:16.231 NotebookApp] Saving file at /feat/CheckDarknet2103.ipynb
+[I 22:22:22.580 NotebookApp] Saving file at /resnet/resnet_07-yolo544-flip.ipynb
