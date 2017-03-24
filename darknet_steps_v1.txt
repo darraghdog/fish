@@ -87,6 +87,7 @@ cp train.txt data/voc.2007.test
 # =================================
 
 
+
 Change files:
 cp cfg/yolo-voc-FISH.cfg cfg/yolo-voc-FISH544.cfg
 mkdir backupFISH544
@@ -125,3 +126,27 @@ nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH640.cfg darkn
 # To predict :
 # Change cudnn to 0 and remake
 ./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH640.cfg backupFISH640/yolo-voc-FISH_11000.weights
+
+
+
+# 640 x 1152 Images
+
+# Set up testing data labels @ 640 x 1152
+# =======================================
+
+# Change files:
+cp cfg/yolo-voc-FISH.cfg cfg/yolo-voc-FISH6401152.cfg
+mkdir backupFISH6401152
+vim cfg/yolo-voc-FISH6401152.cfg  # change height and width and subdivisions to 16 and random to 1
+
+# Change cudnn to 1 and remake
+# Train:
+# ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg darknet19_448.conv.23
+
+nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH6401152.cfg darknet19_448.conv.23 > nohup6401152.out 2>&1&
+
+
+# To predict :
+# Change cudnn to 0 and remake
+./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH6401152.cfg backupFISH640/yolo-voc-FISH_11000.weights
+
