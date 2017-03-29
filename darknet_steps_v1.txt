@@ -125,8 +125,7 @@ nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH640.cfg darkn
 
 # To predict :
 # Change cudnn to 0 and remake
-./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH640.cfg backupFISH640/yolo-voc-FISH_11000.weights
-
+./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH640.cfg backupFISH/yolo-voc-FISH640_11000.weights
 
 
 # 640 x 1152 Images
@@ -148,5 +147,4 @@ nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH6401152.cfg d
 
 # To predict :
 # Change cudnn to 0 and remake
-./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH6401152.cfg backupFISH640/yolo-voc-FISH_11000.weights
-
+./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH640.cfg backupFISH/yolo-voc-FISH6401152_11000.weights
