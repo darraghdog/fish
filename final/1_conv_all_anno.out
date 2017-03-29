@@ -17,3 +17,62 @@ Found 1000 images belonging to 1 classes.
 [2017-03-29 18:27:31.567157] INFO: Logbook: Read in data
 [2017-03-29 18:27:44.187441] INFO: Logbook: Create and fit CNN
 [2017-03-29 18:27:44.354555] INFO: Logbook: Bagging Round 0
+[2017-03-29 18:32:31.366882] INFO: Logbook: Bagged Validation Logloss 0.007
+[2017-03-29 18:32:31.367040] INFO: Logbook: Bagged Validation Accuracy 0.999
+[2017-03-29 18:33:09.883127] INFO: Logbook: Bagged Validation Logloss 0.010
+[2017-03-29 18:33:09.883287] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:33:48.417972] INFO: Logbook: Bagged Validation Logloss 0.009
+[2017-03-29 18:33:48.418131] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:34:26.971472] INFO: Logbook: Bagged Validation Logloss 0.010
+[2017-03-29 18:34:26.971627] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:35:05.526392] INFO: Logbook: Bagged Validation Logloss 0.008
+[2017-03-29 18:35:05.526549] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:35:44.144079] INFO: Logbook: Bagged Validation Logloss 0.008
+[2017-03-29 18:35:44.144237] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:36:22.924406] INFO: Logbook: Bagged Validation Logloss 0.009
+[2017-03-29 18:36:22.924561] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:37:01.809395] INFO: Logbook: Bagged Validation Logloss 0.011
+[2017-03-29 18:37:01.809556] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:37:01.809625] INFO: Logbook: Bagging Round 1
+[2017-03-29 18:41:49.364183] INFO: Logbook: Bagged Validation Logloss 0.016
+[2017-03-29 18:41:49.364347] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:42:27.891229] INFO: Logbook: Bagged Validation Logloss 0.017
+[2017-03-29 18:42:27.891387] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:43:06.449655] INFO: Logbook: Bagged Validation Logloss 0.016
+[2017-03-29 18:43:06.449815] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:43:44.970923] INFO: Logbook: Bagged Validation Logloss 0.017
+[2017-03-29 18:43:44.971086] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:44:23.498661] INFO: Logbook: Bagged Validation Logloss 0.017
+[2017-03-29 18:44:23.498816] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:45:02.034392] INFO: Logbook: Bagged Validation Logloss 0.020
+[2017-03-29 18:45:02.034557] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:45:40.544646] INFO: Logbook: Bagged Validation Logloss 0.019
+[2017-03-29 18:45:40.544834] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:46:19.067853] INFO: Logbook: Bagged Validation Logloss 0.018
+[2017-03-29 18:46:19.068021] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:46:19.068089] INFO: Logbook: Bagging Round 2
+[2017-03-29 18:51:06.510017] INFO: Logbook: Bagged Validation Logloss 0.018
+[2017-03-29 18:51:06.510180] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:51:45.286840] INFO: Logbook: Bagged Validation Logloss 0.027
+[2017-03-29 18:51:45.286997] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:52:23.991181] INFO: Logbook: Bagged Validation Logloss 0.027
+[2017-03-29 18:52:23.991338] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:53:02.558064] INFO: Logbook: Bagged Validation Logloss 0.026
+[2017-03-29 18:53:02.558227] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:53:41.090098] INFO: Logbook: Bagged Validation Logloss 0.025
+[2017-03-29 18:53:41.090254] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:54:19.810335] INFO: Logbook: Bagged Validation Logloss 0.024
+[2017-03-29 18:54:19.810494] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:54:58.571859] INFO: Logbook: Bagged Validation Logloss 0.024
+[2017-03-29 18:54:58.572021] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:55:37.379152] INFO: Logbook: Bagged Validation Logloss 0.023
+[2017-03-29 18:55:37.379314] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 18:55:37.379384] INFO: Logbook: Bagging Round 3
+[2017-03-29 19:00:24.157317] INFO: Logbook: Bagged Validation Logloss 0.022
+[2017-03-29 19:00:24.157479] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 19:01:02.682603] INFO: Logbook: Bagged Validation Logloss 0.026
+[2017-03-29 19:01:02.682778] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 19:01:41.204644] INFO: Logbook: Bagged Validation Logloss 0.026
+[2017-03-29 19:01:41.204820] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 19:02:19.708522] INFO: Logbook: Bagged Validation Logloss 0.025
+[2017-03-29 19:02:19.708680] INFO: Logbook: Bagged Validation Accuracy 1.000
