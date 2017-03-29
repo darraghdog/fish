@@ -153,3 +153,11 @@ Found 1000 images belonging to 1 classes.
 [2017-03-29 19:42:01.869823] INFO: Logbook: Bagged Validation Logloss 0.024
 [2017-03-29 19:42:01.869981] INFO: Logbook: Bagged Validation Accuracy 1.000
 [2017-03-29 19:42:01.870051] INFO: Logbook: Bagging Round 8
+[2017-03-29 19:46:49.109700] INFO: Logbook: Bagged Validation Logloss 0.024
+[2017-03-29 19:46:49.109863] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 19:47:27.651207] INFO: Logbook: Bagged Validation Logloss 0.025
+[2017-03-29 19:47:27.651369] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 19:48:06.412455] INFO: Logbook: Bagged Validation Logloss 0.024
+[2017-03-29 19:48:06.412615] INFO: Logbook: Bagged Validation Accuracy 1.000
+[2017-03-29 19:48:45.280571] INFO: Logbook: Bagged Validation Logloss 0.024
+[2017-03-29 19:48:45.280733] INFO: Logbook: Bagged Validation Accuracy 1.000
