@@ -8,7 +8,6 @@ sub/*
 courses/*
 resnet/checkpoints/*
 resnet/logs/*
-yolo_coords/*
 darknet/backup*
 darknet/darknet*
 darknet/data
