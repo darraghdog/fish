@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[1]:
-
 # Read in Libraries
 from __future__ import division, print_function
 from logbook import Logger, StreamHandler
@@ -20,7 +15,6 @@ import gc
 from theano.sandbox import cuda
 from vgg16bn import Vgg16BN
 from sklearn import metrics
-get_ipython().magic(u'matplotlib inline')
 
 def accuracyfunc(y_act, y_pred):
     return metrics.accuracy_score(np.argmax(y_act, axis=1), np.argmax(y_pred, axis=1))
@@ -34,33 +28,20 @@ def refresh_directory_structure(name, sub_dirs):
         os.makedirs(os.path.join(gdir, sub_dir))
 
 
-# In[2]:
-
 # Set Parameters and check files
-refresh_directories = False
-input_exists = True
-full = True
+refresh_directories = True  # False
+input_exists =        False # True
+full =                True
 log.info('Set Paramters')
-path = "../data/fish/"
-batch_size=32
-clip = 0.99
-bags = 1
-load_size = (380, 680)# (360, 640) 
-
-
-# In[3]:
+path =                "../data/fish/"
+batch_size=           32
+clip =                0.99
+bags =                50  
+load_size =           (380, 680) # (360, 640) 
 
 relabels = pd.read_csv("../data/fish/relabel/relabels.csv", sep = " ", header = None, names = ["fname", "dir_from", "dir_to"])
-relabels.head(3)
-
-
-# In[4]:
-
 subdir2 = relabels[relabels.fname == 'img_00739.jpg'.split('.')[0]].values.tolist()[0][2]
 subdir2 == 'revise'
-
-
-# In[5]:
 
 # Create the test and valid directory
 if refresh_directories:
@@ -85,10 +66,6 @@ if refresh_directories:
             #print(os.path.join(path, value, subdir2, row['file_name']))
         shutil.copyfile(name_from, name_to)
         
-
-
-# In[6]:
-
 # Read in our VGG pretrained model
 log.info('Get VGG')
 model = vgg_ft_bn(8)
@@ -110,15 +87,6 @@ raw_filenames = [f.split('/')[-1] for f in filenames]
 raw_test_filenames = [f.split('/')[-1] for f in test_filenames]
 raw_val_filenames = [f.split('/')[-1] for f in val_filenames]
 
-
-# In[ ]:
-
-
-
-
-# In[7]:
-
-
 folder_anno_in = 'darknet/FISH/annos'
 # Read in the boxes
 anno_classes = ['ALB', 'BET', 'DOL', 'LAG', 'OTHER', 'SHARK', 'YFT']
@@ -132,9 +100,6 @@ for c in anno_classes:
 
 bb_json = {k: tmpdict[k] for k in raw_filenames + raw_val_filenames if k in tmpdict}
 
-
-# In[8]:
-
 # make it easy to find the nof dots, by putting themin the middle
 #empty_bbox = {'height': 0., 'width': 0., 'x': 1280/2., 'y': 720/2}
 empty_bbox = {'height': 0., 'width': 0., 'x': 0., 'y': 0.}
@@ -143,9 +108,6 @@ for f in raw_filenames:
     if not f in bb_json.keys(): bb_json[f] = empty_bbox
 for f in raw_val_filenames:
     if not f in bb_json.keys(): bb_json[f] = empty_bbox
-
-
-# In[9]:
 
 bb_params = ['height', 'width', 'x', 'y']
 def convert_bb(bb, size):
@@ -157,9 +119,6 @@ def convert_bb(bb, size):
     bb[2] = max(bb[2]*conv_x, 0)
     bb[3] = max(bb[3]*conv_y, 0)
     return bb
-
-
-# In[10]:
 
 trn_sizes = [PIL.Image.open(path+'relabel/train/'+f).size for f in filenames]
 val_sizes = [PIL.Image.open(path+'relabel/valid/'+f).size for f in val_filenames]
@@ -186,8 +145,8 @@ def show_bb(i):
     plot(val[i])
     plt.gca().add_patch(create_rect(bb))
 
-val = get_data(path+'relabel/valid', load_size)
-show_bb(500)
+#val = get_data(path+'relabel/valid', load_size)
+#show_bb(500)
 #del val
 #gc.collect()
 
@@ -199,7 +158,7 @@ if not input_exists:
     log.info('Validation - Fetch images; Get VGG output; Write VGG output')    
     val = get_data(path+'relabel/valid', load_size)
     conv_val_feat = vgg640.predict(val, batch_size=16, verbose=1)
-    save_array(path+'results/conv_val_relabel_feat.dat', conv_val_feat)
+    save_array(path+'results/2_conv_val_relabel_feat.dat', conv_val_feat)
     del val, conv_val_feat
     gc.collect()
     
@@ -208,14 +167,14 @@ if not input_exists:
     conv_trn_feat = vgg640.predict(trn, batch_size=16, verbose=1)    
     del trn
     gc.collect()
-    save_array(path+'results/conv_trn_relabel_feat.dat', conv_trn_feat) 
+    save_array(path+'results/2_conv_trn_relabel_feat.dat', conv_trn_feat) 
     del conv_trn_feat
     gc.collect()
     
     log.info('Test - Fetch images; Get VGG output; Write VGG output')
     test = get_data(path+'relabel/test', load_size)
     conv_test_feat = vgg640.predict(test, batch_size=16, verbose=1)
-    save_array(path+'results/conv_test_relabel_feat.dat', conv_test_feat)     
+    save_array(path+'results/2_conv_test_relabel_feat.dat', conv_test_feat)     
     del test, conv_test_feat
     gc.collect()
 
@@ -223,15 +182,9 @@ if not input_exists:
 # In[14]:
 
 gc.collect()
-conv_val_feat = load_array(path+'results/conv_val_relabel_feat.dat')
-conv_trn_feat = load_array(path+'results/conv_trn_relabel_feat.dat') 
-conv_test_feat = load_array(path+'results/conv_test_relabel_feat.dat')
-
-
-# In[15]:
-
-conv_trn_feat.shape
-
+conv_val_feat = load_array(path+'results/2_conv_val_relabel_feat.dat')
+conv_trn_feat = load_array(path+'results/2_conv_trn_relabel_feat.dat') 
+conv_test_feat = load_array(path+'results/2_conv_test_relabel_feat.dat')
 
 # In[16]:
 
@@ -260,11 +213,6 @@ def create_model():
     x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
     x =   Dropout(p)(x)
     x = BatchNormalization(axis=1)(x)
-    #x = MaxPooling2D()(x)
-    #x = ZeroPadding2D((1,1))(x)
-    #x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
-    #x =   Dropout(p)(x)
-    #x = BatchNormalization(axis=1)(x)
     x = MaxPooling2D()(x)
     x = ZeroPadding2D((1,1))(x)
     x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
@@ -286,50 +234,41 @@ def create_model():
     x_class = Dense(8, activation='softmax', name='class')(x1)
     return inp, x_bb, x_class
 
-## Set up the fully convolutional net (FCN); 
-#conv_layers,_ = split_at(vgg640, Convolution2D)
-#nf=128; p=0. # No dropout
 
 model = []
 predsls = []
 pvalsls = []
 
-for ii in range(50):
+for ii in range(bags):
+    log.info('Bagging Round ' + str(ii))
     inp, x_bb, x_class = create_model()
-    model.append(Model([inp], [x_bb, x_class]))
+    model = Model([inp], [x_bb, x_class])
     #model.summary()
-    model[ii].compile(Adam(lr=1e-3), loss=['mse', 'categorical_crossentropy'], metrics=['accuracy'],
+    model.compile(Adam(lr=1e-3), loss=['mse', 'categorical_crossentropy'], metrics=['accuracy'],
                  loss_weights=[.001, 1.])
-    model[ii].fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=3, 
-                 validation_data=(conv_val_feat, [val_bbox, val_labels]))
-    model[ii].optimizer.lr = 1e-4
-    model[ii].optimizer.loss_weights=[.00001, 1.]
-    model[ii].fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=2, 
-                 validation_data=(conv_val_feat, [val_bbox, val_labels]))
-    model[ii].optimizer.lr = 1e-5
+    model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=3, 
+                 validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose = 0)
+    model.optimizer.lr = 1e-4
+    model.optimizer.loss_weights=[.00001, 1.]
+    model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=2, 
+                 validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose = 0)
+    model.optimizer.lr = 1e-5
 
     count = 0
     while count < 8:
-        model[ii].fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=1, 
-                     validation_data=(conv_val_feat, [val_bbox, val_labels]))
-        predsls.append(model[ii].predict(conv_test_feat, batch_size=batch_size)[1]) # or try 32 batch_size
-        pvalsls.append(model[ii].predict(conv_val_feat, batch_size=batch_size)[1])
+        model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=1, 
+                     validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose = 0)
+        predsls.append(model.predict(conv_test_feat, batch_size=batch_size)[1]) # or try 32 batch_size
+        pvalsls.append(model.predict(conv_val_feat, batch_size=batch_size)[1])
         val_score = "%.3f" % metrics.log_loss(val_labels, sum(pvalsls)/len(pvalsls))
         acc_score = "%.3f" % accuracyfunc(val_labels, do_clip(sum(pvalsls)/len(pvalsls), clip))
         log.info('Bagged Validation Logloss ' + str(val_score))
         log.info('Bagged Validation Accuracy ' + str(acc_score))
         count += 1
 
-
 # In[ ]:
-
-trn_labels.shape #, [trn_bbox, trn_labels]
-
-
-# In[ ]:
-
-val = get_data(path+'relabel/valid', load_size)
-pval_bbox = model[0].predict(conv_val_feat, batch_size=batch_size)[0]
+#val = get_data(path+'relabel/valid', load_size)
+#pval_bbox = model[0].predict(conv_val_feat, batch_size=batch_size)[0]
 
 
 # In[ ]:
@@ -344,7 +283,7 @@ def show_bb(i):
     plt.gca().add_patch(create_rect(bb, color='red'))
     plt.gca().add_patch(create_rect(pbb, color='yellow'))
 
-show_bb(352)
+#show_bb(352)
 
 
 # In[20]:
@@ -354,18 +293,13 @@ preds = sum(predsls)/len(predsls)
 subm = do_clip(preds, clip)
 
 if full:
-    subm_name = path+'results/subm_full_conv_' + timestr + 'A.csv' #'.csv.gz'
+    subm_name = path+'sub/subm_full_conv_relabel_2.csv' #'.csv.gz'
 else:
-    subm_name = path+'results/subm_part_conv_' + timestr + 'A.csv' #'.csv.gz'
+    subm_name = path+'sub/subm_part_conv_relabel_2.csv' #'.csv.gz'
 
 classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
 submission = pd.DataFrame(subm, columns=classes)
 submission.insert(0, 'image', raw_test_filenames)
 submission.to_csv(subm_name, index=False)#, compression='gzip')
 log.info('Done - files @ ' + subm_name)
-
-
-# In[21]:
-
-FileLink(subm_name)
 
