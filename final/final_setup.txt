@@ -11,6 +11,13 @@
 	cd darknet
 	make
 9) Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
+10) Mkdir final/checkpoints/checkpoint03A, final/checkpoints/checkpoint03C, final/checkpoints/checkpoint03C
+
+**** Update this part later
+10) Copy the yolo test bounding boxes to ../yolo_coords/
+****
+
+
 
 ###########################################################
 
@@ -28,7 +35,6 @@ jupyter nbconvert --to=python  1_conv_all_anno.ipynb
 # -> Turn off the show image in chunk 16
 # -> Comment out the File Link
 # -> Remove line "get_ipython().magic(u'matplotlib inline')"
-
 nohup python 1_conv_all_anno.py &> 1_conv_all_anno.out&
 
 # Script 2
@@ -44,7 +50,15 @@ jupyter nbconvert --to=python  2_conv_all_relabel.ipynb
 # -> Turn off the show image in chunk 16
 # -> comment out the File Link
 # -> Remove line "get_ipython().magic(u'matplotlib inline')"
-
 nohup python 2_conv_all_relabel.py &> 2_conv_all_relabel.out&
 
+# Script 3
+cp ../resnet/resnet_02-full.ipynb 3A_resnet_crop_partial.ipynb
+jupyter nbconvert --to=python  3A_resnet_crop_partial.ipynb
+nohup python 3A_resnet_crop_partial.py &> 3A_resnet_crop_partial.out&
 
+cp 3A_resnet_crop_partial.py 3B_resnet_crop_partial.py
+cp 3A_resnet_crop_partial.py 3C_resnet_crop_partial.py
+On each of the new files change the checkpoint directory and the outputted file accordingly
+nohup python 3B_resnet_crop_partial.py &> 3B_resnet_crop_partial.out&
+nohup python 3C_resnet_crop_partial.py &> 3C_resnet_crop_partial.out&

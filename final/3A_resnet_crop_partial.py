@@ -37,8 +37,8 @@ K.set_image_dim_ordering('tf')
 
 TRAIN_DIR = '../data/fish/train-all/'
 TEST_DIR =  '../data/fish/test/' 
-CHECKPOINT_DIR = './checkpoints/checkpoint03/'
-LOG_DIR = './logs/log03/'
+CHECKPOINT_DIR = './checkpoints/checkpoint03A/'
+LOG_DIR = './logs'
 FISH_CLASSES = ['NoF', 'ALB', 'BET', 'DOL', 'LAG', 'OTHER', 'SHARK', 'YFT']
 CONF_THRESH = 0.8
 ROWS = 224
@@ -342,7 +342,7 @@ GTbbox_df[:2]
 # Load up YOLO bounding boxes for each class
 import glob
 all_files = glob.glob(os.path.join('../yolo_coords', "*.txt"))
-allFiles = [f for f in all_files if 'FISH' in f]
+allFiles = [f for f in all_files if 'test_FISH.txt' in f] # comp4_det_test_FISH.txt
 frame = pd.DataFrame()
 list_ = []
 for file_ in allFiles:
@@ -399,23 +399,6 @@ GTbbox_test_df[:2]
 
 
 # In[85]:
-
-#image_file, proba, x0, y0, x1, y1, fish_class = yolo_frame.iloc[0].values.tolist()    
-#image = Image.open(TEST_DIR+c+'/'+image_file+'.jpg')
-#image
-aug_imgs, cropped = generator_test(train_datagen, df=GTbbox_test_df, DIR = '../data/fish/')
-# Augmented data
-plt.imshow(cropped)
-
-
-# In[86]:
-
-# Augmented data
-plots(aug_imgs, (20,7), 2)
-
-
-# In[87]:
-
 #del model
 gc.collect()
 
@@ -510,13 +493,12 @@ yolo_pred_df.drop('crop_index', axis=1, inplace=True)
 
 timestr = time.strftime("%Y%m%d")
 if full:
-    subm_name = '../sub/subm_full_resnet_cut0.7_' + timestr + '.csv' #'.csv.gz'
+    subm_name = '../sub/subm_full_conv_resnet_3A.csv'
 else:
-    subm_name = '../sub/subm_part_resnet_cut0.7_' + timestr + '.csv' #'.csv.gz'
+    subm_name = '../sub/subm_part_conv_resnet_3A.csv'
 
 
 # In[122]:
 
 yolo_pred_df.to_csv(subm_name, index=False)#, compression='gzip')
-FileLink(subm_name)
 

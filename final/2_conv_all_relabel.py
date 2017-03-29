@@ -293,9 +293,9 @@ preds = sum(predsls)/len(predsls)
 subm = do_clip(preds, clip)
 
 if full:
-    subm_name = path+'sub/subm_full_conv_relabel_2.csv' #'.csv.gz'
+    subm_name = '../sub/subm_full_conv_relabel_2.csv' #'.csv.gz'
 else:
-    subm_name = path+'sub/subm_part_conv_relabel_2.csv' #'.csv.gz'
+    subm_name = '../sub/subm_part_conv_relabel_2.csv' #'.csv.gz'
 
 classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
 submission = pd.DataFrame(subm, columns=classes)

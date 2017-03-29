@@ -43,7 +43,7 @@ log.info('Set Paramters')
 path =       "../data/fish/"
 batch_size=  32
 clip =       0.99
-bags =       20           # 20
+bags =       40           # 20
 load_size =  (440, 780)  # (360, 640)
 
 
@@ -298,9 +298,9 @@ preds = sum(predsls)/len(predsls)
 subm = do_clip(preds, clip)
 
 if full:
-    subm_name = path+'sub/subm_full_conv_anno_1.csv' #'.csv.gz'
+    subm_name = '../sub/subm_full_conv_anno_1.csv' #'.csv.gz'
 else:
-    subm_name = path+'sub/subm_part_conv_anno_1.csv' #'.csv.gz'
+    subm_name = '../sub/subm_part_conv_anno_1.csv' #'.csv.gz'
 
 classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
 submission = pd.DataFrame(subm, columns=classes)
