@@ -1,3 +1,19 @@
+# Steps to execute the process
+1) Place the train-all folder under /data/fish/
+2) Place the test-stg2 files under /data/fish/test and also place them under /data/fish/test/test
+3) Place the image_validation_set.csv in the main folder. This holds the validations data
+4) Create directory data/fish/results
+5) Check that the annotations (from kaggle forum here: http://bit.ly/2nN05Ld) are in ../data/fish/annos/{}_labels.json
+6) Check that the labels from Liu Weijie in this post http://bit.ly/2nBceSA are under ../data/fish/annos1/{}.json
+7) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
+8) Git clone the darknet directory in the main directory as seen here :
+	git clone https://github.com/pjreddie/darknet
+	cd darknet
+	make
+9) Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
+
+###########################################################
+
 # Script 1
 cp ../scripts/old/test_anno_0.797.ipynb 1_conv_all_anno.ipynb
 jupyter nbconvert --to=python  1_conv_all_anno.ipynb
