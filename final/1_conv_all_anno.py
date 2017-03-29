@@ -36,15 +36,15 @@ def refresh_directory_structure(name, sub_dirs):
 # In[2]:
 
 # Set Parameters and check files
-refresh_directories = True
-input_exists = False 
-full = True
+refresh_directories =    False # True
+input_exists =           True  # False 
+full =                   True 
 log.info('Set Paramters')
-path = "../data/fish/"
-batch_size=32
-clip = 0.99
-bags = 20
-load_size = (440, 780)#(360, 640)
+path =       "../data/fish/"
+batch_size=  32
+clip =       0.99
+bags =       20           # 20
+load_size =  (440, 780)  # (360, 640)
 
 
 # In[3]:
@@ -150,8 +150,6 @@ def show_bb(i):
     plot(val[i])
     plt.gca().add_patch(create_rect(bb))
 
-#val = get_data(path+'valid', load_size)
-#show_bb(500)
 #del val
 gc.collect()
 
@@ -234,11 +232,6 @@ def create_model():
     x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
     x =   Dropout(p)(x)
     x = BatchNormalization(axis=1)(x)
-    #x = MaxPooling2D()(x)
-    #x = ZeroPadding2D((1,1))(x)
-    #x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
-    #x =   Dropout(p)(x)
-    #x = BatchNormalization(axis=1)(x)
     x = MaxPooling2D()(x)
     x = ZeroPadding2D((1,1))(x)
     x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
@@ -260,48 +253,36 @@ def create_model():
     x_class = Dense(8, activation='softmax', name='class')(x1)
     return inp, x_bb, x_class
 
-## Set up the fully convolutional net (FCN); 
-#conv_layers,_ = split_at(vgg640, Convolution2D)
-#nf=128; p=0. # No dropout
-
 model = []
 predsls = []
 pvalsls = []
 
 for ii in range(bags):
+    log.info('Bagging Round ' + str(ii))
     inp, x_bb, x_class = create_model()
-    model.append(Model([inp], [x_bb, x_class]))
-    #model.summary()
-    model[ii].compile(Adam(lr=1e-3), loss=['mse', 'categorical_crossentropy'], metrics=['accuracy'],
+    model = Model([inp], [x_bb, x_class])
+    model.compile(Adam(lr=1e-3), loss=['mse', 'categorical_crossentropy'], metrics=['accuracy'],
                  loss_weights=[.001, 1.])
-    model[ii].fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=5, 
-                 validation_data=(conv_val_feat, [val_bbox, val_labels]))
-    model[ii].optimizer.lr = 1e-4
-    model[ii].optimizer.loss_weights=[.00001, 1.]
-    model[ii].fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=2, 
-                 validation_data=(conv_val_feat, [val_bbox, val_labels]))
-    model[ii].optimizer.lr = 1e-5
+    model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=5, 
+                 validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose = 0)
+    model.optimizer.lr = 1e-4
+    model.optimizer.loss_weights=[.00001, 1.]
+    model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=2, 
+                 validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose = 0)
+    model.optimizer.lr = 1e-5
 
     count = 0
     while count < 8:
-        model[ii].fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=1, 
-                     validation_data=(conv_val_feat, [val_bbox, val_labels]))
-        predsls.append(model[ii].predict(conv_test_feat, batch_size=batch_size)[1]) # or try 32 batch_size
-        pvalsls.append(model[ii].predict(conv_val_feat, batch_size=batch_size)[1])
+        model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=1, 
+                     validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose = 0)
+        predsls.append(model.predict(conv_test_feat, batch_size=batch_size)[1]) # or try 32 batch_size
+        pvalsls.append(model.predict(conv_val_feat, batch_size=batch_size)[1])
         val_score = "%.3f" % metrics.log_loss(val_labels, sum(pvalsls)/len(pvalsls))
         acc_score = "%.3f" % accuracyfunc(val_labels, do_clip(sum(pvalsls)/len(pvalsls), clip))
         log.info('Bagged Validation Logloss ' + str(val_score))
         log.info('Bagged Validation Accuracy ' + str(acc_score))
         count += 1
 
-
-# In[15]:
-
-# val = get_data(path+'valid', load_size)
-# pval_bbox = model[0].predict(conv_val_feat, batch_size=batch_size)[0]
-
-
-# In[16]:
 
 def create_rect(bb, color='red'):
     return plt.Rectangle((bb[2], bb[3]), bb[1], bb[0], color=color, fill=False, lw=3)
@@ -313,12 +294,6 @@ def show_bb(i):
     plt.gca().add_patch(create_rect(bb, color='red'))
     plt.gca().add_patch(create_rect(pbb, color='yellow'))
 
-# show_bb(350)
-
-
-# In[17]:
-
-# metrics.log_loss(val_labels, do_clip(sum(pvalsls)/len(pvalsls), .9999))
 preds = sum(predsls)/len(predsls)
 subm = do_clip(preds, clip)
 
@@ -332,9 +307,3 @@ submission = pd.DataFrame(subm, columns=classes)
 submission.insert(0, 'image', raw_test_filenames)
 submission.to_csv(subm_name, index=False)#, compression='gzip')
 log.info('Done - files @ ' + subm_name)
-
-
-# In[18]:
-
-# FileLink(subm_name)
-
