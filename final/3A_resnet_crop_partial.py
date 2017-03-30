@@ -47,7 +47,7 @@ BATCHSIZE = 32 # 256 #64
 LEARNINGRATE = 1e-4
 BG_THRESH_HI = 0.3
 BG_THRESH_LO = 0.1
-bags = 3
+bags = 5
 learn_round = 2
 p=16
 full = True
@@ -279,7 +279,7 @@ model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['ac
 # In[16]:
 
 # train the model on the new data for a few epochs
-model.fit_generator(train_generator(datagen=train_datagen, df=train_df), samples_per_epoch=samples_per_epoch, nb_epoch=12, verbose=1,
+model.fit_generator(train_generator(datagen=train_datagen, df=train_df), samples_per_epoch=samples_per_epoch, nb_epoch=12, verbose=0,
                     callbacks=[early_stopping, model_checkpoint, learningrate_schedule],  # , tensorboard
                     validation_data=(valid_x,valid_y), nb_worker=3, pickle_safe=True)
 
