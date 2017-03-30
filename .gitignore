@@ -7,7 +7,6 @@ final/*.out
 final/log*
 final/checkpoints/*
 data/*
-sub/*
 courses/*
 resnet/checkpoints/*
 resnet/logs/*
