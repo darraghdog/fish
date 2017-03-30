@@ -12,7 +12,7 @@
 	make
 9) Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
 10) Mkdir final/checkpoints/checkpoint03A, final/checkpoints/checkpoint03C, final/checkpoints/checkpoint03C
-
+11) Change R blending script called *** to point at home directory in setwd() step.
 **** Update this part later
 10) Copy the yolo test bounding boxes to ../yolo_coords/
 ****
