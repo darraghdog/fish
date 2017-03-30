@@ -3,6 +3,7 @@ rcnn_PASCAL_FISH.zip
 keras-resnet
 deep-l*
 *.tar
+final/checkpoint/*
 data/*
 sub/*
 courses/*

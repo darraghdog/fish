@@ -36,8 +36,8 @@ def refresh_directory_structure(name, sub_dirs):
 # In[2]:
 
 # Set Parameters and check files
-refresh_directories =    False # True
-input_exists =           True  # False 
+refresh_directories =    True
+input_exists =           False 
 full =                   True 
 log.info('Set Paramters')
 path =       "../data/fish/"
