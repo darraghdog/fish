@@ -32,7 +32,7 @@ K.set_image_dim_ordering('tf')
 
 TRAIN_DIR = '../data/fish/train-all/'
 TEST_DIR =  '../data/fish/test/' 
-CHECKPOINT_DIR = './checkpoints/checkpoint05A/'
+CHECKPOINT_DIR = './checkpoints/checkpoint05B/'
 LOG_DIR = './logs'
 FISH_CLASSES = ['NoF', 'ALB', 'BET', 'DOL', 'LAG', 'OTHER', 'SHARK', 'YFT']
 CONF_THRESH = 0.8
@@ -501,9 +501,9 @@ yolo_pred_df.drop('crop_index', axis=1, inplace=True)
 
 timestr = time.strftime("%Y%m%d")
 if full:
-    subm_name = '../sub/subm_full_convbig_resnet_5A.csv'
+    subm_name = '../sub/subm_full_convbig_resnet_5B.csv'
 else:
-    subm_name = '../sub/subm_part_convbig_resnet_5A.csv'
+    subm_name = '../sub/subm_part_convbig_resnet_5B.csv'
 
 
 
