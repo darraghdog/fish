@@ -68,12 +68,17 @@ nohup python 3C_resnet_crop_partial.py &> 3C_resnet_crop_partial.out&
 cp ../resnet/resnet_07-yolo544-flip.ipynb 4A_resnet_cropsq_partial.ipynb
 jupyter nbconvert --to=python  4A_resnet_cropsq_partial.ipynb
 nohup python 4A_resnet_cropsq_partial.py &> 4A_resnet_cropsq_partial.out&
+nohup python 4B_resnet_cropsq_partial.py &> 4B_resnet_cropsq_partial.out&
+nohup python 4C_resnet_cropsq_partial.py &> 4C_resnet_cropsq_partial.out&
 mkdir checkpoints/checkpoint04A
 mkdir checkpoints/checkpoint04B
 mkdir checkpoints/checkpoint04C
 
 # Script 5?
 copy script 4 and change to 360 x 360 
+nohup python 5A_resnet_cropsq_partial.py &> 5A_resnet_cropsq_partial.out&
+nohup python 5B_resnet_cropsq_partial.py &> 5B_resnet_cropsq_partial.out&
+nohup python 5C_resnet_cropsq_partial.py &> 5C_resnet_cropsq_partial.out&
 mkdir checkpoints/checkpoint04A
 mkdir checkpoints/checkpoint04B
 mkdir checkpoints/checkpoint04C
