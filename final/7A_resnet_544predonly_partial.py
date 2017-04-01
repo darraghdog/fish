@@ -49,6 +49,16 @@ full = True
 
 '''
 '''
+train_datagen = ImageDataGenerator(
+    rotation_range=180,
+    shear_range=0.2,
+    zoom_range=0.1,
+    width_shift_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=True,
+    vertical_flip=True)
+
+
 # Load up YOLO bounding boxes for each class
 import glob
 # all_files = glob.glob(os.path.join('../yolo_coords', "*.txt"))
