@@ -1,20 +1,26 @@
 # Steps to execute the process
-1) Place the train-all folder under /data/fish/
-2) Place the test-stg2 files under /data/fish/test and also place them under /data/fish/test/test
-3) Place the image_validation_set.csv in the main folder. This holds the validations data
-4) Create directory data/fish/results
-5) Check that the annotations (from kaggle forum here: http://bit.ly/2nN05Ld) are in ../data/fish/annos/{}_labels.json
-6) Check that the labels from Liu Weijie in this post http://bit.ly/2nBceSA are under ../data/fish/annos1/{}.json
-7) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
-8) Git clone the darknet directory in the main directory as seen here :
+1) Set up environment on a aws p2 instance
+     - Install Ubuntu environment as laid out here : http://course.fast.ai/lessons/aws.html
+     - Install R, and package data.table
+2) Place the train-all folder under /data/fish/
+3) Place the test-stg2 files under /data/fish/test and also place them under /data/fish/test/test
+4) Place the image_validation_set.csv in the main folder. This holds the validations data
+5) Create directory data/fish/results
+6) Check that the annotations (from kaggle forum here: http://bit.ly/2nN05Ld) are in ../data/fish/annos/{}_labels.json
+7) Check that the labels from Liu Weijie in this post http://bit.ly/2nBceSA are under ../data/fish/annos1/{}.json
+8) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
+9) Git clone the darknet directory in the main directory as seen here :
 	git clone https://github.com/pjreddie/darknet
 	cd darknet
 	make
-9) Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
-10) Mkdir final/checkpoints/checkpoint03A, final/checkpoints/checkpoint03C, final/checkpoints/checkpoint03C
-11) Change R blending script called *** to point at home directory in setwd() step.
+10) Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
+11) Mkdir final/checkpoints/checkpoint03A, final/checkpoints/checkpoint03C, final/checkpoints/checkpoint03C
+12) Change R blending script called *** to point at home directory in setwd() step.
 **** Update this part later
-10) Copy the yolo test bounding boxes to ../yolo_coords/
+Earlier) Copy the yolo test bounding boxes to ../yolo_coords/
+    move yolo comp4_det_test_FISH544.txt to yolo_coords/comp4_det_test_FISH544.txt
+    move yolo comp4_det_test_FISH414.txt to yolo_coords/comp4_det_test_FISH.txt
+    move yolo comp4_det_test_FISH414.txt to yolo_coords/comp4_det_test_FISH540.txt # This one came from a bug.
 ****
 
 
@@ -82,4 +88,10 @@ nohup python 5C_resnet_cropbig_partial.py &> 5C_resnet_cropbig_partial.out&
 mkdir checkpoints/checkpoint05A
 mkdir checkpoints/checkpoint05B
 mkdir checkpoints/checkpoint05C
+
+# Script 6
+Rscript avg_subs_final_round1.R # Run this rscript
+cp ../scripts/test_pseudo.ipynb 6_conv_all_pseudo.ipynb
+jupyter nbconvert --to=python  6_conv_all_pseudo.ipynb
+nohup python 6_conv_all_pseudo.py &> 6_conv_all_pseudo.out&
 

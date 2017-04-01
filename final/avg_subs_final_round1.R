@@ -3,7 +3,7 @@ rm(list=ls())
 gc();gc()
 
 # Set working directory 
-setwd("~/Dropbox/fish/")
+setwd("~/fish/")
 
 # Load up the sub files 
 subm_01   <- fread("sub/subm_full_conv_anno_1.csv")
