@@ -47,6 +47,43 @@ learn_round = 2
 p=16
 full = True
 
+
+
+def load_img(path, bbox, target_size=None):
+    img = Image.open(path)
+    imsize = Image.open(path).size
+    height, width = bbox[2]-bbox[0], bbox[3]-bbox[1]
+    length = max(height, width)    
+    # Make it square
+    dim = [width, height]
+    for i in range(2):
+        offset = length - dim[0+i]
+        if bbox[0+i]+length+(offset/2) > imsize[0+i]:
+            bbox[0+i] = bbox[2+i] - length + (offset/2)
+            bbox[2+i] = bbox[2+i] + (offset/2)
+        else:
+            bbox[2+i] = bbox[0+i] + length
+        bbox[0+i] -= length*0.05
+        bbox[2+i] += length*0.05
+        
+    img = img.convert('RGB')
+    cropped = img.crop((bbox[0],bbox[1],bbox[2],bbox[3]))
+    if target_size:
+        cropped = cropped.resize((target_size[1], target_size[0]))
+    if height < width:
+        cropped = cropped.rotate(-90)
+    return cropped
+
+def preprocess_input(x):
+    #resnet50 image preprocessing
+    # 'RGB'->'BGR'
+    x = x[:, :, ::-1]
+    x[:, :, 0] -= 105
+    x[:, :, 1] -= 115
+    x[:, :, 2] -= 123
+    return x
+
+
 '''
 '''
 train_datagen = ImageDataGenerator(
