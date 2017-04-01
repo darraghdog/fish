@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[1]:
-
 # Leveraged from 4A_resnet_cropsq_partial.py
 # Read in Libraries
 from __future__ import division, print_function
@@ -32,8 +27,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
-
 from keras.models import Sequential, Model, load_model, model_from_json
 from keras.layers import GlobalAveragePooling2D, Flatten, Dropout, Dense, LeakyReLU
 from keras.optimizers import Adam
@@ -335,13 +328,6 @@ if full == True:
     samples_per_epoch=BATCHSIZE*math.ceil(train_df.groupby('crop_class').size()['ALB']/nb_perClass)
 
 
-# In[14]:
-
-print(GTbbox_pseudo_df.shape)
-print(GTbbox_df.shape)
-
-
-# In[15]:
 
 def generator_test(gen, df, DIR):
         batch_x = np.zeros((BATCHSIZE, ROWS, COLS, 3), dtype=K.floatx())
@@ -613,9 +599,9 @@ yolo_pred_df.drop('crop_index', axis=1, inplace=True)
 
 timestr = time.strftime("%Y%m%d")
 if full:
-    subm_name = '../sub/subm_full_convsq_resnet_8A.csv'
+    subm_name = '../sub/subm_full_pseudo_resnet_8A.csv'
 else:
-    subm_name = '../sub/subm_part_convsq_resnet_8A.csv'
+    subm_name = '../sub/subm_part_pseudo_resnet_8A.csv'
 
 
 
