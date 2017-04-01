@@ -1,2 +1,0 @@
-class Context(object):
-    pass
