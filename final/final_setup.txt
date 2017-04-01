@@ -1,5 +1,5 @@
 # Steps to execute the process
-1) Set up environment on a aws p2 instance
+1) Set up environment on a aws p2 instance with ~ 200GB space
      - Install Ubuntu environment as laid out here : http://course.fast.ai/lessons/aws.html
      - Install R, and package data.table
 2) Place the train-all folder under /data/fish/
@@ -9,11 +9,9 @@
 6) Check that the annotations (from kaggle forum here: http://bit.ly/2nN05Ld) are in ../data/fish/annos/{}_labels.json
 7) Check that the labels from Liu Weijie in this post http://bit.ly/2nBceSA are under ../data/fish/annos1/{}.json
 8) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
-9) Git clone the darknet directory in the main directory as seen here :
-	git clone https://github.com/pjreddie/darknet
-	cd darknet
-	make
-10) Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
+9) Run yolo script #1 
+	
+
 11) Mkdir final/checkpoints/checkpoint03A, final/checkpoints/checkpoint03C, final/checkpoints/checkpoint03C
 12) Change R blending script called *** to point at home directory in setwd() step.
 **** Update this part later
@@ -22,9 +20,20 @@ Earlier) Copy the yolo test bounding boxes to ../yolo_coords/
     move yolo comp4_det_test_FISH414.txt to yolo_coords/comp4_det_test_FISH.txt
     move yolo comp4_det_test_FISH414.txt to yolo_coords/comp4_det_test_FISH540.txt # This one came from a bug.
 ****
+###########################################################
+
+# Yolo set up part #1
+chmod +v yolo_setup1.sh
+./yolo_setup1.sh
+
+# Manually do the next step :
+# Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
+
+
 
 
 ###########################################################
+# Python Scripts
 
 # Script 1
 cp ../scripts/old/test_anno_0.797.ipynb 1_conv_all_anno.ipynb
