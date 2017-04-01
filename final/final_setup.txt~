@@ -29,7 +29,7 @@ chmod +v yolo_setup1.sh
 # Manually do the next step :
 # Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
 
-# Yolo set up part #2 - it may be better to do this manually, as some steps are not automated.
+# Yolo set up part #2
 _______________________________________________________________________
 # Set up the train, test and label files for the 414x414 yolo image run
 python voc_label_FISH1.py
@@ -43,13 +43,9 @@ cp voc.FISH.data darknet/cfg/voc.FISH.data
 cp coco.c darknet/src/coco.c
 cp yolo-voc-FISH.cfg darknet/cfg/yolo-voc-FISH.cfg
 cp yolo-voc-FISH544.cfg darknet/cfg/yolo-voc-FISH544.cfg
-mkdir darknet/backupFISH
-
-# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=0", to "CUDNN=1"; if needed, and then execute ./darknet/make to remake
-# The next step runs for about a day...
 
 
-# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=1", to "CUDNN=0" and then execute ./darknet/make to remake
+# Change cudnn to 0 and remake
 ./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg backupFISH/yolo-voc-FISH_11000.weights
 
 
