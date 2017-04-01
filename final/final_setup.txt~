@@ -4,22 +4,12 @@
      - Install R, and package data.table
 2) Place the train-all folder under /data/fish/
 3) Place the test-stg2 files under /data/fish/test and also place them under /data/fish/test/test
-4) Place the image_validation_set.csv in the main folder. This holds the validations data
-5) Create directory data/fish/results
-6) Check that the annotations (from kaggle forum here: http://bit.ly/2nN05Ld) are in ../data/fish/annos/{}_labels.json
-7) Check that the labels from Liu Weijie in this post http://bit.ly/2nBceSA are under ../data/fish/annos1/{}.json
-8) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
-9) Run yolo script #1 
-	
+4) Create directory data/fish/results
+5) Check that the annotations (from kaggle forum here: http://bit.ly/2nN05Ld) are in ../data/fish/annos/{}_labels.json
+6) Check that the labels from Liu Weijie in this post http://bit.ly/2nBceSA are under ../data/fish/annos1/{}.json
+7) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
+8) Change R blending script called *** to point at home directory in setwd() step.
 
-11) Mkdir final/checkpoints/checkpoint03A, final/checkpoints/checkpoint03C, final/checkpoints/checkpoint03C
-12) Change R blending script called *** to point at home directory in setwd() step.
-**** Update this part later
-Earlier) Copy the yolo test bounding boxes to ../yolo_coords/
-    move yolo comp4_det_test_FISH544.txt to yolo_coords/comp4_det_test_FISH544.txt
-    move yolo comp4_det_test_FISH414.txt to yolo_coords/comp4_det_test_FISH.txt
-    move yolo comp4_det_test_FISH414.txt to yolo_coords/comp4_det_test_FISH540.txt # This one came from a bug.
-****
 ###########################################################
 
 # Yolo set up part #1
@@ -29,83 +19,71 @@ chmod +v yolo_setup1.sh
 # Manually do the next step :
 # Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
 
-# Yolo set up part #2
-_______________________________________________________________________
-# Set up the train, test and label files for the 414x414 yolo image run
+# Yolo set up part #2 - it may be better to do this manually, as some steps are not automated. Execute from main directory. 
 python voc_label_FISH1.py
 cp train-all.txt darknet/train.txt 
 cp test.txt darknet/test.txt 
-# Copy in config files specific for our case
-cp yolo.cfg darknet/cfg/yolo.cfg
-cp yolo.cfg darknet/cfg/yolo.cfg
-cp voc.FISH.names darknet/data/voc.FISH.names
-cp voc.FISH.data darknet/cfg/voc.FISH.data
-cp coco.c darknet/src/coco.c
-cp yolo-voc-FISH.cfg darknet/cfg/yolo-voc-FISH.cfg
-cp yolo-voc-FISH544.cfg darknet/cfg/yolo-voc-FISH544.cfg
 
+##################################
+### Train yolo on 414x414 images
+##################################
 
-# Change cudnn to 0 and remake
+# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=0", to "CUDNN=1"; if needed, and then execute ./darknet/make to remake
+# The next step runs for about a day, run this from the darknet directory
+./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg darknet19_448.conv.23 
+
+# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=1", to "CUDNN=0" and then execute ./darknet/make to remake
+# Run this from the darknet directory
 ./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg backupFISH/yolo-voc-FISH_11000.weights
+# Run the below from the main directory
+cp darknet/results/comp4_det_test_FISH.txt yolo_coords/comp4_det_test_FISH.txt
+cp darknet/results/comp4_det_test_FISH.txt yolo_coords/comp4_det_test_FISH540.txt
 
 
+##################################
+### Train yolo on 544x544 images
+##################################
+
+# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=0", to "CUDNN=1"; if needed, and then execute ./darknet/make to remake
+# The next step runs for about a day, run this from the darknet directory
+nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH544.cfg darknet19_448.conv.23 > nohup544.out 2>&1&
+
+# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=1", to "CUDNN=0" and then execute ./darknet/make to remake
+# Run this from the darknet directory
+./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH544.cfg backupFISH/yolo-voc-FISH544_11000.weights
+# Run the below from the main directory
+cp darknet/results/comp4_det_test_FISH.txt yolo_coords/comp4_det_test_FISH544.txt
 
 
 ###########################################################
 # Python Scripts
+mkdir final/checkpoints/checkpoint03A
+mkdir final/checkpoints/checkpoint03B
+mkdir final/checkpoints/checkpoint03C
+mkdir final/checkpoints/checkpoint04A
+mkdir final/checkpoints/checkpoint04B
+mkdir final/checkpoints/checkpoint04C
+mkdir final/checkpoints/checkpoint05A
+mkdir final/checkpoints/checkpoint05B
+mkdir final/checkpoints/checkpoint05C
 
 # Script 1
-cp ../scripts/old/test_anno_0.797.ipynb 1_conv_all_anno.ipynb
-jupyter nbconvert --to=python  1_conv_all_anno.ipynb
-# Vim file
-# -> Turn off the show image in chunk 9
-# -> Set bags to 20, and set bags in the model run
-# -> Set input_exists and refresh_directories to False and True
-# -> Change array stored to a new name.. .eg. 1_ added to the start
-# -> Change the out path anfd ile to 'sub/subm_full_conv_anno_1.csv'
-# -> Change the model from a list to reset each time
-# -> Turn off verbose and put a log for each batch round
-# -> Turn off the show image in chunk 16
-# -> Comment out the File Link
-# -> Remove line "get_ipython().magic(u'matplotlib inline')"
 nohup python 1_conv_all_anno.py &> 1_conv_all_anno.out&
 
 # Script 2
-cp ../scripts/test_anno_relabel.ipynb 2_conv_all_relabel.ipynb
-jupyter nbconvert --to=python  2_conv_all_relabel.ipynb
-# Vim file
-# -> Turn off the show image in chunk 9
-# -> set bags to 20, and set bags in the model run
-# -> Set input_exists and refresh_directories to False and True
-# -> Change array stored to a new name.. .eg. 1_ added to the start
-# -> change the out path anfd ile to 'sub/subm_full_conv_relabel_2.csv'
-# -> change the model from a list to reset each time
-# -> Turn off the show image in chunk 16
-# -> comment out the File Link
-# -> Remove line "get_ipython().magic(u'matplotlib inline')"
 nohup python 2_conv_all_relabel.py &> 2_conv_all_relabel.out&
 
 # Script 3
-cp ../resnet/resnet_02-full.ipynb 3A_resnet_crop_partial.ipynb
-jupyter nbconvert --to=python  3A_resnet_crop_partial.ipynb
 nohup python 3A_resnet_crop_partial.py &> 3A_resnet_crop_partial.out&
-
-cp 3A_resnet_crop_partial.py 3B_resnet_crop_partial.py
-cp 3A_resnet_crop_partial.py 3C_resnet_crop_partial.py
-On each of the new files change the checkpoint directory and the outputted file accordingly
 nohup python 3B_resnet_crop_partial.py &> 3B_resnet_crop_partial.out&
 nohup python 3C_resnet_crop_partial.py &> 3C_resnet_crop_partial.out&
 
 
 # Script 4 
-cp ../resnet/resnet_07-yolo544-flip.ipynb 4A_resnet_cropsq_partial.ipynb
-jupyter nbconvert --to=python  4A_resnet_cropsq_partial.ipynb
 nohup python 4A_resnet_cropsq_partial.py &> 4A_resnet_cropsq_partial.out&
 nohup python 4B_resnet_cropsq_partial.py &> 4B_resnet_cropsq_partial.out&
 nohup python 4C_resnet_cropsq_partial.py &> 4C_resnet_cropsq_partial.out&
-mkdir checkpoints/checkpoint04A
-mkdir checkpoints/checkpoint04B
-mkdir checkpoints/checkpoint04C
+
 
 # Script 5?
 copy script 4 and change to 360 x 360 
@@ -118,8 +96,6 @@ mkdir checkpoints/checkpoint05C
 
 # Script 6
 Rscript avg_subs_final_round1.R # Run this rscript
-cp ../scripts/test_pseudo.ipynb 6_conv_all_pseudo.ipynb
-jupyter nbconvert --to=python  6_conv_all_pseudo.ipynb
 nohup python 6_conv_all_pseudo.py &> 6_conv_all_pseudo.out&
 
 # Script 7
