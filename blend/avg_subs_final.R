@@ -14,6 +14,7 @@ subm_03C  <- fread("sub/subm_full_conv_resnet_3C.csv")
 subm_04A  <- fread("sub/subm_full_convsq_resnet_4A.csv")
 subm_04B  <- fread("sub/subm_full_convsq_resnet_4B.csv")
 subm_04C  <- fread("sub/subm_full_convsq_resnet_4C.csv")
+subm_06   <- fread("sub/subm_full_conv_pseudo_6.csv")
 subm_07A  <- fread("sub/subm_full_convsq_resnet_7A.csv")
 subm_07B  <- fread("sub/subm_full_convsq_resnet_7B.csv")
 subm_07C  <- fread("sub/subm_full_convsq_resnet_7C.csv")
@@ -79,13 +80,14 @@ rm(subm_part01, subm_part02, subm_part03)
 ###############################
 subm_01 = subm_01[order(image)]
 subm_02 = subm_02[order(image)]
+subm_06 = subm_06[order(image)]
 
 # Get the weighted average
 subm_012 = subm_01
 cols = names(subm_012)[-1]
-for (var in cols) subm_012[[var]] = (subm_01[[var]]*.5) + (subm_02[[var]]*.5) 
+for (var in cols) subm_012[[var]] = (subm_01[[var]]*.25) + (subm_02[[var]]*.25)  + (subm_06[[var]]*.5)
 subm_012 = subm_012[order(image)]
-
+rm(subm_01, subm_02, subm_06)
 
 ###############################
 ##### Merge both ##############
@@ -116,8 +118,9 @@ subm_final[,2:9] = subm_final[,2:9]/rowSums(data.frame(subm_final[,2:9]))
 subm_final = data.table(subm_final)
 
 # Round #1 Sub
-write.csv(subm_final, paste0("sub/final-add-544yolo.csv"), row.names = F)
+write.csv(subm_final, paste0("sub/final-add-544yolo-addVGGpseudo.csv"), row.names = F)
 
 
+# Apr 1st - Adding pseu VGG : 0.493 from 0.508 
 # Apr 1st - Adding yolo 544 : 0.508 from 0.528 
 
