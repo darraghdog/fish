@@ -478,9 +478,9 @@ yolo_pred_df.drop('crop_index', axis=1, inplace=True)
 
 timestr = time.strftime("%Y%m%d")
 if full:
-    subm_name = '../sub/subm_full_convsq_resnet_4A.csv'
+    subm_name = '../sub/subm_full_convsq_resnet_7A.csv'
 else:
-    subm_name = '../sub/subm_part_convsq_resnet_4A.csv'
+    subm_name = '../sub/subm_part_convsq_resnet_7A.csv'
 
 
 
