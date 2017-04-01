@@ -14,6 +14,9 @@ subm_03C  <- fread("sub/subm_full_conv_resnet_3C.csv")
 subm_04A  <- fread("sub/subm_full_convsq_resnet_4A.csv")
 subm_04B  <- fread("sub/subm_full_convsq_resnet_4B.csv")
 subm_04C  <- fread("sub/subm_full_convsq_resnet_4C.csv")
+subm_07A  <- fread("sub/subm_full_convsq_resnet_7A.csv")
+subm_07B  <- fread("sub/subm_full_convsq_resnet_7B.csv")
+subm_07C  <- fread("sub/subm_full_convsq_resnet_7C.csv")
 
 # Load up the yolo bounding boxes
 yolo <- data.table(read.table("yolo_coords/comp4_det_test_FISH544.txt", quote="\"", comment.char=""))
@@ -38,6 +41,38 @@ setnames(subm_04, "image_file", "image")
 subm_04 = subm_04[order(image)]
 rm(subm_04A, subm_04B, subm_04C)
 
+# Get the average of the box cropped - yolo 414
+subm_07 = subm_07A
+cols = names(subm_07)[-1]
+for (var in cols) subm_07[[var]] = (subm_07A[[var]] + subm_07B[[var]] + subm_07C[[var]])/3
+setnames(subm_07, "image_file", "image")
+subm_07 = subm_07[order(image)]
+rm(subm_07A, subm_07B, subm_07C)
+
+
+###############################
+##  Merge partial data set ####
+###############################
+
+# Get the weighted average of the 414 predictions
+subm_034 = subm_03
+cols = names(subm_034)[-1]
+for (var in cols) subm_034[[var]] = (subm_03[[var]]*.5) + (subm_04[[var]]*.5) 
+subm_034 = subm_034[order(image)]
+
+# Get the outersect of the 414 and 544 images
+img_intrsct = intersect(subm_07$image, subm_034$image)
+subm_part01 = subm_07[!image %in% img_intrsct]
+subm_part02 = subm_034[!image %in% img_intrsct]
+
+# Get the weighted average of the 544 and 414 predictions
+subm_part03 = subm_034[image %in% img_intrsct]
+for (var in cols) subm_part03[[var]] = (subm_034[image %in% img_intrsct][[var]]*.5) + (subm_07[image %in% img_intrsct][[var]]*.5) 
+
+# Add all the parts together
+subm_part = rbind(subm_part01, subm_part02, subm_part03)
+subm_part = subm_part[order(image)]
+rm(subm_part01, subm_part02, subm_part03)
 
 ###############################
 ####  Full data set ###########
@@ -57,10 +92,10 @@ subm_012 = subm_012[order(image)]
 ###############################
 
 subm_final = subm_012
-id = subm_03$image
+id = subm_part$image
 cols = names(subm_final)[-1]
 for (var in cols) subm_final[image %in% id][[var]] = (subm_012[image %in% id][[var]]*0.3 +    # Original Preds
-                                                        (subm_03[image %in% id][[var]]*0.4 + subm_04[image %in% id][[var]]*0.6)*0.7)  # Yolo 414 Preds
+                                                        (subm_part[image %in% id][[var]])*0.7)  # Yolo 414 and 544 Preds
 
 ###############################
 ##### Thresholding ############
@@ -73,14 +108,16 @@ subm_final[,2:9] = subm_final[,2:9]/rowSums(data.frame(subm_final[,2:9]))
 subm_final = data.table(subm_final)
 
 # Boost the scores of the very seldom classes. 
-subm_final[LAG>0.5][["LAG"]] = 10
-subm_final[NoF>0.5][["NoF"]] = 10
-subm_final[OTHER>0.5][["OTHER"]] = 10
+subm_final[LAG>0.4][["LAG"]] = 10
+subm_final[NoF>0.4][["NoF"]] = 10
+subm_final[OTHER>0.4][["OTHER"]] = 10
 subm_final = data.frame(subm_final)
 subm_final[,2:9] = subm_final[,2:9]/rowSums(data.frame(subm_final[,2:9]))
 subm_final = data.table(subm_final)
 
 # Round #1 Sub
-write.csv(subm_final, paste0("sub/final-round1-input-pseudo.csv"), row.names = F)
+write.csv(subm_final, paste0("sub/final-add-544yolo.csv"), row.names = F)
 
+
+# Apr 1st - Adding yolo 544 : 0.508 from 0.528 
 
