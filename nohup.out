@@ -60,3 +60,378 @@
 [I 19:25:58.653 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
 [W 19:27:03.853 NotebookApp] 404 GET http://www.baidu.com/cache/global/img/gs.gif (93.174.93.136) 7.04ms referer=None
 [I 19:27:58.111 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:33:58.118 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:34:44.421 NotebookApp] Kernel interrupted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 19:42:34.680 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:44:11.307 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 19:47:39.687 NotebookApp] Kernel interrupted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 19:47:45.971 NotebookApp] Kernel interrupted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 19:50:24.480 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:58:14.489 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:00:02.715 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:00:12.569 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 20:04:08.821 NotebookApp] Kernel interrupted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 20:06:04.652 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:13:54.497 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:19:28.726 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:19:36.692 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 20:21:44.476 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:22:50.830 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 20:23:56.579 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:24:44.952 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 20:26:55.088 NotebookApp] Kernel interrupted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 20:27:02.063 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:27:11.963 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 20:29:34.637 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:44:53.472 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:44:54.140 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:44:56.474 NotebookApp] KernelRestarter: restarting kernel (1/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:44:59.482 NotebookApp] KernelRestarter: restarting kernel (2/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:45:02.492 NotebookApp] KernelRestarter: restarting kernel (3/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:45:05.500 NotebookApp] KernelRestarter: restarting kernel (4/5)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 20:45:08.100 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[W 20:45:11.102 NotebookApp] KernelRestarter: restart failed
+[W 20:45:11.102 NotebookApp] Kernel a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0 died, removing from map.
+[W 20:45:11.103 NotebookApp] Restarting kernel failed: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[E 20:45:11.103 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/kernels/handlers.py", line 88, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/gen.py", line 1015, in run
+        value = future.result()
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/concurrent.py", line 237, in result
+        raise_exc_info(self._exc_info)
+      File "<string>", line 3, in raise_exc_info
+    RuntimeError: Restart failed
+[E 20:45:11.105 NotebookApp] {
+      "Origin": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Content-Length": "0", 
+      "Accept-Language": "en-GB,en-US;q=0.8,en;q=0.6", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Host": "ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Accept": "application/json, text/javascript, */*; q=0.01", 
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36", 
+      "Connection": "keep-alive", 
+      "X-Requested-With": "XMLHttpRequest", 
+      "Referer": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb", 
+      "Cookie": "username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888=\"2|1:0|10:1491070394|64:username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888|48:NGM2YjgxYTYtYTNiZS00YjNjLThjYmMtODY5YjlmNjU2NWYy|de0006a8bfebc860b9be1a915535bbac73122508ce2049d9d218a144c5ddb003\""
+    }
+[E 20:45:11.105 NotebookApp] 500 POST /api/kernels/a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0/restart (176.61.36.2) 18661.86ms referer=http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb
+[I 20:45:13.937 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[W 20:45:38.125 NotebookApp] Timeout waiting for kernel_info_reply: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[E 20:45:38.126 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/kernels/handlers.py", line 88, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/gen.py", line 1015, in run
+        value = future.result()
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/concurrent.py", line 237, in result
+        raise_exc_info(self._exc_info)
+      File "<string>", line 3, in raise_exc_info
+    TimeoutError: Timeout waiting for restart
+[E 20:45:38.126 NotebookApp] {
+      "Origin": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Content-Length": "0", 
+      "Accept-Language": "en-GB,en-US;q=0.8,en;q=0.6", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Host": "ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Accept": "application/json, text/javascript, */*; q=0.01", 
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36", 
+      "Connection": "keep-alive", 
+      "X-Requested-With": "XMLHttpRequest", 
+      "Referer": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb", 
+      "Cookie": "username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888=\"2|1:0|10:1491070394|64:username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888|48:NGM2YjgxYTYtYTNiZS00YjNjLThjYmMtODY5YjlmNjU2NWYy|de0006a8bfebc860b9be1a915535bbac73122508ce2049d9d218a144c5ddb003\""
+    }
+[E 20:45:38.126 NotebookApp] 500 POST /api/kernels/a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0/restart (176.61.36.2) 30034.23ms referer=http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb
+[E 20:46:04.008 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/kernels/handlers.py", line 88, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/kernels/kernelmanager.py", line 109, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/kernels/kernelmanager.py", line 169, in _check_kernel_id
+        raise web.HTTPError(404, u'Kernel does not exist: %s' % kernel_id)
+    HTTPError: HTTP 404: Not Found (Kernel does not exist: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0)
+[E 20:46:04.009 NotebookApp] {
+      "Origin": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Content-Length": "0", 
+      "Accept-Language": "en-GB,en-US;q=0.8,en;q=0.6", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Host": "ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Accept": "application/json, text/javascript, */*; q=0.01", 
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36", 
+      "Connection": "keep-alive", 
+      "X-Requested-With": "XMLHttpRequest", 
+      "Referer": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb", 
+      "Cookie": "username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888=\"2|1:0|10:1491070394|64:username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888|48:NGM2YjgxYTYtYTNiZS00YjNjLThjYmMtODY5YjlmNjU2NWYy|de0006a8bfebc860b9be1a915535bbac73122508ce2049d9d218a144c5ddb003\""
+    }
+[E 20:46:04.009 NotebookApp] 500 POST /api/kernels/a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0/restart (176.61.36.2) 1.67ms referer=http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb
+[E 20:46:24.094 NotebookApp] Unhandled error in API request
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/base/handlers.py", line 457, in wrapper
+        result = yield gen.maybe_future(method(self, *args, **kwargs))
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/gen.py", line 1015, in run
+        value = future.result()
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/concurrent.py", line 237, in result
+        raise_exc_info(self._exc_info)
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tornado/gen.py", line 1024, in run
+        yielded = self.gen.send(value)
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/sessions/handlers.py", line 57, in post
+        model = yield gen.maybe_future(sm.get_session(path=path))
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/sessions/sessionmanager.py", line 166, in get_session
+        return self.row_to_model(row)
+      File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/notebook/services/sessions/sessionmanager.py", line 205, in row_to_model
+        raise KeyError
+    KeyError
+[E 20:46:24.096 NotebookApp] {
+      "Origin": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Content-Length": "104", 
+      "Accept-Language": "en-GB,en-US;q=0.8,en;q=0.6", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Host": "ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888", 
+      "Accept": "application/json, text/javascript, */*; q=0.01", 
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36", 
+      "Connection": "keep-alive", 
+      "X-Requested-With": "XMLHttpRequest", 
+      "Referer": "http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb", 
+      "Cookie": "username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888=\"2|1:0|10:1491070394|64:username-ec2-52-212-217-161-eu-west-1-compute-amazonaws-com-8888|48:NGM2YjgxYTYtYTNiZS00YjNjLThjYmMtODY5YjlmNjU2NWYy|de0006a8bfebc860b9be1a915535bbac73122508ce2049d9d218a144c5ddb003\"", 
+      "Content-Type": "application/json"
+    }
+[E 20:46:24.096 NotebookApp] 500 POST /api/sessions (176.61.36.2) 3.84ms referer=http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb
+[I 20:46:30.660 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 20:46:36.674 NotebookApp] Kernel started: 1c7deea2-7bc5-4092-b3ed-983cba3eef53
+[I 20:46:53.989 NotebookApp] Kernel restarted: 1c7deea2-7bc5-4092-b3ed-983cba3eef53
+[I 20:48:36.773 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 21:28:32.989 NotebookApp] KernelRestarter: restarting kernel (1/5)
+WARNING:root:kernel 1c7deea2-7bc5-4092-b3ed-983cba3eef53 restarted
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 21:28:35.998 NotebookApp] KernelRestarter: restarting kernel (2/5)
+WARNING:root:kernel 1c7deea2-7bc5-4092-b3ed-983cba3eef53 restarted
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 21:28:39.007 NotebookApp] KernelRestarter: restarting kernel (3/5)
+WARNING:root:kernel 1c7deea2-7bc5-4092-b3ed-983cba3eef53 restarted
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[I 21:28:42.017 NotebookApp] KernelRestarter: restarting kernel (4/5)
+WARNING:root:kernel 1c7deea2-7bc5-4092-b3ed-983cba3eef53 restarted
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/ubuntu/anaconda2/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/__main__.py", line 3, in <module>
+    app.launch_new_instance()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 652, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-120>", line 2, in initialize
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 445, in initialize
+    self.init_sockets()
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 235, in init_sockets
+    self.shell_port = self._bind_socket(self.shell_socket, self.shell_port)
+  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/ipykernel/kernelapp.py", line 177, in _bind_socket
+    s.bind("tcp://%s:%i" % (self.ip, port))
+  File "zmq/backend/cython/socket.pyx", line 495, in zmq.backend.cython.socket.Socket.bind (zmq/backend/cython/socket.c:5327)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/socket.c:9542)
+    raise ZMQError(errno)
+ZMQError: Address already in use
+[W 21:28:45.027 NotebookApp] KernelRestarter: restart failed
+[W 21:28:45.027 NotebookApp] Kernel 1c7deea2-7bc5-4092-b3ed-983cba3eef53 died, removing from map.
+ERROR:root:kernel 1c7deea2-7bc5-4092-b3ed-983cba3eef53 restarted failed!
+[W 21:28:45.058 NotebookApp] Kernel deleted before session
+[W 21:28:45.058 NotebookApp] 410 DELETE /api/sessions/3a46fde3-ead1-4655-9961-622f3b47b94e (176.61.36.2) 1.22ms referer=http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb
