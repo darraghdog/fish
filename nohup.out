@@ -1,0 +1,62 @@
+[I 18:12:53.105 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 18:12:53.109 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 18:12:55.724 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 18:12:57.136 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 18:12:57.136 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 18:12:57.140 NotebookApp] [nb_conda] enabled
+[I 18:12:58.563 NotebookApp] [nb_anacondacloud] enabled
+[I 18:12:58.566 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fish
+[I 18:12:58.566 NotebookApp] 0 active kernels 
+[I 18:12:58.566 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 18:12:58.566 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 18:13:06.508 NotebookApp] 302 GET / (176.61.36.2) 0.60ms
+[I 18:13:06.525 NotebookApp] 302 GET /tree (176.61.36.2) 0.81ms
+[W 18:13:09.276 NotebookApp] 401 POST /login?next=%2Ftree (176.61.36.2) 1.30ms referer=http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/login?next=%2Ftree
+[I 18:13:14.218 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.85ms
+[I 18:13:55.151 NotebookApp] Creating new notebook in /final
+[I 18:13:58.822 NotebookApp] Kernel started: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 18:15:58.695 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:17:58.162 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:19:58.147 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:21:58.135 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:23:58.142 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:25:58.151 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:27:58.152 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:31:15.547 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:31:58.158 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:33:58.157 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:35:58.170 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:37:58.187 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:39:27.742 NotebookApp] Kernel interrupted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 18:39:58.175 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:40:10.496 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:40:23.449 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 18:41:58.138 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:43:58.693 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:45:58.138 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:47:28.371 NotebookApp] Kernel interrupted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 18:47:58.149 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:49:58.144 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:51:58.156 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:53:58.128 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:55:58.136 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:57:58.141 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 18:59:58.127 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:01:58.138 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:03:58.128 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:05:58.124 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:07:58.134 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:09:58.210 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:11:58.215 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:13:58.200 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:15:58.189 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:17:58.111 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:19:58.684 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:21:58.109 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:22:29.413 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:23:58.112 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:24:17.723 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[I 19:24:30.387 NotebookApp] Kernel restarted: a1c1a4fa-00f4-4b43-b0cc-12ec4e5f20c0
+[I 19:25:58.653 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
+[W 19:27:03.853 NotebookApp] 404 GET http://www.baidu.com/cache/global/img/gs.gif (93.174.93.136) 7.04ms referer=None
+[I 19:27:58.111 NotebookApp] Saving file at /final/8A_resnet_pseudo_partial.ipynb
