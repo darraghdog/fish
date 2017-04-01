@@ -28,3 +28,13 @@ mkdir darknet/FISH/labels
 mkdir darknet/FISH/annos
 python voc_label_FISH1.py
 
+# Copy in config files specific for our case
+cp yolo.cfg darknet/cfg/yolo.cfg
+cp yolo.cfg darknet/cfg/yolo.cfg
+cp voc.FISH.names darknet/data/voc.FISH.names
+cp voc.FISH.data darknet/cfg/voc.FISH.data
+cp coco.c darknet/src/coco.c
+cp yolo-voc-FISH.cfg darknet/cfg/yolo-voc-FISH.cfg
+cp yolo-voc-FISH544.cfg darknet/cfg/yolo-voc-FISH544.cfg
+mkdir darknet/backupFISH
+
