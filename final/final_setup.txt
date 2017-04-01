@@ -95,3 +95,8 @@ cp ../scripts/test_pseudo.ipynb 6_conv_all_pseudo.ipynb
 jupyter nbconvert --to=python  6_conv_all_pseudo.ipynb
 nohup python 6_conv_all_pseudo.py &> 6_conv_all_pseudo.out&
 
+# Script 7
+nohup python 7A_resnet_544predonly_partial.py &> 7A_resnet_544predonly_partial.out&
+nohup python 7B_resnet_544predonly_partial.py &> 7B_resnet_544predonly_partial.out&
+nohup python 7C_resnet_544predonly_partial.py &> 7C_resnet_544predonly_partial.out&
+
