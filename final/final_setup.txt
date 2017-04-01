@@ -24,7 +24,6 @@ Earlier) Copy the yolo test bounding boxes to ../yolo_coords/
 ****
 
 
-
 ###########################################################
 
 # Script 1
