@@ -113,6 +113,8 @@ yolo_frame = pd.concat(list_)
 yolo_frame['proba_max'] = df.groupby('fname')['proba'].transform('max')
 yolo_frame = yolo_frame[yolo_frame['proba_max']<0.7]
 yolo_frame = yolo_frame[yolo_frame['proba_max']>0.5]
+yolo_frame.drop(['proba_max'], axis=1, inplace=True)
+
 # Sort the predictions on the area 
 yolo_frame['area'] = (yolo_frame['x1']-yolo_frame['x0']) * (yolo_frame['y1']-yolo_frame['y0'])
 yolo_frame = yolo_frame.sort(['fname','area'], ascending=[1, 0]).reset_index(drop=True)
