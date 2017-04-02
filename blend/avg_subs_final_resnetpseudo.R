@@ -19,6 +19,8 @@ subm_07A  <- fread("sub/subm_full_convsq_resnet_7A.csv")
 subm_07B  <- fread("sub/subm_full_convsq_resnet_7B.csv")
 subm_07C  <- fread("sub/subm_full_convsq_resnet_7C.csv")
 subm_08A  <- fread("sub/subm_full_pseudo_resnet_8A.csv")
+subm_08B  <- fread("sub/subm_full_pseudo_resnet_8B.csv")
+subm_08C  <- fread("sub/subm_full_pseudo_resnet_8C.csv")
 
 # Load up the yolo bounding boxes
 yolo <- data.table(read.table("yolo_coords/comp4_det_test_FISH544.txt", quote="\"", comment.char=""))
@@ -53,6 +55,9 @@ rm(subm_07A, subm_07B, subm_07C)
 
 # Get the average of the box cropped - yolo pseudo
 subm_08 = subm_08A
+cols = names(subm_08)[-1]
+for (var in cols) subm_08[[var]] = (subm_08A[[var]] + subm_08B[[var]] + subm_08C[[var]])/3
+# for (var in cols) subm_08[[var]] = (subm_08A[[var]] + subm_08C[[var]])/2
 setnames(subm_08, "image_file", "image")
 subm_08 = subm_08[order(image)]
 rm(subm_08A, subm_08B, subm_08C)
@@ -85,7 +90,7 @@ rm(subm_part01, subm_part02, subm_part03)
 
 # Add in the pseudo
 id = intersect(subm_08$image, subm_part$image)
-for (var in cols) subm_part[image%in% id][[var]] = (subm_part[image%in% id][[var]]*.75) + (subm_08[image%in% id][[var]]*.25) 
+for (var in cols) subm_part[image%in% id][[var]] = (subm_part[image%in% id][[var]]*.8) + (subm_08[image%in% id][[var]]*.2) 
 
 
 ###############################

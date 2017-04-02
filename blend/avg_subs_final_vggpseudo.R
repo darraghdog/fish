@@ -14,11 +14,14 @@ subm_03C  <- fread("sub/subm_full_conv_resnet_3C.csv")
 subm_04A  <- fread("sub/subm_full_convsq_resnet_4A.csv")
 subm_04B  <- fread("sub/subm_full_convsq_resnet_4B.csv")
 subm_04C  <- fread("sub/subm_full_convsq_resnet_4C.csv")
+# subm_05A  <- fread("sub/subm_full_loyolo_resnet_5A.csv")
+# subm_05B  <- fread("sub/subm_full_loyolo_resnet_5B.csv")
+# subm_05C  <- fread("sub/subm_full_loyolo_resnet_5C.csv")
 subm_06   <- fread("sub/subm_full_conv_pseudo_6.csv")
 subm_07A  <- fread("sub/subm_full_convsq_resnet_7A.csv")
 subm_07B  <- fread("sub/subm_full_convsq_resnet_7B.csv")
 subm_07C  <- fread("sub/subm_full_convsq_resnet_7C.csv")
-rfcn <- fread("~/Dropbox/fish/sub/rfcn.csv")[order(image)]
+# rfcn <- fread("~/Dropbox/fish/sub/rfcn.csv")[order(image)]
 
 # Load up the yolo bounding boxes
 yolo <- data.table(read.table("yolo_coords/comp4_det_test_FISH544.txt", quote="\"", comment.char=""))
@@ -51,6 +54,14 @@ setnames(subm_07, "image_file", "image")
 subm_07 = subm_07[order(image)]
 rm(subm_07A, subm_07B, subm_07C)
 
+# Get the average of low confidence yolo
+subm_05 = subm_05A
+cols = names(subm_05)[-1]
+for (var in cols) subm_05[[var]] = (subm_05A[[var]] + subm_05B[[var]] + subm_05C[[var]])/3
+setnames(subm_05, "image_file", "image")
+subm_05 = subm_05[order(image)]
+subm_05 = subm_05[!image %in% c(subm_03$image, subm_07$image)]
+rm(subm_05A, subm_05B, subm_05C)
 
 ###############################
 ##  Merge partial data set ####
@@ -87,7 +98,7 @@ subm_06 = subm_06[order(image)]
 # Get the weighted average
 subm_012 = subm_01
 cols = names(subm_012)[-1]
-for (var in cols) subm_012[[var]] = ((subm_01[[var]]*.25) + (subm_02[[var]]*.25)  + (subm_06[[var]]*.5))*.7 +  rfcn[[var]]*.3
+for (var in cols) subm_012[[var]] = ((subm_01[[var]]*.25) + (subm_02[[var]]*.25)  + (subm_06[[var]]*.5))# *.7 +  rfcn[[var]]*.3
 subm_012 = subm_012[order(image)]
 rm(subm_01, subm_02, subm_06)
 
@@ -120,7 +131,7 @@ subm_final[,2:9] = subm_final[,2:9]/rowSums(data.frame(subm_final[,2:9]))
 subm_final = data.table(subm_final)
 
 # Round #1 Sub
-write.csv(subm_final, paste0("sub/final-add-544yolo-addVGGpseudorfcn.csv"), row.names = F)
+write.csv(subm_final, paste0("sub/final-add-544yolo-addVGGpseudorfcn-loconf.csv"), row.names = F)
 
 
 # Apr 1st - Adding pseu VGG : 0.493 from 0.508 
