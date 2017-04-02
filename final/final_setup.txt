@@ -101,5 +101,9 @@ nohup python 7B_resnet_544predonly_partial.py &> 7B_resnet_544predonly_partial.o
 nohup python 7C_resnet_544predonly_partial.py &> 7C_resnet_544predonly_partial.out&
 
 
-# Script 7
+# Script 8
 nohup python 8A_resnet_pseudo_partial.py  &> 8A_resnet_pseudo_partial.out&
+nohup python 8B_resnet_pseudo_partial.py  &> 8B_resnet_pseudo_partial.out&
+nohup python 8C_resnet_pseudo_partial.py  &> 8C_resnet_pseudo_partial.out&
+
+
