@@ -23,46 +23,53 @@ chmod +v yolo_setup1.sh
 ./yolo_setup1.sh
 ```
 
-# Manually do the next step :
-# Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
+Manually do the next step :
+Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
 
-# Yolo set up part #2 - it may be better to do this manually, as some steps are not automated. Execute from main directory. 
+Yolo set up part #2 - it may be better to do this manually, as some steps are not automated. Execute from main directory. 
+```
 python voc_label_FISH1.py
 cp train-all.txt darknet/train.txt 
 cp test.txt darknet/test.txt 
+```
 
-##################################
-### Train yolo on 414x414 images
-##################################
-
-# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=0", to "CUDNN=1"; if needed, and then execute ./darknet/make to remake
-# The next step runs for about a day, run this from the darknet directory
+#### Train yolo on 414x414 images
+Manually, at train time, in the darknet/Makefile, change the line "CUDNN=0", to "CUDNN=1"; if needed, and then execute ./darknet/make to remake
+The next step runs for about a day, run this from the darknet directory
+```
 ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg darknet19_448.conv.23 
-
-# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=1", to "CUDNN=0" and then execute ./darknet/make to remake
-# Run this from the darknet directory
+```
+Manually, at predict time, in the darknet/Makefile, change the line "CUDNN=1", to "CUDNN=0" and then execute ./darknet/make to remake
+Run this from the darknet directory
+```
 ./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH.cfg backupFISH/yolo-voc-FISH_11000.weights
-# Run the below from the main directory
+```
+Run the below from the main directory
+```
 cp darknet/results/comp4_det_test_FISH.txt yolo_coords/comp4_det_test_FISH.txt
 cp darknet/results/comp4_det_test_FISH.txt yolo_coords/comp4_det_test_FISH540.txt
+```
 
+#### Train yolo on 544x544 images
 
-##################################
-### Train yolo on 544x544 images
-##################################
-
-# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=0", to "CUDNN=1"; if needed, and then execute ./darknet/make to remake
-# The next step runs for about a day, run this from the darknet directory
+Manually, at train time, in the darknet/Makefile, change the line "CUDNN=0", to "CUDNN=1"; if needed, and then execute ./darknet/make to remake
+The next step runs for about a day, run this from the darknet directory
+```
 nohup ./darknet detector train cfg/voc.FISH1.data cfg/yolo-voc-FISH544.cfg darknet19_448.conv.23 > nohup544.out 2>&1&
+```
 
-# ** Manually, at train time, in the darknet/Makefile, change the line "CUDNN=1", to "CUDNN=0" and then execute ./darknet/make to remake
-# Run this from the darknet directory
+Manually, at predict time, in the darknet/Makefile, change the line "CUDNN=1", to "CUDNN=0" and then execute ./darknet/make to remake
+Run this from the darknet directory
+
+```
 ./darknet detector valid cfg/voc.FISH1.data cfg/yolo-voc-FISH544.cfg backupFISH/yolo-voc-FISH544_11000.weights
-# Run the below from the main directory
+```
+Run the below from the main directory
+```
 cp darknet/results/comp4_det_test_FISH.txt yolo_coords/comp4_det_test_FISH544.txt
+```
 
-
-###########################################################
+###############################################################
 # Python Scripts
 mkdir final/checkpoints/checkpoint03A
 mkdir final/checkpoints/checkpoint03B
