@@ -11,7 +11,7 @@ import random
 random.seed(100);
 
 # Set working directory
-os.chdir('data')
+os.chdir('../data')
 
 def hamdist(hash_set):
     diffs = 0
@@ -45,7 +45,7 @@ duplicate_images = False
 duplicates = True
 
 img_id_hash = []
-parent_dir = "fish"
+parent_dir = "fish/test/test"
 names = os.listdir(parent_dir)
 for name in names:
     imgdata = Image.open(os.path.join(parent_dir, name)).convert("L")
@@ -54,6 +54,7 @@ for name in names:
     counter+=1
 
 df = pd.DataFrame(img_id_hash,columns=['ParDirectory' , 'file_name', 'image_hash'])
+df.head()
 
 # Create the distance matrix for the distances in images
 pool = multiprocessing.Pool(8)
@@ -63,7 +64,7 @@ for i, row in df.iterrows():
     all_hashes = [(row['image_hash'], f) for f in df.image_hash.tolist()]
     dists = pool.map(hamdist, all_hashes)
     distances[i, :] = dists
-
+    
 # Lets look at the first 5 clusters
 if duplicate_images:
     _, ax = plt.subplots(112, 4, figsize=(24, 560))
@@ -76,12 +77,12 @@ if duplicate_images:
             for j in range(i,1000):
                 if (distances[i,j]>10) and (distances[i,j]<15):
                     if i!=j:
-                        imgdata = Image.open(os.path.join('fish/test', names[i]))
+                        imgdata = Image.open(os.path.join('fish/test/test', names[i]))
                         axis = ax[counter]
                         axis.imshow(np.asarray(imgdata), interpolation='nearest', aspect='auto')        
                         axis.axis('off')
                         counter += 1
-                        imgdata = Image.open(os.path.join('fish/test', names[j]))
+                        imgdata = Image.open(os.path.join('fish/test/test', names[j]))
                         axis = ax[counter]
                         axis.imshow(np.asarray(imgdata), interpolation='nearest', aspect='auto')        
                         axis.axis('off')
@@ -102,13 +103,12 @@ if duplicates:
                     if check == 0: imgls.append([names[i], names[j]])
 for i in range(len(imgls)):
     imgls[i] = list(set(imgls[i]))
-
+    
 # Open the file to write to
-fo = open("test_fish_same_test.csv", 'w')
-fo.write('image, group\n')
+fo = open("../test_fish_same_test.csv", 'w')
+fo.write('image,group\n')
 for subls in imgls:
     for im in subls:
         #print (im, ' '.join(subls))
         fo.write('%s,%s\n' % (im, ' '.join(subls)))
 fo.close()
-
