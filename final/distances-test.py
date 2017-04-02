@@ -8,13 +8,10 @@ import matplotlib.pyplot as plt
 import multiprocessing
 from sklearn import cluster
 import random
-get_ipython().magic(u'matplotlib inline')
-new_style = {'grid': False}
-plt.rc('axes', **new_style)
 random.seed(100);
 
 # Set working directory
-os.chdir('../data')
+os.chdir('data')
 
 def hamdist(hash_set):
     diffs = 0
@@ -48,7 +45,7 @@ duplicate_images = False
 duplicates = True
 
 img_id_hash = []
-parent_dir = "fish/test"
+parent_dir = "fish"
 names = os.listdir(parent_dir)
 for name in names:
     imgdata = Image.open(os.path.join(parent_dir, name)).convert("L")
@@ -79,12 +76,12 @@ if duplicate_images:
             for j in range(i,1000):
                 if (distances[i,j]>10) and (distances[i,j]<15):
                     if i!=j:
-                        imgdata = Image.open(os.path.join('fish/test/test', names[i]))
+                        imgdata = Image.open(os.path.join('fish/test', names[i]))
                         axis = ax[counter]
                         axis.imshow(np.asarray(imgdata), interpolation='nearest', aspect='auto')        
                         axis.axis('off')
                         counter += 1
-                        imgdata = Image.open(os.path.join('fish/test/test', names[j]))
+                        imgdata = Image.open(os.path.join('fish/test', names[j]))
                         axis = ax[counter]
                         axis.imshow(np.asarray(imgdata), interpolation='nearest', aspect='auto')        
                         axis.axis('off')
@@ -107,7 +104,7 @@ for i in range(len(imgls)):
     imgls[i] = list(set(imgls[i]))
 
 # Open the file to write to
-fo = open("../test_fish_same_test.csv", 'w')
+fo = open("test_fish_same_test.csv", 'w')
 fo.write('image, group\n')
 for subls in imgls:
     for im in subls:
