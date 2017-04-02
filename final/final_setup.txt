@@ -9,6 +9,7 @@
 6) Check that the labels from Liu Weijie in this post http://bit.ly/2nBceSA are under ../data/fish/annos1/{}.json
 7) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
 8) Change R blending script called *** to point at home directory in setwd() step.
+9) Create directory data/fish/pseudo and data/fish/pseudoresnet
 
 ###########################################################
 
@@ -101,4 +102,11 @@ nohup python 6_conv_all_pseudo.py &> 6_conv_all_pseudo.out&
 nohup python 7A_resnet_544predonly_partial.py &> 7A_resnet_544predonly_partial.out&
 nohup python 7B_resnet_544predonly_partial.py &> 7B_resnet_544predonly_partial.out&
 nohup python 7C_resnet_544predonly_partial.py &> 7C_resnet_544predonly_partial.out&
+
+
+# Script 8
+nohup python 8A_resnet_pseudo_partial.py  &> 8A_resnet_pseudo_partial.out&
+nohup python 8B_resnet_pseudo_partial.py  &> 8B_resnet_pseudo_partial.out&
+nohup python 8C_resnet_pseudo_partial.py  &> 8C_resnet_pseudo_partial.out&
+
 
