@@ -66,6 +66,9 @@ mkdir final/checkpoints/checkpoint04C
 mkdir final/checkpoints/checkpoint05A
 mkdir final/checkpoints/checkpoint05B
 mkdir final/checkpoints/checkpoint05C
+mkdir final/checkpoints/checkpoint08A
+mkdir final/checkpoints/checkpoint08B
+mkdir final/checkpoints/checkpoint08C
 
 # Script 1
 nohup python 1_conv_all_anno.py &> 1_conv_all_anno.out&
