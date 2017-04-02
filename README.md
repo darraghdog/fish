@@ -1,7 +1,7 @@
-# fish
-Kaggle - The Nature Conservancy
 
-# Steps to execute the process
+## Kaggle - The Nature Conservancy
+
+### Steps to execute the process
 1) Set up environment on a aws p2 instance with ~ 200GB space
      - Install Ubuntu environment as laid out here : http://course.fast.ai/lessons/aws.html
      - Install R, and package data.table
@@ -16,9 +16,12 @@ Kaggle - The Nature Conservancy
 
 ###########################################################
 
-# Yolo set up part #1
+### Yolo set up part #1
+
+```
 chmod +v yolo_setup1.sh
 ./yolo_setup1.sh
+```
 
 # Manually do the next step :
 # Place the labels from Liu Weijie in this post http://bit.ly/2nBceSA under fish/darknet/FISH/annos
