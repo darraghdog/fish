@@ -69,8 +69,9 @@ Run the below from the main directory
 cp darknet/results/comp4_det_test_FISH.txt yolo_coords/comp4_det_test_FISH544.txt
 ```
 
-###############################################################
-# Python Scripts
+### Run Python Scripts
+Create the below directories
+```
 mkdir final/checkpoints/checkpoint03A
 mkdir final/checkpoints/checkpoint03B
 mkdir final/checkpoints/checkpoint03C
@@ -83,8 +84,11 @@ mkdir final/checkpoints/checkpoint05C
 mkdir final/checkpoints/checkpoint08A
 mkdir final/checkpoints/checkpoint08B
 mkdir final/checkpoints/checkpoint08C
+```
 
-## Run the following from the final/ directory 
+Run the following from the final/ directory 
+```
+cd final
 # Script 1
 nohup python 1_conv_all_anno.py &> 1_conv_all_anno.out&
 
@@ -95,7 +99,6 @@ nohup python 2_conv_all_relabel.py &> 2_conv_all_relabel.out&
 nohup python 3A_resnet_crop_partial.py &> 3A_resnet_crop_partial.out&
 nohup python 3B_resnet_crop_partial.py &> 3B_resnet_crop_partial.out&
 nohup python 3C_resnet_crop_partial.py &> 3C_resnet_crop_partial.out&
-
 
 # Script 4 
 nohup python 4A_resnet_cropsq_partial.py &> 4A_resnet_cropsq_partial.out&
@@ -118,10 +121,10 @@ nohup python 7A_resnet_544predonly_partial.py &> 7A_resnet_544predonly_partial.o
 nohup python 7B_resnet_544predonly_partial.py &> 7B_resnet_544predonly_partial.out&
 nohup python 7C_resnet_544predonly_partial.py &> 7C_resnet_544predonly_partial.out&
 
-
 # Script 8
 nohup python 8A_resnet_pseudo_partial.py  &> 8A_resnet_pseudo_partial.out&
 nohup python 8B_resnet_pseudo_partial.py  &> 8B_resnet_pseudo_partial.out&
 nohup python 8C_resnet_pseudo_partial.py  &> 8C_resnet_pseudo_partial.out&
 
-
+# Blend all the scripts
+Rscript ../blend/avg_subs_final_vggpseudo.R
