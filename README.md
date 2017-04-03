@@ -13,6 +13,9 @@
 7) Place the relabelling file from this post (http://bit.ly/2o8W9Vw) under the directory ../data/fish/relabel/relabels.csv
 8) Change R blending script called *** to point at home directory in setwd() step.
 9) Create directory data/fish/pseudo and data/fish/pseudoresnet
+10) Pretrained weights were sourced from http://www.platform.ai/models/ and https://keras.io/applications/ and https://pjreddie.com/darknet/yolo/ 
+All weights should be downloadable on executuion of the code. I have created and saved my own weights for the resnet models; however executing the code below should create the same weights. 
+
 
 ###########################################################
 
@@ -89,38 +92,38 @@ mkdir final/checkpoints/checkpoint08C
 Run the following from the final/ directory 
 ```
 cd final
-# Script 1
+# Script 1 - VGG training on boundary boxes and classes simulatneously
 nohup python 1_conv_all_anno.py &> 1_conv_all_anno.out&
 
-# Script 2
+# Script 2 - VGG training on boundary boxes and classes simulatneously; using relabel classes from the forums
 nohup python 2_conv_all_relabel.py &> 2_conv_all_relabel.out&
 
-# Script 3
+# Script 3 - 3 x Bagged resnet with data augmentation on Yolo 414 crops
 nohup python 3A_resnet_crop_partial.py &> 3A_resnet_crop_partial.out&
 nohup python 3B_resnet_crop_partial.py &> 3B_resnet_crop_partial.out&
 nohup python 3C_resnet_crop_partial.py &> 3C_resnet_crop_partial.out&
 
-# Script 4 
+# Script 4 - 3 x Bagged resnet with data augmentation on Yolo 414 crops, resizing the crops to be a square cut out of original image
 nohup python 4A_resnet_cropsq_partial.py &> 4A_resnet_cropsq_partial.out&
 nohup python 4B_resnet_cropsq_partial.py &> 4B_resnet_cropsq_partial.out&
 nohup python 4C_resnet_cropsq_partial.py &> 4C_resnet_cropsq_partial.out&
 
-# Script 6
+# Script 6 - Make initial prediction with the above models to be used for pseudo labelling
 python distances_test.py
 Rscript avg_subs_final_round1.R # Run this rscript
 nohup python 6_conv_all_pseudo.py &> 6_conv_all_pseudo.out&
 
-# Script 7
+# Script 7 - 3 x Bagged resnet with data augmentation on Yolo 544 crops, resizing the crops to be a square cut out of original image
 nohup python 7A_resnet_544predonly_partial.py &> 7A_resnet_544predonly_partial.out&
 nohup python 7B_resnet_544predonly_partial.py &> 7B_resnet_544predonly_partial.out&
 nohup python 7C_resnet_544predonly_partial.py &> 7C_resnet_544predonly_partial.out&
 
-# Script 8
+# Script 8 - VGG same as script 1, just augmenting training data with high confidence pseudo labels 
 nohup python 8A_resnet_pseudo_partial.py  &> 8A_resnet_pseudo_partial.out&
 nohup python 8B_resnet_pseudo_partial.py  &> 8B_resnet_pseudo_partial.out&
 nohup python 8C_resnet_pseudo_partial.py  &> 8C_resnet_pseudo_partial.out&
 
-# Blend all the scripts
+# Blend all the scripts - weighted average of all scripts with some thresholding of minority classes.
 Rscript avg_subs_final_vggpseudo.R
 Rscript avg_subs_final_resnetpseudo.R
 ```
