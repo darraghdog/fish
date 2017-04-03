@@ -1,0 +1,9 @@
+nohup: ignoring input
+Using gpu device 0: Tesla K80 (CNMeM is disabled, cuDNN 5103)
+/home/ubuntu/anaconda2/lib/python2.7/site-packages/theano/sandbox/cuda/__init__.py:600: UserWarning: Your cuDNN version is more recent than the one Theano officially supports. If you see any problems, try updating Theano or downgrading cuDNN to version 5.
+  warnings.warn(warn)
+Using Theano backend.
+5A_resnet_544predonly_loyolo.py:119: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  yolo_frame = yolo_frame.sort(['fname','area'], ascending=[1, 0]).reset_index(drop=True)
+5A_resnet_544predonly_loyolo.py:153: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  GTbbox_test_df = GTbbox_test_df.sort(['image_file','crop_index']).reset_index(drop=True)
