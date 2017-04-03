@@ -105,11 +105,6 @@ nohup python 4A_resnet_cropsq_partial.py &> 4A_resnet_cropsq_partial.out&
 nohup python 4B_resnet_cropsq_partial.py &> 4B_resnet_cropsq_partial.out&
 nohup python 4C_resnet_cropsq_partial.py &> 4C_resnet_cropsq_partial.out&
 
-# Script 5
-nohup python 5A_resnet_544predonlynobox_partial.py &> 5A_resnet_544predonlynobox_partial.out&
-nohup python 5B_resnet_544predonlynobox_partial.py &> 5B_resnet_544predonlynobox_partial.out&
-nohup python 5C_resnet_544predonlynobox_partial.py &> 5C_resnet_544predonlynobox_partial.out&
-
 # Script 6
 python distances_test.py
 Rscript avg_subs_final_round1.R # Run this rscript
@@ -126,6 +121,6 @@ nohup python 8B_resnet_pseudo_partial.py  &> 8B_resnet_pseudo_partial.out&
 nohup python 8C_resnet_pseudo_partial.py  &> 8C_resnet_pseudo_partial.out&
 
 # Blend all the scripts
-Rscript ../blend/avg_subs_final_vggpseudo.R
-Rscript ../blend/avg_subs_final_resnetpseudo.R
+Rscript avg_subs_final_vggpseudo.R
+Rscript avg_subs_final_resnetpseudo.R
 ```
