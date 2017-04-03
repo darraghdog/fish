@@ -89,7 +89,7 @@ mkdir final/checkpoints/checkpoint08B
 mkdir final/checkpoints/checkpoint08C
 ```
 
-Run the following from the final/ directory 
+Run the following from the `final/` directory. Note, the models marked `*A_*`, `*B_*` and `*C_*` are the exact same except the wieghts are svaed to different locations to allow predictions to be bagged or averaged. 
 ```
 cd final
 # Script 1 - VGG training on boundary boxes and classes simulatneously
