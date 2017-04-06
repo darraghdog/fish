@@ -35,8 +35,8 @@ def refresh_directory_structure(name, sub_dirs):
 # In[2]:
 
 # Set Parameters and check files
-refresh_directories =    True
-input_exists =           False 
+refresh_directories =    False # True
+input_exists =           True  # False 
 full =                   True 
 log.info('Set Paramters')
 path =       "../data/fish/"
@@ -197,27 +197,6 @@ if not input_exists:
 
 # Start script 2
 
-
-# Read in Libraries
-from __future__ import division, print_function
-from logbook import Logger, StreamHandler
-import sys
-StreamHandler(sys.stdout).push_application()
-log = Logger('Logbook')
-import shutil, csv, time
-timestr = time.strftime("%Y%m%d")
-import ujson as json
-from keras.layers.advanced_activations import LeakyReLU
-import utils; reload(utils)
-from utils import *
-import gc
-# from __future__ import division, print_function
-from theano.sandbox import cuda
-from vgg16bn import Vgg16BN
-from sklearn import metrics
-
-def accuracyfunc(y_act, y_pred):
-    return metrics.accuracy_score(np.argmax(y_act, axis=1), np.argmax(y_pred, axis=1))
     
 def refresh_directory_structure(name, sub_dirs):
     gdir = os.path.join(path, name)
