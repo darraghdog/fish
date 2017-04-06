@@ -1,4 +1,7 @@
 python 4A_resnet_cropsq_partial.py
 python 4B_resnet_cropsq_partial.py
 python 4C_resnet_cropsq_partial.py
+python 5A_resnet_544predonlynobox_partial.py
+python 5B_resnet_544predonlynobox_partial.py
+python 5C_resnet_544predonlynobox_partial.py
 
