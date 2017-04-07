@@ -30,6 +30,8 @@ def refresh_directory_structure(name, sub_dirs):
         os.makedirs(os.path.join(gdir, sub_dir))
 
 
+
+
 # Set Parameters and check files
 refresh_directories = True
 input_exists = False

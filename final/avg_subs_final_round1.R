@@ -67,7 +67,7 @@ for (var in cols) subm_final[image %in% id][[var]] = (subm_012[image %in% id][[v
 ###############################
 
 # Make the NoF for the yoloimages very low
-subm_final[image %in% id]$NoF = .00001
+subm_final[image %in% id]$NoF = .0001
 subm_final = data.frame(subm_final)
 subm_final[,2:9] = subm_final[,2:9]/rowSums(data.frame(subm_final[,2:9]))
 subm_final = data.table(subm_final)
