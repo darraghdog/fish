@@ -437,3 +437,4 @@ ERROR:root:kernel 1c7deea2-7bc5-4092-b3ed-983cba3eef53 restarted failed!
 [W 21:28:45.058 NotebookApp] 410 DELETE /api/sessions/3a46fde3-ead1-4655-9961-622f3b47b94e (176.61.36.2) 1.22ms referer=http://ec2-52-212-217-161.eu-west-1.compute.amazonaws.com:8888/notebooks/final/8A_resnet_pseudo_partial.ipynb
 [I 05:00:01.651 NotebookApp] 302 GET / (71.6.158.166) 0.34ms
 [I 05:00:01.981 NotebookApp] 302 GET /tree (71.6.158.166) 0.58ms
+python: can't open file 'distances_test.py': [Errno 2] No such file or directory
