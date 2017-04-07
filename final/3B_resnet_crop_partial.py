@@ -264,7 +264,7 @@ x = Dense(256, init='glorot_normal')(x)
 x = LeakyReLU(alpha=0.33)(x)
 x = Dropout(0.5)(x)
 predictions = Dense(len(FISH_CLASSES), init='glorot_normal', activation='softmax')(x)
-
+'''
 model = Model(input=base_model.input, output=predictions)
 
 # first: train only the top layers 
@@ -331,7 +331,7 @@ model.fit_generator(train_generator(datagen=train_datagen, df=train_df), samples
                     callbacks=[early_stopping, model_checkpoint, learningrate_schedule], # , tensorboard
                     validation_data=(valid_x,valid_y), nb_worker=1, pickle_safe=True)
 
-
+'''
 # In[20]:
 
 GTbbox_df[:2]

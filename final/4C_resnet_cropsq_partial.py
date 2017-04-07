@@ -281,7 +281,7 @@ learningrate_schedule = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patien
 
 #Resnet50
 #top layer training
-
+'''
 from keras.applications.resnet50 import ResNet50
 
 base_model = ResNet50(weights='imagenet', include_top=False)
@@ -323,6 +323,7 @@ gc.collect()
 # Resnet50
 # fine tuning
 model_checkpoint = ModelCheckpoint(filepath=CHECKPOINT_DIR+'weights.{epoch:03d}-{val_loss:.4f}.hdf5', monitor='val_loss', verbose=1, save_best_only=False, save_weights_only=False, mode='auto')
+
 import glob
 start_layer = 38
 
@@ -361,6 +362,8 @@ model.fit_generator(train_generator(datagen=train_datagen, df=train_df), samples
                     callbacks=[early_stopping, model_checkpoint, learningrate_schedule], # , tensorboard
                     validation_data=(valid_x,valid_y), nb_worker=1, pickle_safe=True)
 
+
+'''
 # Load up YOLO bounding boxes for each class
 import glob
 # all_files = glob.glob(os.path.join('../yolo_coords', "*.txt"))
