@@ -1,3 +1,4 @@
+
 # Read in Libraries
 from __future__ import division, print_function
 from logbook import Logger, StreamHandler
@@ -30,9 +31,9 @@ def refresh_directory_structure(name, sub_dirs):
 
 
 # Set Parameters and check files
-refresh_directories = False #True
-input_exists = True # False
-full =         True
+refresh_directories = True
+input_exists = False
+full = True
 log.info('Set Paramters')
 path = "../data/fish/"
 batch_size=32
@@ -65,7 +66,7 @@ hiconf_test['class'] = hiconf_test.drop(['image'], axis=1).idxmax(axis = 1)
 # Now we read in our high confidence boundary boxes. 
 # Load up YOLO bounding boxes for each class
 all_files = glob.glob(os.path.join('../yolo_coords', "*.txt"))
-allFiles = [f for f in all_files if 'FISH.txt' in f]
+allFiles = [f for f in all_files if 'FISH' in f]
 frame = pd.DataFrame()
 list_ = []
 for file_ in allFiles:
@@ -238,120 +239,3 @@ if not input_exists:
     #del trn, val, test
     gc.collect()
     gc.collect()
-
-
-# In[19]:
-
-gc.collect()
-conv_val_feat = load_array(path+'results/6_conv_val_pseudo_feat.dat')
-conv_trn_feat = load_array(path+'results/6_conv_trn_pseudo_feat.dat') 
-conv_test_feat = load_array(path+'results/6_conv_test_pseudo_feat.dat')
-
-
-# In[20]:
-if full:
-    conv_trn_feat = np.concatenate([conv_trn_feat, conv_val_feat])
-    trn_labels = np.concatenate([trn_labels, val_labels]) 
-    trn_bbox = np.concatenate([trn_bbox, val_bbox])
-    
-# Our Convolutional Net Architecture
-log.info('Create and fit CNN')
-p=0.6
-# Set up the fully convolutional net (FCN); 
-conv_layers,_ = split_at(vgg640, Convolution2D)
-nf=128; p=0. # No dropout
-
-
-# In[21]:
-
-gc.collect()
-nf = 512
-p  = 0.3
-def create_model():
-    inp = Input(conv_layers[-1].output_shape[1:])
-    x = MaxPooling2D()(inp)
-    x = ZeroPadding2D((1,1))(x)
-    x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
-    x =   Dropout(p)(x)
-    x = BatchNormalization(axis=1)(x)
-    x = MaxPooling2D()(x)
-    x = ZeroPadding2D((1,1))(x)
-    x = Convolution2D(nf,3,3, activation='relu', border_mode='same')(x)
-    x =   Dropout(p)(x)
-    x = BatchNormalization(axis=1)(x)
-    x1 =   MaxPooling2D()(x)
-    x1 =   Convolution2D(8,3,3, border_mode='same')(x1)
-    x1 =   Dropout(p/2)(x1)
-    x1 =   GlobalAveragePooling2D()(x1)
-    x = Dropout(p/2)(x)
-    x = Flatten()(x)
-    x = Dense(1024, activation='relu')(x)
-    x = BatchNormalization()(x)
-    x = Dropout(p/2)(x)
-    x = Dense(1024, activation='relu')(x)
-    x = BatchNormalization()(x)
-    x = Dropout(p/2)(x)
-    x_bb = Dense(4, name='bb')(x)
-    x_class = Dense(8, activation='softmax', name='class')(x1)
-    return inp, x_bb, x_class
-
-
-predsls = []
-pvalsls = []
-
-for ii in range(bags):
-    inp, x_bb, x_class = create_model()
-    model = Model([inp], [x_bb, x_class])
-    #model.summary()
-    model.compile(Adam(lr=1e-3), loss=['mse', 'categorical_crossentropy'], metrics=['accuracy'],
-                 loss_weights=[.001, 1.])
-    model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=5, 
-                 validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose=0)
-    model.optimizer.lr = 1e-4
-    model.optimizer.loss_weights=[.00001, 1.]
-    model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=2, 
-                 validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose =0)
-    model.optimizer.lr = 1e-5
-
-    count = 0
-    while count < 8:
-        model.fit(conv_trn_feat, [trn_bbox, trn_labels], batch_size=batch_size, nb_epoch=1, 
-                     validation_data=(conv_val_feat, [val_bbox, val_labels]), verbose =0)
-        predsls.append(model.predict(conv_test_feat, batch_size=batch_size)[1]) # or try 32 batch_size
-        pvalsls.append(model.predict(conv_val_feat, batch_size=batch_size)[1])
-        val_score = "%.3f" % metrics.log_loss(val_labels, sum(pvalsls)/len(pvalsls))
-        acc_score = "%.3f" % accuracyfunc(val_labels, do_clip(sum(pvalsls)/len(pvalsls), clip))
-        log.info('Bagged Validation Logloss ' + str(val_score))
-        log.info('Bagged Validation Accuracy ' + str(acc_score))
-        count += 1
-
-
-# In[22]:
-
-def create_rect(bb, color='red'):
-    return plt.Rectangle((bb[2], bb[3]), bb[1], bb[0], color=color, fill=False, lw=3)
-
-def show_bb(i):
-    bb = val_bbox[i]
-    pbb = pval_bbox[i]
-    plot(val[i])
-    plt.gca().add_patch(create_rect(bb, color='red'))
-    plt.gca().add_patch(create_rect(pbb, color='yellow'))
-
-
-# metrics.log_loss(val_labels, do_clip(sum(pvalsls)/len(pvalsls), .9999))
-preds = sum(predsls)/len(predsls)
-subm = do_clip(preds, clip)
-
-
-if full:
-    subm_name = '../sub/subm_full_conv_pseudo_6.csv' #'.csv.gz'
-else:
-    subm_name = '../sub/subm_part_conv_pseudo_6.csv' #'.csv.gz'
-
-
-classes = ['ALB', 'BET', 'DOL', 'LAG', 'NoF', 'OTHER', 'SHARK', 'YFT']
-submission = pd.DataFrame(subm, columns=classes)
-submission.insert(0, 'image', raw_test_filenames)
-submission.to_csv(subm_name, index=False)#, compression='gzip')
-log.info('Done - files @ ' + subm_name)
