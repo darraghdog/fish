@@ -66,7 +66,7 @@ hiconf_test['class'] = hiconf_test.drop(['image'], axis=1).idxmax(axis = 1)
 # Now we read in our high confidence boundary boxes. 
 # Load up YOLO bounding boxes for each class
 all_files = glob.glob(os.path.join('../yolo_coords', "*.txt"))
-allFiles = [f for f in all_files if 'FISH' in f]
+allFiles = [f for f in all_files if 'FISH544.txt' in f]
 frame = pd.DataFrame()
 list_ = []
 for file_ in allFiles:
