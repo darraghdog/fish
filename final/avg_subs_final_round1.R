@@ -74,7 +74,6 @@ subm_final = data.table(subm_final)
 
 # Boost the scores of the very seldom classes. 
 subm_final[LAG>0.5][["LAG"]] = 10
-subm_final[NoF>0.5][["NoF"]] = 10
 subm_final[OTHER>0.5][["OTHER"]] = 10
 subm_final = data.frame(subm_final)
 subm_final[,2:9] = subm_final[,2:9]/rowSums(data.frame(subm_final[,2:9]))
