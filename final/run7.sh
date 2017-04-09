@@ -1,0 +1,3 @@
+#python 7A_resnet_544predonly_partial.py
+python 7B_resnet_544predonly_partial.py
+python 7C_resnet_544predonly_partial.py
